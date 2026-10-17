@@ -1,0 +1,6 @@
+# Preserve the exact bytes recorded in MANIFEST.json and patch checksums.
+* -text
+*.bps binary
+*.patch binary
+*.png binary
+*.zip binary

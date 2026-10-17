@@ -1,0 +1,36 @@
+# Game ROMs, saves and emulator data are never published.
+*.gba
+*.gbc
+*.gb
+*.nds
+*.sav
+*.srm
+*.state
+*.state.*
+*.ss[0-9]
+*.sgm
+*.nav-sram
+*.zip
+!dist/NyBy-Unbound-RTC-v1.1RC1-FR-EN-Community-r3-2026-10-17.zip
+
+# Build output and local tools.
+__pycache__/
+*.py[cod]
+.venv/
+node_modules/
+outils/
+ROM-patchee/
+build-output/
+.zig-cache/
+zig-cache/
+cache-global/
+cache-local/
+zig-out/
+*.o
+*.elf
+*.bin
+*.dll
+*.exe
+*.log
+.DS_Store
+Thumbs.db

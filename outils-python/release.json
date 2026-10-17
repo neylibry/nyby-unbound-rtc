@@ -1,0 +1,157 @@
+{
+  "project": "Unbound EN and FR manual RTC",
+  "author": "NyBy",
+  "version": "1.1-rc1",
+  "release_date": "2026-10-17",
+  "status": "release candidate; FR smooth gameplay reported on real GBA; EN PC validated; Options issue open",
+  "display_credit": {
+    "fr": "par NyBy v1.1RC1 17/10/2026",
+    "en": "BY NyBy v1.1RC1 17/10/2026"
+  },
+  "inputs": [
+    {
+      "name": "Unbound 2.1.1.1 French 2.1.179 without this RTC patch",
+      "sha256": "55bd66a6cd6a54b36b1c90b750541dfd0d621466bfb1ddee1e222f6207ad4164",
+      "bytes": 33554432,
+      "crc32": "51F81F4B",
+      "patch": "patches/Unbound-FR179-RTC-NyBy-v1.1RC1.bps",
+      "patch_sha256": "634d9108fa6e19a9ee299944e3e5d332bb1fcf68768116612673cbe35430fae9",
+      "patch_bytes": 4739,
+      "variant": "fr"
+    },
+    {
+      "name": "Unbound FR179 manual RTC beta1",
+      "sha256": "1fbe042a0f5a88fe6c3d104018773be99b9ac76699d0dd604131723695601d9c",
+      "bytes": 33554432,
+      "crc32": "CB3DD8A3",
+      "patch": "patches/MAJ-beta1-vers-NyBy-v1.1RC1.bps",
+      "patch_sha256": "6df298a0f83a380e1b0f0c8c744e57b9d3309e9db39de29af53d07384f03c9c4",
+      "patch_bytes": 4572,
+      "variant": "fr"
+    },
+    {
+      "name": "NyBy RTC v1.0",
+      "sha256": "bcb24306cd03b0acbb3039ed1bb3404f5c9a8db3eee50c393ac823709e715e36",
+      "bytes": 33554432,
+      "crc32": "AC2E71CA",
+      "patch": "patches/MAJ-v1.0-vers-NyBy-v1.1RC1.bps",
+      "patch_sha256": "48b7abdc8c5aab38cfd554dc041f2571265d02199fb586a7411287767b8194b8",
+      "patch_bytes": 2855,
+      "variant": "fr"
+    },
+    {
+      "name": "Unbound 2.1.1.1 EN already prepared from FireRed USA v1.0",
+      "variant": "en",
+      "sha256": "7aa25bbf568f7cfcf6ee1cf2e9e6ff637350b3d0705c2375cabb6baa7d9739f7",
+      "bytes": 33554432,
+      "crc32": "4B3D4957",
+      "patch": "patches/Unbound-EN2111-RTC-NyBy-v1.1RC1.bps",
+      "patch_sha256": "014eb67e6801166fa447ada6705caf00b3998c0ff0f2fd4053be7d42b2e56c3b",
+      "patch_bytes": 4730
+    }
+  ],
+  "additional_permanent_ram_bytes": 0,
+  "settings_bytes": 4,
+  "save_format_changed": false,
+  "known_options_issue_resolved": false,
+  "rom_included": false,
+  "save_included": false,
+  "required_superfw": {
+    "tested_version_for_beta": "0.21",
+    "patchmode": "PatchEngine",
+    "directsaving": true,
+    "rtc": false,
+    "igm": false,
+    "cheats": false
+  },
+  "package_edition": "community-3-FR-EN-documentation",
+  "schema_version": 2,
+  "physical_test_scope": "FR qualitative gameplay feedback; EN hardware test pending",
+  "hardware_feedback": {
+    "date": "2026-10-17",
+    "source": "user report",
+    "variant": "fr",
+    "optimized_gameplay_reported_smooth": true,
+    "fps_measured": false,
+    "known_options_issue_resolved": false
+  },
+  "browser_installer": {
+    "filename": "INSTALLER-FR-EN.html",
+    "offline": true,
+    "languages": [
+      "fr",
+      "en"
+    ],
+    "python_required": false,
+    "source_sha256_checked": true,
+    "output_sha256_checked": true,
+    "already_patched_rom_reused_without_repatching": true,
+    "optional_native_save_copy": true,
+    "direct_sd_access": false,
+    "network_access": false
+  },
+  "preparation_workflow": {
+    "base": "Own Pokemon FireRed USA v1.0 ROM",
+    "english": [
+      "FireRed USA v1.0",
+      "Unbound 2.1.1.1 patch",
+      "NyBy RTC EN patch"
+    ],
+    "french": [
+      "FireRed USA v1.0",
+      "Unbound 2.1.1.1 patch",
+      "Antony French 2.1.179 translation patch",
+      "NyBy RTC FR patch"
+    ],
+    "installer_scope": "Only the final RTC step; SHA-256 recognition of already prepared Unbound builds",
+    "unbound_patch_bundled": false,
+    "translation_patch_bundled": false,
+    "interface_language_changes_game_language": false
+  },
+  "variants": [
+    {
+      "id": "fr",
+      "game": "Unbound 2.1.1.1 French Antony 2.1.179",
+      "menu_language": "fr",
+      "target": {
+        "filename": "Unbound FR 179 RTC NyBy v1.1 RC1.gba",
+        "bytes": 33554432,
+        "sha256": "4aef499c90b35311695d42d98e89d3cca6388552a22563742abaff1a9c658898",
+        "crc32": "84E9E2BA"
+      },
+      "payload_bytes": 4504,
+      "sd_folder": "SD/fr",
+      "superfw_cache": {
+        "bytes": 800,
+        "sha256": "482d381235d50dd98202b9e7d20050aee8cd3cd1f0a22d7b03bb781abb2af017"
+      },
+      "validation": {
+        "pc_checked": true,
+        "user_reported_smooth_on_gba": true,
+        "options_issue_resolved": false
+      }
+    },
+    {
+      "id": "en",
+      "game": "Original English Unbound 2.1.1.1",
+      "menu_language": "en",
+      "target": {
+        "filename": "Unbound EN 2111 RTC NyBy v1.1 RC1.gba",
+        "bytes": 33554432,
+        "sha256": "ca4b2835e41daecdd2f80108270bb5d6337a4ad6f6373b2a5d554c662ab1a51f",
+        "crc32": "EAC2C7C7"
+      },
+      "payload_bytes": 4500,
+      "sd_folder": "SD/en",
+      "superfw_cache": {
+        "bytes": 800,
+        "sha256": "482d381235d50dd98202b9e7d20050aee8cd3cd1f0a22d7b03bb781abb2af017"
+      },
+      "validation": {
+        "pc_checked": true,
+        "native_save_and_cold_restarts": true,
+        "physical_gba_tested": false
+      }
+    }
+  ]
+}

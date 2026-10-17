@@ -1,0 +1,63 @@
+# NyBy RTC — Pokémon Unbound EN / FR
+
+Une horloge manuelle pour jouer à Unbound sur **vraie GBA + SuperCard sous SuperFW 0.21**, sans puce RTC. / A manual clock for Unbound on **real GBA + SuperCard running SuperFW 0.21**, without an RTC chip.
+
+**v1.1RC1 · 17/10/2026 · Kit communauté r3**
+
+[Télécharger le kit / Download the package](dist/NyBy-Unbound-RTC-v1.1RC1-FR-EN-Community-r3-2026-10-17.zip?raw=true) · [Guide français](README_FR.md) · [English guide](README_EN.md)
+
+## Français
+
+Réglez la date et l'heure au démarrage ; elles avancent pendant le jeu. Le dernier réglage saisi est mémorisé. Le temps console éteinte n'est pas compté : remettez l'heure au lancement.
+
+Les deux parcours partent de votre propre **FireRed USA v1.0 en anglais** :
+
+- **Jeu EN :** FireRed USA → patch Unbound 2.1.1.1 → patch RTC NyBy EN.
+- **Jeu FR :** FireRed USA → patch Unbound 2.1.1.1 → traduction Antony FR 2.1.179 → patch RTC NyBy FR.
+
+Ce kit effectue uniquement la dernière étape RTC. L'installateur reconnaît par SHA-256 votre fichier Unbound **déjà préparé** et sélectionne le patch RTC correspondant. Le sélecteur de langue de l'installateur change uniquement son interface.
+
+**Installation :** extraire le kit, ouvrir `INSTALLER-FR-EN.html`, choisir Unbound préparé et éventuellement son .sav natif de 128 Kio, puis générer le ZIP personnel prêt à copier sur la SD. Aucun Python, compte ou accès réseau nécessaire. Conservez une copie de votre partie avant installation.
+
+**SuperFW :** PatchEngine, DirectSaving activé, RTC SuperFW / IGM / cheats désactivés. Les caches sont fournis : ne pas les régénérer.
+
+Le kit public ne contient aucune ROM, traduction complète ou sauvegarde personnelle. Le ZIP généré avec vos fichiers est destiné à votre usage personnel.
+
+## English
+
+Set the current date/time at startup; it advances while playing. The last setting you entered is remembered. Powered-off time is not counted: adjust the clock at each launch.
+
+Both paths start from your own **English FireRed USA v1.0**:
+
+- **EN game:** FireRed USA → Unbound 2.1.1.1 patch → NyBy RTC EN patch.
+- **FR game:** FireRed USA → Unbound 2.1.1.1 patch → Antony French 2.1.179 translation → NyBy RTC FR patch.
+
+This package handles only the final RTC step. The installer fingerprints your **already prepared Unbound build** using SHA-256 and selects the matching RTC patch. Its language selector changes only the installer interface.
+
+**Setup:** extract the package, open `INSTALLER-FR-EN.html`, select prepared Unbound and optionally its native 128 KiB .sav, then generate your personal SD ZIP. No Python, account or network access required. Back up your save first.
+
+**SuperFW:** PatchEngine, DirectSaving enabled, SuperFW RTC / IGM / cheats disabled. Matching caches are included: do not regenerate them.
+
+The public package contains no ROM, complete translation or personal save. Generated ZIPs containing your files are for personal use.
+
+## État / Status
+
+- **FR :** fluidité confirmée par un utilisateur sur GBA. / Smooth gameplay reported by a user on real GBA.
+- **EN :** tests PC réussis, sauvegarde/reprise et calendrier exhaustif ; essai GBA encore à confirmer. / PC checks passed, including native save/resume and exhaustive calendar; hardware test pending.
+- **RC1 :** signalement d'affichage intermittent des choix dans les paramètres toujours ouvert. / Intermittent disappearing Options choices issue remains open.
+
+[Vérifications / Verification](docs/VERIFICATION-FR-EN.md) · [Preuves installateur / Installer checks](docs/INSTALLER-TESTS.json) · [Validation EN / EN validation](docs/EN-VALIDATION.json)
+
+## Aperçus / Previews
+
+| Français | English |
+|---|---|
+| ![Menu RTC français](APERCU.png) | ![English RTC menu](APERCU-EN.png) |
+
+## Sources et crédits / Source and credits
+
+[Sources et reconstruction / Source and rebuilding](sources/README-FR-EN.md) · [Crédits / Credits](CREDITS-FR-EN.md) · [Texte de présentation / Release text](ANNONCE-FR-EN.md)
+
+RTC : **NyBy** · Unbound : **Skeli et son équipe / and team** · Traduction FR / French translation : **Antony** · SuperFW : **davidgfnet**.
+
+Projet indépendant. Pour signaler un problème, indiquez les versions, le matériel et les étapes de reproduction ; ne publiez pas de ROM ou de sauvegarde personnelle. / Independent project. Report versions, hardware and reproduction steps; do not post ROMs or personal saves.

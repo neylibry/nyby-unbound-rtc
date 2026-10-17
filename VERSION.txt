@@ -1,0 +1,5 @@
+NyBy Manual RTC v1.1RC1 / community-3-FR-EN-documentation
+2026-10-17
+Already prepared Unbound 2.1.1.1 EN OR French 2.1.179; SuperFW 0.21
+Both start with FireRed USA v1.0 + Unbound; FR additionally needs the translation before RTC.
+FR: user GBA feedback. EN: PC validated, hardware pending. Options issue open.
