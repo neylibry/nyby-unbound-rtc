@@ -110,3 +110,9 @@ La méthode Python 3.10+ reste disponible dans `outils-python/` : lancer `Appliq
 `docs/VERIFICATION-FR-EN.md` décrit les tests et leurs limites. Les sources du module et de l'installateur sont fournies dans `sources/`. Les outils de compilation et d'émulation ne sont pas inclus.
 
 Crédits : module RTC **NyBy** ; Unbound **Skeli et son équipe** ; traduction FR **Antony** ; SuperFW **davidgfnet**. Projet indépendant, sans affiliation officielle. Liens et précisions dans `CREDITS-FR-EN.md`.
+
+## Licence et développement
+
+Code original NyBy sous [licence MIT](LICENSE) ; voir sa [portée](LICENSING-FR-EN.md).
+
+Des parties importantes du code et de la documentation ont été générées avec Codex (IA), sous la direction de NyBy. NyBy a défini le besoin et effectué les essais sur sa GBA. Les tests matériels rapportés concernent la FR ; l'EN reste à confirmer sur console.

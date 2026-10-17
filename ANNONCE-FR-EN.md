@@ -49,3 +49,11 @@ The ARM7TDMI optimization has been tested on PC. A user now reports smooth gamep
 FR/EN documentation, source code, hashes and limitations are included. When reporting a problem, provide versions and reproduction steps without posting ROMs or personal saves.
 
 RTC: NyBy. Unbound: Skeli and team. French translation: Antony. SuperFW: davidgfnet. Independent project.
+
+## Licence et méthode / Licensing and development
+
+Code original NyBy : [MIT](LICENSE), [portée / scope](LICENSING-FR-EN.md).
+
+Des parties importantes du code et de la documentation ont été générées avec Codex (IA), sous la direction de NyBy. NyBy a défini le besoin et effectué les essais sur sa GBA. Les tests matériels rapportés concernent la FR ; l'EN reste à confirmer sur console.
+
+Substantial parts of the code and documentation were generated with Codex (AI), directed by NyBy. NyBy defined the requirements and performed the reported GBA testing. Hardware feedback concerns the French build; English hardware testing is still pending.

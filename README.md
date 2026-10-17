@@ -2,9 +2,9 @@
 
 Une horloge manuelle pour jouer à Unbound sur **vraie GBA + SuperCard sous SuperFW 0.21**, sans puce RTC. / A manual clock for Unbound on **real GBA + SuperCard running SuperFW 0.21**, without an RTC chip.
 
-**v1.1RC1 · 17/10/2026 · Kit communauté r3**
+**v1.1RC1 · 17/10/2026 · Kit communauté r4 · code original MIT**
 
-[Télécharger le kit / Download the package](dist/NyBy-Unbound-RTC-v1.1RC1-FR-EN-Community-r3-2026-10-17.zip?raw=true) · [Guide français](README_FR.md) · [English guide](README_EN.md)
+[Télécharger le kit / Download the package](https://github.com/neylibry/nyby-unbound-rtc/releases/tag/v1.1-rc1-community-r4) · [Guide français](README_FR.md) · [English guide](README_EN.md)
 
 ## Français
 
@@ -61,3 +61,15 @@ The public package contains no ROM, complete translation or personal save. Gener
 RTC : **NyBy** · Unbound : **Skeli et son équipe / and team** · Traduction FR / French translation : **Antony** · SuperFW : **davidgfnet**.
 
 Projet indépendant. Pour signaler un problème, indiquez les versions, le matériel et les étapes de reproduction ; ne publiez pas de ROM ou de sauvegarde personnelle. / Independent project. Report versions, hardware and reproduction steps; do not post ROMs or personal saves.
+
+## Licence et diffusion / Licensing and distribution
+
+Code original NyBy : **[MIT](LICENSE)**, avec [portée FR/EN](LICENSING-FR-EN.md). / Original NyBy code: **MIT**; third-party game, translation and firmware rights remain separate.
+
+Des parties importantes du code et de la documentation ont été générées avec Codex (IA), sous la direction de NyBy. NyBy a défini le besoin et effectué les essais sur sa GBA. Les tests matériels rapportés concernent la FR ; l'EN reste à confirmer sur console.
+
+Substantial parts of the code and documentation were generated with Codex (AI), directed by NyBy. NyBy defined the requirements and performed the reported GBA testing. Hardware feedback concerns the French build; English hardware testing is still pending.
+
+[Textes et destinations de publication / Publication drafts and destinations](docs/publication/README-FR-EN.md).
+
+r4 ajoute la licence et les documents de diffusion ; patchs et installateur identiques à r3. / r4 adds licensing and publication material; patches and installer are unchanged from r3.

@@ -110,3 +110,9 @@ The Python 3.10+ method remains in `outils-python/`: run `Appliquer-patch-Window
 See `docs/VERIFICATION-FR-EN.md` for tests and limitations. Module and installer sources are in `sources/`. Compiler and emulator tools are not bundled.
 
 Credits: RTC module **NyBy**; Unbound **Skeli and team**; French translation **Antony**; SuperFW **davidgfnet**. Independent project, without official affiliation. See `CREDITS-FR-EN.md` for links and details.
+
+## Licensing and development
+
+Original NyBy code is [MIT-licensed](LICENSE); see the [scope](LICENSING-FR-EN.md).
+
+Substantial parts of the code and documentation were generated with Codex (AI), directed by NyBy. NyBy defined the requirements and performed the reported GBA testing. Hardware feedback concerns the French build; English hardware testing is still pending.

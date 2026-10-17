@@ -1,15 +1,15 @@
 {
   "project": "NyBy manual RTC",
   "version": "1.1-rc1",
-  "edition": "community-3-FR-EN-documentation",
+  "edition": "community-4-MIT-publication",
   "rom_included": false,
   "save_included": false,
   "personal_data_included": false,
   "files": [
     {
       "path": "ANNONCE-FR-EN.md",
-      "bytes": 4914,
-      "sha256": "fa23b3f817a3fb12fde99277cac85c2d0868e3bafe16a7f284a4d381d1573bb2"
+      "bytes": 5579,
+      "sha256": "4ca092d49c4b70465fc0a4b0e4ec11e3b1a9ff39bff07fb9c954dffb95cb18c6"
     },
     {
       "path": "APERCU-EN.png",
@@ -23,8 +23,8 @@
     },
     {
       "path": "CREDITS-FR-EN.md",
-      "bytes": 2237,
-      "sha256": "f397dede63f3239dbc9124b12a454f9fe0b06ab86c9e473fbe19c019d19b7990"
+      "bytes": 2902,
+      "sha256": "370d689ae23bad23c227c72bf46bd0bba262beb8aba3d75ec147dde02499f98c"
     },
     {
       "path": "DEMARRAGE-RAPIDE-FR-EN.txt",
@@ -42,6 +42,41 @@
       "sha256": "2d379a4cdaa84f37c0aedfc316f6a3e09d400f9177032bfa6019160ac39a0cff"
     },
     {
+      "path": "docs/publication/ANNONCE-COURTE-FR.md",
+      "bytes": 1783,
+      "sha256": "715613c78a9683a483c547f42fe7a11a3fbf8b0919d6bc62739380c21ecda5df"
+    },
+    {
+      "path": "docs/publication/Discord-FR-EN.md",
+      "bytes": 2037,
+      "sha256": "72d54c99ba1b5d71171710db954d1fe28549307379b6b4bb8c4e5c894a655ae1"
+    },
+    {
+      "path": "docs/publication/GBAtemp-EN.bbcode.txt",
+      "bytes": 2859,
+      "sha256": "d756b50b7031457bd65d65f81fd4c0226f0ae3df6dc3ef3240a2e77a68219c12"
+    },
+    {
+      "path": "docs/publication/README-FR-EN.md",
+      "bytes": 5263,
+      "sha256": "2173b4c1a164b001fdcaa6679f6551f61b10211fc749be1b0581fa64a53361cd"
+    },
+    {
+      "path": "docs/publication/Reddit-Unbound-EN.md",
+      "bytes": 2318,
+      "sha256": "1803e6c3b38091fa778699b47246063b1dec1ce6a4cf0e86bdf0a54d2dcdb3fe"
+    },
+    {
+      "path": "docs/publication/RELEASE-FR-EN.md",
+      "bytes": 4398,
+      "sha256": "30ede3221dcb1bd51919f5b64447f2a96ac85f56e676af6772f975f758086a86"
+    },
+    {
+      "path": "docs/publication/Romhack-Plaza-EN.md",
+      "bytes": 3739,
+      "sha256": "d153a7d52481eacf289e1f923df254338ac4df835343906352b8356d67047ffe"
+    },
+    {
       "path": "docs/VERIFICATION-FR-EN.md",
       "bytes": 4002,
       "sha256": "2839f367c6b3c2572de3c25c70bcf5a2a3372940710fd0b4a7a0e421edb16a46"
@@ -55,6 +90,16 @@
       "path": "INSTALLER-FR-EN.html",
       "bytes": 64259,
       "sha256": "78afceefbcf2c229c24fcdfd3156938ba494a995efd11acc628c3fb956ae8219"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1082,
+      "sha256": "ad3666c71d1a6acc0879426cf43fc55d2e6305e9b7a4e9852d0f878ec824a909"
+    },
+    {
+      "path": "LICENSING-FR-EN.md",
+      "bytes": 2417,
+      "sha256": "99d3cdccc85d1e33edc465208598e0fbbd3e224757fa34384b45b762caa1d65e"
     },
     {
       "path": "outils-python/Appliquer-patch-Windows.cmd",
@@ -118,13 +163,13 @@
     },
     {
       "path": "README_EN.md",
-      "bytes": 9515,
-      "sha256": "a3d133cffcc03cd35f6826fc44a83976cf235088d93a0913864ff5ac240d1759"
+      "bytes": 9893,
+      "sha256": "33342b6ec5ebb5ff832e8b261c65defea3bdb7c63e19a11730a26c84c388aa2c"
     },
     {
       "path": "README_FR.md",
-      "bytes": 10695,
-      "sha256": "00797090db26e69929f716835f3c1ea910f1074d303dbfc6a5c0bbb0b5493606"
+      "bytes": 11091,
+      "sha256": "7f2772234daa096849ed3330fad06c16c6cbbbecd7353032a2d0f87089f08f57"
     },
     {
       "path": "release.json",
@@ -278,8 +323,10 @@
     },
     {
       "path": "VERSION.txt",
-      "bytes": 315,
-      "sha256": "f45dc81ef76058d5ca6e9120c4cd8258b5ae74405536bd25980240469ebf72d9"
+      "bytes": 440,
+      "sha256": "6f88d0e1944af9159dba090d99b143f5718e194f51b11bec4422f547ce586147"
     }
-  ]
+  ],
+  "original_code_license": "MIT",
+  "runtime_and_installer_unchanged_from": "community-3-FR-EN-documentation"
 }

@@ -1,5 +1,7 @@
-NyBy Manual RTC v1.1RC1 / community-3-FR-EN-documentation
+NyBy Manual RTC v1.1RC1 / community-4-MIT-publication
 2026-10-17
-Already prepared Unbound 2.1.1.1 EN OR French 2.1.179; SuperFW 0.21
-Both start with FireRed USA v1.0 + Unbound; FR additionally needs the translation before RTC.
+Original code: MIT. See LICENSE and LICENSING-FR-EN.md.
+Documentation/package change only: RTC patches and installer unchanged from r3.
+Already prepared Unbound 2.1.1.1 EN OR French Antony 2.1.179; SuperFW 0.21.
+Both start with FireRed USA v1.0 + Unbound; FR needs translation before RTC.
 FR: user GBA feedback. EN: PC validated, hardware pending. Options issue open.

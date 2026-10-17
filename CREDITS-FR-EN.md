@@ -9,3 +9,11 @@
 Ce kit est un ajout indépendant. Il ne contient pas le jeu, la traduction, le firmware ou une sauvegarde personnelle. Les liens servent à identifier les projets d'origine ; ce kit ne télécharge aucun de leurs fichiers. Les composants d'origine conservent leurs crédits et conditions propres. Deux patchs RTC sont proposés pour les fichiers Unbound déjà préparés : EN après FireRed USA v1.0 + Unbound, FR après FireRed USA v1.0 + Unbound + traduction FR. Les patchs Unbound et de traduction ne sont pas inclus dans ce kit.
 
 This is an independent add-on. It contains no game ROM, translation package, firmware, or personal save. Links identify the original projects; this package downloads none of their files. Original components retain their own credits and terms. RTC patches target already prepared Unbound files: EN after FireRed USA v1.0 + Unbound, FR after FireRed USA v1.0 + Unbound + the French translation. The Unbound and translation patches are not bundled here.
+
+## Licence et méthode / Licensing and development
+
+Code original NyBy : [MIT](LICENSE), [portée / scope](LICENSING-FR-EN.md).
+
+Des parties importantes du code et de la documentation ont été générées avec Codex (IA), sous la direction de NyBy. NyBy a défini le besoin et effectué les essais sur sa GBA. Les tests matériels rapportés concernent la FR ; l'EN reste à confirmer sur console.
+
+Substantial parts of the code and documentation were generated with Codex (AI), directed by NyBy. NyBy defined the requirements and performed the reported GBA testing. Hardware feedback concerns the French build; English hardware testing is still pending.
