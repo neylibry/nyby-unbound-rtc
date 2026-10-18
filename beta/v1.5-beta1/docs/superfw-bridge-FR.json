@@ -1,0 +1,99 @@
+{
+  "lang": "FR",
+  "cache_bytes": 800,
+  "cache_sha256": "4ce8303abd9757db0c2d14223259a851ad38cb153f2bab297e7a65124eea5764",
+  "operations_before": {
+    "waitcnt": 7,
+    "save": 8,
+    "irq": 4,
+    "rtc": 0
+  },
+  "rtc_operations_after": 1,
+  "gate_rom_offset": "0x164d6a8",
+  "probe_operation": "0x7164d6a8",
+  "probe_writes_only_gate": true,
+  "game_rtc_handlers_replaced_by_superfw": false,
+  "requires_superfw_rtc_enabled": true,
+  "base_cache_sha256": "482d381235d50dd98202b9e7d20050aee8cd3cd1f0a22d7b03bb781abb2af017",
+  "baseline_cache_target_ranges_unchanged": [
+    {
+      "offset": "0x13a18bc",
+      "bytes_checked": 2
+    },
+    {
+      "offset": "0x1e37cc",
+      "bytes_checked": 2
+    },
+    {
+      "offset": "0x1e393c",
+      "bytes_checked": 2
+    },
+    {
+      "offset": "0x1e399e",
+      "bytes_checked": 2
+    },
+    {
+      "offset": "0x1e3a66",
+      "bytes_checked": 2
+    },
+    {
+      "offset": "0x3c4",
+      "bytes_checked": 2
+    },
+    {
+      "offset": "0x703ab6",
+      "bytes_checked": 2
+    },
+    {
+      "offset": "0x1de844",
+      "bytes_checked": 8
+    },
+    {
+      "offset": "0x1deb64",
+      "bytes_checked": 4
+    },
+    {
+      "offset": "0x1debfc",
+      "bytes_checked": 4
+    },
+    {
+      "offset": "0x1dea98",
+      "bytes_checked": 2048
+    },
+    {
+      "offset": "0x1dee60",
+      "bytes_checked": 2048
+    },
+    {
+      "offset": "0x1deed4",
+      "bytes_checked": 2048
+    },
+    {
+      "offset": "0x1df070",
+      "bytes_checked": 2048
+    },
+    {
+      "offset": "0x1defa4",
+      "bytes_checked": 2048
+    },
+    {
+      "offset": "0x240",
+      "bytes_checked": 4
+    },
+    {
+      "offset": "0x13a1be4",
+      "bytes_checked": 4
+    },
+    {
+      "offset": "0x6ec",
+      "bytes_checked": 4
+    },
+    {
+      "offset": "0x70395c",
+      "bytes_checked": 4
+    }
+  ],
+  "directsaving_hole_verified": true,
+  "hardware_tested": false,
+  "experimental": true
+}

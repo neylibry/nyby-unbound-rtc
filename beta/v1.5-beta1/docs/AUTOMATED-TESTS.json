@@ -1,0 +1,1983 @@
+{
+  "success": true,
+  "version": "1.5-beta1",
+  "date": "2026-10-18",
+  "raw_personal_firered_to_unbound_then_html_rtc_tested": true,
+  "full_superfw_bios_path_tested": false,
+  "physical_gba_tested": false,
+  "rom_downloaded": false,
+  "personal_save_used": false,
+  "sd_accessed": false,
+  "reports": {
+    "base_pipeline": {
+      "success": true,
+      "downloaded_rom": false,
+      "source_preserved": true,
+      "base": "Personal FireRed USA v1.0 backup",
+      "base_sha256": "3d0c79f1627022e18765766f6cb5ea067f6b5bf7dca115552189ad65a5c3a8ac",
+      "unbound_patch_sha256": "9b321914cf4acc22f6ef842cfab837a42d5ca031b76b88cb6a9d05818c8c04fa",
+      "translation_patch_sha256": "57774a64c1e6d83550229769167c577a15f5f5630f8bcee360ca9ffe504997f2",
+      "stages": [
+        {
+          "id": "EN",
+          "workflow": "FireRed USA v1.0 -> official Unbound 2.1.1.1 UPS",
+          "sha256": "7aa25bbf568f7cfcf6ee1cf2e9e6ff637350b3d0705c2375cabb6baa7d9739f7"
+        },
+        {
+          "id": "FR",
+          "workflow": "Unbound EN -> Antony FR 2.1.179 BPS",
+          "sha256": "55bd66a6cd6a54b36b1c90b750541dfd0d621466bfb1ddee1e222f6207ad4164"
+        }
+      ],
+      "third_party_patches_bundled": false,
+      "personal_save_used": false
+    },
+    "installer_engine": {
+      "success": true,
+      "checks": 29,
+      "passed": [
+        "CRC32 reference vector",
+        "SHA256 reference vector",
+        "All four BPS actions and overlapping target copies",
+        "Damaged BPS rejected",
+        "Wrong BPS source CRC rejected",
+        "Truncated BPS rejected",
+        "Forward target copy rejected",
+        "Source overread rejected",
+        "Output overwrite rejected",
+        "fr clean Unbound produces exact compiled beta",
+        "fr beta output reused without double patch",
+        "fr generated bundle without save",
+        "fr generated bundle with byte-identical save",
+        "en clean Unbound produces exact compiled beta",
+        "en beta output reused without double patch",
+        "en generated bundle without save",
+        "en generated bundle with byte-identical save",
+        "Raw FireRed size rejected by RTC engine",
+        "Unsupported full-size ROM rejected",
+        "Single-byte modified source rejected",
+        "Older RTC build requires clean Unbound input",
+        "Blank FF save rejected",
+        "Blank zero save rejected",
+        "Wrong save size rejected",
+        "Save state rejected",
+        "ZIP traversal rejected",
+        "ZIP duplicate names rejected",
+        "Damaged embedded cache rejected",
+        "Damaged embedded patch rejected"
+      ],
+      "source_roms_preserved": true,
+      "personal_save_used": false
+    },
+    "browser": {
+      "success": true,
+      "browser": "155.0.8059.82",
+      "offline": true,
+      "file_url": true,
+      "checks": [
+        "French beta screen; empty submission disabled",
+        "fr clean Unbound -> actual HTML ZIP without save; interface language independent",
+        "fr clean Unbound -> actual HTML ZIP with native save; interface language independent",
+        "en clean Unbound -> actual HTML ZIP without save; interface language independent",
+        "en clean Unbound -> actual HTML ZIP with native save; interface language independent",
+        "fr already-patched beta output accepted",
+        "en already-patched beta output accepted",
+        "unrecognized ROM rejected; stale download cleared",
+        "raw FireRed rejected; stale download cleared",
+        "Blank save rejected in HTML",
+        "360px viewport and language switching after completion"
+      ],
+      "javascript_errors": 0,
+      "http_requests": 0,
+      "personal_save_used": false
+    },
+    "downloads": {
+      "success": true,
+      "zips_verified": 10,
+      "zip_checks": [
+        {
+          "case": "engine-fr-with-save.zip",
+          "success": true,
+          "rom_sha256_verified": true,
+          "matching_cache_and_rtc_enabled_profile": true,
+          "save_byte_identical": true
+        },
+        {
+          "case": "engine-fr-without-save.zip",
+          "success": true,
+          "rom_sha256_verified": true,
+          "matching_cache_and_rtc_enabled_profile": true,
+          "save_byte_identical": false
+        },
+        {
+          "case": "engine-en-with-save.zip",
+          "success": true,
+          "rom_sha256_verified": true,
+          "matching_cache_and_rtc_enabled_profile": true,
+          "save_byte_identical": true
+        },
+        {
+          "case": "engine-en-without-save.zip",
+          "success": true,
+          "rom_sha256_verified": true,
+          "matching_cache_and_rtc_enabled_profile": true,
+          "save_byte_identical": false
+        },
+        {
+          "case": "browser-fr-with-save.zip",
+          "success": true,
+          "rom_sha256_verified": true,
+          "matching_cache_and_rtc_enabled_profile": true,
+          "save_byte_identical": true
+        },
+        {
+          "case": "browser-fr-without-save.zip",
+          "success": true,
+          "rom_sha256_verified": true,
+          "matching_cache_and_rtc_enabled_profile": true,
+          "save_byte_identical": false
+        },
+        {
+          "case": "browser-fr-already-patched.zip",
+          "success": true,
+          "rom_sha256_verified": true,
+          "matching_cache_and_rtc_enabled_profile": true,
+          "save_byte_identical": false
+        },
+        {
+          "case": "browser-en-with-save.zip",
+          "success": true,
+          "rom_sha256_verified": true,
+          "matching_cache_and_rtc_enabled_profile": true,
+          "save_byte_identical": true
+        },
+        {
+          "case": "browser-en-without-save.zip",
+          "success": true,
+          "rom_sha256_verified": true,
+          "matching_cache_and_rtc_enabled_profile": true,
+          "save_byte_identical": false
+        },
+        {
+          "case": "browser-en-already-patched.zip",
+          "success": true,
+          "rom_sha256_verified": true,
+          "matching_cache_and_rtc_enabled_profile": true,
+          "save_byte_identical": false
+        }
+      ],
+      "html_rebuild_reproducible": true,
+      "python_fallback_exact_output": true,
+      "python_fallback_refuses_overwrite": true,
+      "html_outputs_extracted_for_runtime_testing": true,
+      "personal_data_used": false,
+      "sd_accessed": false
+    },
+    "runtime": {
+      "success": true,
+      "simulation": "mGBA libretro; injected UND bank values before Unbound startup",
+      "real_superfw_or_bios_executed": false,
+      "hardware_tested": false,
+      "html_generated_roms_used": true,
+      "user_save_used": false,
+      "sd_accessed": false,
+      "summaries": {
+        "FR": {
+          "payload_bytes": 5804,
+          "rom_sha256": "0f14eafb6760188cf010ceace7c17ec03d69e64436b5b031001ab6228f114750",
+          "actual_matching_cache_probe_used": true,
+          "screen_static": true,
+          "import_survived_unbound_startup": true,
+          "synthetic_existing_save_resumed": true,
+          "save_changes_limited_to_four_setting_bytes": true,
+          "one_minute_advanced_seconds": 61,
+          "waiting_time_included_in_clock": true,
+          "manual_override_with_L": true,
+          "cold_restart_remembers_manual_value_without_rewrite": true,
+          "missing_or_invalid_data_manual_fallback": true,
+          "held_start_requires_release_and_new_press": true,
+          "waiting_across_midnight_and_new_year": true,
+          "all_five_fields_direct_editing": true,
+          "A_B_do_not_open_lists": true,
+          "write_error_screen_and_continue": true
+        },
+        "EN": {
+          "payload_bytes": 5784,
+          "rom_sha256": "32e8ad29c2130652e39729df47959f0e411f8e51d44a964f6b0ad6a86c0b8172",
+          "actual_matching_cache_probe_used": true,
+          "screen_static": true,
+          "import_survived_unbound_startup": true,
+          "synthetic_existing_save_resumed": true,
+          "save_changes_limited_to_four_setting_bytes": true,
+          "one_minute_advanced_seconds": 61,
+          "waiting_time_included_in_clock": true,
+          "manual_override_with_L": true,
+          "cold_restart_remembers_manual_value_without_rewrite": true,
+          "missing_or_invalid_data_manual_fallback": true,
+          "held_start_requires_release_and_new_press": true,
+          "waiting_across_midnight_and_new_year": true,
+          "all_five_fields_direct_editing": true,
+          "A_B_do_not_open_lists": true,
+          "write_error_screen_and_continue": true
+        }
+      },
+      "screen_resolution": [
+        240,
+        160
+      ],
+      "preview_nearest_neighbor_scale": 3,
+      "events": [
+        {
+          "lang": "FR",
+          "event": "01-confirmation-superfw",
+          "rows": [],
+          "telemetry": {
+            "frames_this_process": 120,
+            "saveblock2_ptr": "02024588",
+            "gClock": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dow": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "rtc_error": 0,
+            "rtc_bcd": "00000000000000000000",
+            "playtime_state": 0,
+            "playtime": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0,
+              "frames": 0
+            }
+          },
+          "graphics": {
+            "resolution": [
+              240,
+              160
+            ],
+            "ink_boxes": {
+              "title": [
+                55,
+                8,
+                185,
+                22
+              ],
+              "credit": [
+                45,
+                28,
+                194,
+                35
+              ],
+              "date": [
+                63,
+                52,
+                179,
+                66
+              ],
+              "time": [
+                79,
+                88,
+                163,
+                109
+              ],
+              "L_or_missing": [
+                60,
+                120,
+                179,
+                127
+              ],
+              "start": [
+                57,
+                134,
+                182,
+                141
+              ],
+              "footer": [
+                54,
+                153,
+                185,
+                158
+              ]
+            },
+            "available": true,
+            "start_label_fr": "start - lancer le jeu",
+            "footer": "V1.5 B1 SUPERFW BRIDGE 18/10/2026"
+          }
+        },
+        {
+          "lang": "FR",
+          "event": "04-correction-manuelle",
+          "rows": [],
+          "telemetry": {
+            "frames_this_process": 133,
+            "saveblock2_ptr": "02024588",
+            "gClock": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dow": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "rtc_error": 0,
+            "rtc_bcd": "00000000000000000000",
+            "playtime_state": 0,
+            "playtime": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0,
+              "frames": 0
+            }
+          },
+          "graphics": {
+            "resolution": [
+              240,
+              160
+            ],
+            "ink_boxes": {
+              "title": [
+                37,
+                8,
+                201,
+                22
+              ],
+              "help": [
+                42,
+                122,
+                197,
+                129
+              ],
+              "action": [
+                57,
+                136,
+                182,
+                143
+              ],
+              "footer": [
+                54,
+                153,
+                185,
+                158
+              ],
+              "date": [
+                63,
+                59,
+                179,
+                73
+              ],
+              "time": [
+                93,
+                96,
+                149,
+                110
+              ]
+            },
+            "bottom_help_lines": 2,
+            "direct_button_editing": true
+          }
+        },
+        {
+          "lang": "FR",
+          "event": "06-champ-heure",
+          "rows": [],
+          "telemetry": {
+            "frames_this_process": 133,
+            "saveblock2_ptr": "02024588",
+            "gClock": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dow": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "rtc_error": 0,
+            "rtc_bcd": "00000000000000000000",
+            "playtime_state": 0,
+            "playtime": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0,
+              "frames": 0
+            }
+          },
+          "graphics": {
+            "resolution": [
+              240,
+              160
+            ],
+            "ink_boxes": {
+              "title": [
+                37,
+                8,
+                201,
+                22
+              ],
+              "help": [
+                42,
+                122,
+                197,
+                129
+              ],
+              "action": [
+                57,
+                136,
+                182,
+                143
+              ],
+              "footer": [
+                54,
+                153,
+                185,
+                158
+              ],
+              "date": [
+                63,
+                59,
+                179,
+                73
+              ],
+              "time": [
+                93,
+                96,
+                149,
+                110
+              ]
+            },
+            "bottom_help_lines": 2,
+            "direct_button_editing": true
+          }
+        },
+        {
+          "lang": "FR",
+          "event": "06-champ-minute",
+          "rows": [],
+          "telemetry": {
+            "frames_this_process": 228,
+            "saveblock2_ptr": "02024588",
+            "gClock": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dow": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "rtc_error": 0,
+            "rtc_bcd": "00000000000000000000",
+            "playtime_state": 0,
+            "playtime": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0,
+              "frames": 0
+            }
+          },
+          "graphics": {
+            "resolution": [
+              240,
+              160
+            ],
+            "ink_boxes": {
+              "title": [
+                37,
+                8,
+                201,
+                22
+              ],
+              "help": [
+                42,
+                122,
+                197,
+                129
+              ],
+              "action": [
+                57,
+                136,
+                182,
+                143
+              ],
+              "footer": [
+                54,
+                153,
+                185,
+                158
+              ],
+              "date": [
+                63,
+                59,
+                179,
+                73
+              ],
+              "time": [
+                93,
+                96,
+                149,
+                110
+              ]
+            },
+            "bottom_help_lines": 2,
+            "direct_button_editing": true
+          }
+        },
+        {
+          "lang": "FR",
+          "event": "06-champ-jour",
+          "rows": [],
+          "telemetry": {
+            "frames_this_process": 323,
+            "saveblock2_ptr": "02024588",
+            "gClock": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dow": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "rtc_error": 0,
+            "rtc_bcd": "00000000000000000000",
+            "playtime_state": 0,
+            "playtime": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0,
+              "frames": 0
+            }
+          },
+          "graphics": {
+            "resolution": [
+              240,
+              160
+            ],
+            "ink_boxes": {
+              "title": [
+                37,
+                8,
+                201,
+                22
+              ],
+              "help": [
+                42,
+                122,
+                197,
+                129
+              ],
+              "action": [
+                57,
+                136,
+                182,
+                143
+              ],
+              "footer": [
+                54,
+                153,
+                185,
+                158
+              ],
+              "date": [
+                63,
+                59,
+                179,
+                73
+              ],
+              "time": [
+                93,
+                96,
+                149,
+                110
+              ]
+            },
+            "bottom_help_lines": 2,
+            "direct_button_editing": true
+          }
+        },
+        {
+          "lang": "FR",
+          "event": "06-champ-mois",
+          "rows": [],
+          "telemetry": {
+            "frames_this_process": 418,
+            "saveblock2_ptr": "02024588",
+            "gClock": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dow": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "rtc_error": 0,
+            "rtc_bcd": "00000000000000000000",
+            "playtime_state": 0,
+            "playtime": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0,
+              "frames": 0
+            }
+          },
+          "graphics": {
+            "resolution": [
+              240,
+              160
+            ],
+            "ink_boxes": {
+              "title": [
+                37,
+                8,
+                201,
+                22
+              ],
+              "help": [
+                42,
+                122,
+                197,
+                129
+              ],
+              "action": [
+                57,
+                136,
+                182,
+                143
+              ],
+              "footer": [
+                54,
+                153,
+                185,
+                158
+              ],
+              "date": [
+                63,
+                59,
+                179,
+                73
+              ],
+              "time": [
+                93,
+                96,
+                149,
+                110
+              ]
+            },
+            "bottom_help_lines": 2,
+            "direct_button_editing": true
+          }
+        },
+        {
+          "lang": "FR",
+          "event": "06-champ-annee",
+          "rows": [],
+          "telemetry": {
+            "frames_this_process": 513,
+            "saveblock2_ptr": "02024588",
+            "gClock": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dow": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "rtc_error": 0,
+            "rtc_bcd": "00000000000000000000",
+            "playtime_state": 0,
+            "playtime": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0,
+              "frames": 0
+            }
+          },
+          "graphics": {
+            "resolution": [
+              240,
+              160
+            ],
+            "ink_boxes": {
+              "title": [
+                37,
+                8,
+                201,
+                22
+              ],
+              "help": [
+                42,
+                122,
+                197,
+                129
+              ],
+              "action": [
+                57,
+                136,
+                182,
+                143
+              ],
+              "footer": [
+                54,
+                153,
+                185,
+                158
+              ],
+              "date": [
+                63,
+                59,
+                179,
+                73
+              ],
+              "time": [
+                93,
+                96,
+                149,
+                110
+              ]
+            },
+            "bottom_help_lines": 2,
+            "direct_button_editing": true
+          }
+        },
+        {
+          "lang": "FR",
+          "event": "07-heure-validee",
+          "rows": [],
+          "telemetry": {
+            "frames_this_process": 647,
+            "saveblock2_ptr": "02024588",
+            "gClock": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dow": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "rtc_error": 0,
+            "rtc_bcd": "00000000000000000000",
+            "playtime_state": 0,
+            "playtime": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0,
+              "frames": 0
+            }
+          },
+          "graphics": {
+            "resolution": [
+              240,
+              160
+            ],
+            "ink_boxes": {
+              "title": [
+                37,
+                8,
+                201,
+                22
+              ],
+              "help": [
+                42,
+                122,
+                197,
+                129
+              ],
+              "action": [
+                57,
+                136,
+                182,
+                143
+              ],
+              "footer": [
+                54,
+                153,
+                185,
+                158
+              ],
+              "date": [
+                63,
+                59,
+                179,
+                73
+              ],
+              "time": [
+                91,
+                96,
+                149,
+                110
+              ]
+            },
+            "bottom_help_lines": 2,
+            "direct_button_editing": true
+          }
+        },
+        {
+          "lang": "FR",
+          "event": "05-missing",
+          "rows": [],
+          "telemetry": {
+            "frames_this_process": 120,
+            "saveblock2_ptr": "02024588",
+            "gClock": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dow": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "rtc_error": 0,
+            "rtc_bcd": "00000000000000000000",
+            "playtime_state": 0,
+            "playtime": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0,
+              "frames": 0
+            }
+          },
+          "graphics": {
+            "resolution": [
+              240,
+              160
+            ],
+            "ink_boxes": {
+              "title": [
+                55,
+                8,
+                185,
+                22
+              ],
+              "credit": [
+                45,
+                28,
+                194,
+                35
+              ],
+              "date": [
+                61,
+                54,
+                179,
+                64
+              ],
+              "time": [
+                76,
+                91,
+                163,
+                106
+              ],
+              "L_or_missing": [
+                63,
+                120,
+                176,
+                127
+              ],
+              "start": [
+                54,
+                134,
+                185,
+                141
+              ],
+              "footer": [
+                54,
+                153,
+                185,
+                158
+              ]
+            },
+            "available": false,
+            "start_label_fr": "start - régler l’heure",
+            "footer": "V1.5 B1 SUPERFW BRIDGE 18/10/2026"
+          }
+        },
+        {
+          "lang": "FR",
+          "event": "05-invalid-date",
+          "rows": [],
+          "telemetry": {
+            "frames_this_process": 120,
+            "saveblock2_ptr": "02024588",
+            "gClock": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dow": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "rtc_error": 0,
+            "rtc_bcd": "00000000000000000000",
+            "playtime_state": 0,
+            "playtime": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0,
+              "frames": 0
+            }
+          },
+          "graphics": {
+            "resolution": [
+              240,
+              160
+            ],
+            "ink_boxes": {
+              "title": [
+                55,
+                8,
+                185,
+                22
+              ],
+              "credit": [
+                45,
+                28,
+                194,
+                35
+              ],
+              "date": [
+                61,
+                54,
+                179,
+                64
+              ],
+              "time": [
+                76,
+                91,
+                163,
+                106
+              ],
+              "L_or_missing": [
+                63,
+                120,
+                176,
+                127
+              ],
+              "start": [
+                54,
+                134,
+                185,
+                141
+              ],
+              "footer": [
+                54,
+                153,
+                185,
+                158
+              ]
+            },
+            "available": false,
+            "start_label_fr": "start - régler l’heure",
+            "footer": "V1.5 B1 SUPERFW BRIDGE 18/10/2026"
+          }
+        },
+        {
+          "lang": "FR",
+          "event": "05-invalid-speed",
+          "rows": [],
+          "telemetry": {
+            "frames_this_process": 120,
+            "saveblock2_ptr": "02024588",
+            "gClock": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dow": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "rtc_error": 0,
+            "rtc_bcd": "00000000000000000000",
+            "playtime_state": 0,
+            "playtime": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0,
+              "frames": 0
+            }
+          },
+          "graphics": {
+            "resolution": [
+              240,
+              160
+            ],
+            "ink_boxes": {
+              "title": [
+                55,
+                8,
+                185,
+                22
+              ],
+              "credit": [
+                45,
+                28,
+                194,
+                35
+              ],
+              "date": [
+                61,
+                54,
+                179,
+                64
+              ],
+              "time": [
+                76,
+                91,
+                163,
+                106
+              ],
+              "L_or_missing": [
+                63,
+                120,
+                176,
+                127
+              ],
+              "start": [
+                54,
+                134,
+                185,
+                141
+              ],
+              "footer": [
+                54,
+                153,
+                185,
+                158
+              ]
+            },
+            "available": false,
+            "start_label_fr": "start - régler l’heure",
+            "footer": "V1.5 B1 SUPERFW BRIDGE 18/10/2026"
+          }
+        },
+        {
+          "lang": "EN",
+          "event": "01-confirmation-superfw",
+          "rows": [],
+          "telemetry": {
+            "frames_this_process": 120,
+            "saveblock2_ptr": "02024588",
+            "gClock": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dow": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "rtc_error": 0,
+            "rtc_bcd": "00000000000000000000",
+            "playtime_state": 0,
+            "playtime": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0,
+              "frames": 0
+            }
+          },
+          "graphics": {
+            "resolution": [
+              240,
+              160
+            ],
+            "ink_boxes": {
+              "title": [
+                55,
+                8,
+                185,
+                22
+              ],
+              "credit": [
+                45,
+                28,
+                194,
+                35
+              ],
+              "date": [
+                63,
+                52,
+                179,
+                66
+              ],
+              "time": [
+                79,
+                88,
+                163,
+                109
+              ],
+              "L_or_missing": [
+                69,
+                120,
+                169,
+                127
+              ],
+              "start": [
+                63,
+                134,
+                176,
+                141
+              ],
+              "footer": [
+                54,
+                153,
+                185,
+                158
+              ]
+            },
+            "available": true,
+            "start_label_fr": "start - lancer le jeu",
+            "footer": "V1.5 B1 SUPERFW BRIDGE 18/10/2026"
+          }
+        },
+        {
+          "lang": "EN",
+          "event": "04-correction-manuelle",
+          "rows": [],
+          "telemetry": {
+            "frames_this_process": 133,
+            "saveblock2_ptr": "02024588",
+            "gClock": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dow": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "rtc_error": 0,
+            "rtc_bcd": "00000000000000000000",
+            "playtime_state": 0,
+            "playtime": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0,
+              "frames": 0
+            }
+          },
+          "graphics": {
+            "resolution": [
+              240,
+              160
+            ],
+            "ink_boxes": {
+              "title": [
+                49,
+                8,
+                189,
+                22
+              ],
+              "help": [
+                48,
+                122,
+                191,
+                129
+              ],
+              "action": [
+                63,
+                136,
+                176,
+                143
+              ],
+              "footer": [
+                54,
+                153,
+                185,
+                158
+              ],
+              "date": [
+                63,
+                59,
+                179,
+                73
+              ],
+              "time": [
+                93,
+                96,
+                149,
+                110
+              ]
+            },
+            "bottom_help_lines": 2,
+            "direct_button_editing": true
+          }
+        },
+        {
+          "lang": "EN",
+          "event": "06-champ-heure",
+          "rows": [],
+          "telemetry": {
+            "frames_this_process": 133,
+            "saveblock2_ptr": "02024588",
+            "gClock": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dow": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "rtc_error": 0,
+            "rtc_bcd": "00000000000000000000",
+            "playtime_state": 0,
+            "playtime": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0,
+              "frames": 0
+            }
+          },
+          "graphics": {
+            "resolution": [
+              240,
+              160
+            ],
+            "ink_boxes": {
+              "title": [
+                49,
+                8,
+                189,
+                22
+              ],
+              "help": [
+                48,
+                122,
+                191,
+                129
+              ],
+              "action": [
+                63,
+                136,
+                176,
+                143
+              ],
+              "footer": [
+                54,
+                153,
+                185,
+                158
+              ],
+              "date": [
+                63,
+                59,
+                179,
+                73
+              ],
+              "time": [
+                93,
+                96,
+                149,
+                110
+              ]
+            },
+            "bottom_help_lines": 2,
+            "direct_button_editing": true
+          }
+        },
+        {
+          "lang": "EN",
+          "event": "06-champ-minute",
+          "rows": [],
+          "telemetry": {
+            "frames_this_process": 228,
+            "saveblock2_ptr": "02024588",
+            "gClock": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dow": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "rtc_error": 0,
+            "rtc_bcd": "00000000000000000000",
+            "playtime_state": 0,
+            "playtime": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0,
+              "frames": 0
+            }
+          },
+          "graphics": {
+            "resolution": [
+              240,
+              160
+            ],
+            "ink_boxes": {
+              "title": [
+                49,
+                8,
+                189,
+                22
+              ],
+              "help": [
+                48,
+                122,
+                191,
+                129
+              ],
+              "action": [
+                63,
+                136,
+                176,
+                143
+              ],
+              "footer": [
+                54,
+                153,
+                185,
+                158
+              ],
+              "date": [
+                63,
+                59,
+                179,
+                73
+              ],
+              "time": [
+                93,
+                96,
+                149,
+                110
+              ]
+            },
+            "bottom_help_lines": 2,
+            "direct_button_editing": true
+          }
+        },
+        {
+          "lang": "EN",
+          "event": "06-champ-jour",
+          "rows": [],
+          "telemetry": {
+            "frames_this_process": 323,
+            "saveblock2_ptr": "02024588",
+            "gClock": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dow": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "rtc_error": 0,
+            "rtc_bcd": "00000000000000000000",
+            "playtime_state": 0,
+            "playtime": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0,
+              "frames": 0
+            }
+          },
+          "graphics": {
+            "resolution": [
+              240,
+              160
+            ],
+            "ink_boxes": {
+              "title": [
+                49,
+                8,
+                189,
+                22
+              ],
+              "help": [
+                48,
+                122,
+                191,
+                129
+              ],
+              "action": [
+                63,
+                136,
+                176,
+                143
+              ],
+              "footer": [
+                54,
+                153,
+                185,
+                158
+              ],
+              "date": [
+                63,
+                59,
+                179,
+                73
+              ],
+              "time": [
+                93,
+                96,
+                149,
+                110
+              ]
+            },
+            "bottom_help_lines": 2,
+            "direct_button_editing": true
+          }
+        },
+        {
+          "lang": "EN",
+          "event": "06-champ-mois",
+          "rows": [],
+          "telemetry": {
+            "frames_this_process": 418,
+            "saveblock2_ptr": "02024588",
+            "gClock": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dow": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "rtc_error": 0,
+            "rtc_bcd": "00000000000000000000",
+            "playtime_state": 0,
+            "playtime": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0,
+              "frames": 0
+            }
+          },
+          "graphics": {
+            "resolution": [
+              240,
+              160
+            ],
+            "ink_boxes": {
+              "title": [
+                49,
+                8,
+                189,
+                22
+              ],
+              "help": [
+                48,
+                122,
+                191,
+                129
+              ],
+              "action": [
+                63,
+                136,
+                176,
+                143
+              ],
+              "footer": [
+                54,
+                153,
+                185,
+                158
+              ],
+              "date": [
+                63,
+                59,
+                179,
+                73
+              ],
+              "time": [
+                93,
+                96,
+                149,
+                110
+              ]
+            },
+            "bottom_help_lines": 2,
+            "direct_button_editing": true
+          }
+        },
+        {
+          "lang": "EN",
+          "event": "06-champ-annee",
+          "rows": [],
+          "telemetry": {
+            "frames_this_process": 513,
+            "saveblock2_ptr": "02024588",
+            "gClock": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dow": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "rtc_error": 0,
+            "rtc_bcd": "00000000000000000000",
+            "playtime_state": 0,
+            "playtime": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0,
+              "frames": 0
+            }
+          },
+          "graphics": {
+            "resolution": [
+              240,
+              160
+            ],
+            "ink_boxes": {
+              "title": [
+                49,
+                8,
+                189,
+                22
+              ],
+              "help": [
+                48,
+                122,
+                191,
+                129
+              ],
+              "action": [
+                63,
+                136,
+                176,
+                143
+              ],
+              "footer": [
+                54,
+                153,
+                185,
+                158
+              ],
+              "date": [
+                63,
+                59,
+                179,
+                73
+              ],
+              "time": [
+                93,
+                96,
+                149,
+                110
+              ]
+            },
+            "bottom_help_lines": 2,
+            "direct_button_editing": true
+          }
+        },
+        {
+          "lang": "EN",
+          "event": "07-heure-validee",
+          "rows": [],
+          "telemetry": {
+            "frames_this_process": 647,
+            "saveblock2_ptr": "02024588",
+            "gClock": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dow": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "rtc_error": 0,
+            "rtc_bcd": "00000000000000000000",
+            "playtime_state": 0,
+            "playtime": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0,
+              "frames": 0
+            }
+          },
+          "graphics": {
+            "resolution": [
+              240,
+              160
+            ],
+            "ink_boxes": {
+              "title": [
+                49,
+                8,
+                189,
+                22
+              ],
+              "help": [
+                48,
+                122,
+                191,
+                129
+              ],
+              "action": [
+                63,
+                136,
+                176,
+                143
+              ],
+              "footer": [
+                54,
+                153,
+                185,
+                158
+              ],
+              "date": [
+                63,
+                59,
+                179,
+                73
+              ],
+              "time": [
+                91,
+                96,
+                149,
+                110
+              ]
+            },
+            "bottom_help_lines": 2,
+            "direct_button_editing": true
+          }
+        },
+        {
+          "lang": "EN",
+          "event": "05-missing",
+          "rows": [],
+          "telemetry": {
+            "frames_this_process": 120,
+            "saveblock2_ptr": "02024588",
+            "gClock": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dow": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "rtc_error": 0,
+            "rtc_bcd": "00000000000000000000",
+            "playtime_state": 0,
+            "playtime": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0,
+              "frames": 0
+            }
+          },
+          "graphics": {
+            "resolution": [
+              240,
+              160
+            ],
+            "ink_boxes": {
+              "title": [
+                55,
+                8,
+                185,
+                22
+              ],
+              "credit": [
+                45,
+                28,
+                194,
+                35
+              ],
+              "date": [
+                61,
+                54,
+                179,
+                64
+              ],
+              "time": [
+                76,
+                91,
+                163,
+                106
+              ],
+              "L_or_missing": [
+                63,
+                120,
+                176,
+                127
+              ],
+              "start": [
+                57,
+                134,
+                181,
+                141
+              ],
+              "footer": [
+                54,
+                153,
+                185,
+                158
+              ]
+            },
+            "available": false,
+            "start_label_fr": "start - régler l’heure",
+            "footer": "V1.5 B1 SUPERFW BRIDGE 18/10/2026"
+          }
+        },
+        {
+          "lang": "EN",
+          "event": "05-invalid-date",
+          "rows": [],
+          "telemetry": {
+            "frames_this_process": 120,
+            "saveblock2_ptr": "02024588",
+            "gClock": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dow": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "rtc_error": 0,
+            "rtc_bcd": "00000000000000000000",
+            "playtime_state": 0,
+            "playtime": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0,
+              "frames": 0
+            }
+          },
+          "graphics": {
+            "resolution": [
+              240,
+              160
+            ],
+            "ink_boxes": {
+              "title": [
+                55,
+                8,
+                185,
+                22
+              ],
+              "credit": [
+                45,
+                28,
+                194,
+                35
+              ],
+              "date": [
+                61,
+                54,
+                179,
+                64
+              ],
+              "time": [
+                76,
+                91,
+                163,
+                106
+              ],
+              "L_or_missing": [
+                63,
+                120,
+                176,
+                127
+              ],
+              "start": [
+                57,
+                134,
+                181,
+                141
+              ],
+              "footer": [
+                54,
+                153,
+                185,
+                158
+              ]
+            },
+            "available": false,
+            "start_label_fr": "start - régler l’heure",
+            "footer": "V1.5 B1 SUPERFW BRIDGE 18/10/2026"
+          }
+        },
+        {
+          "lang": "EN",
+          "event": "05-invalid-speed",
+          "rows": [],
+          "telemetry": {
+            "frames_this_process": 120,
+            "saveblock2_ptr": "02024588",
+            "gClock": {
+              "year": 0,
+              "month": 0,
+              "day": 0,
+              "dow": 0,
+              "hour": 0,
+              "minute": 0,
+              "second": 0
+            },
+            "rtc_error": 0,
+            "rtc_bcd": "00000000000000000000",
+            "playtime_state": 0,
+            "playtime": {
+              "hours": 0,
+              "minutes": 0,
+              "seconds": 0,
+              "frames": 0
+            }
+          },
+          "graphics": {
+            "resolution": [
+              240,
+              160
+            ],
+            "ink_boxes": {
+              "title": [
+                55,
+                8,
+                185,
+                22
+              ],
+              "credit": [
+                45,
+                28,
+                194,
+                35
+              ],
+              "date": [
+                61,
+                54,
+                179,
+                64
+              ],
+              "time": [
+                76,
+                91,
+                163,
+                106
+              ],
+              "L_or_missing": [
+                63,
+                120,
+                176,
+                127
+              ],
+              "start": [
+                57,
+                134,
+                181,
+                141
+              ],
+              "footer": [
+                54,
+                153,
+                185,
+                158
+              ]
+            },
+            "available": false,
+            "start_label_fr": "start - régler l’heure",
+            "footer": "V1.5 B1 SUPERFW BRIDGE 18/10/2026"
+          }
+        }
+      ]
+    },
+    "native_save": {
+      "success": true,
+      "checks": {
+        "FR": {
+          "rom_sha256": "0f14eafb6760188cf010ceace7c17ec03d69e64436b5b031001ab6228f114750",
+          "html_output_unmodified": true,
+          "manual_fallback_without_injected_registers": true,
+          "clock_edit_only_four_bytes": true,
+          "native_save_written_and_retains_clock_setting": true,
+          "cold_restart_and_native_continue": true,
+          "unchanged_clock_does_not_rewrite_save": true
+        },
+        "EN": {
+          "rom_sha256": "32e8ad29c2130652e39729df47959f0e411f8e51d44a964f6b0ad6a86c0b8172",
+          "html_output_unmodified": true,
+          "manual_fallback_without_injected_registers": true,
+          "clock_edit_only_four_bytes": true,
+          "native_save_written_and_retains_clock_setting": true,
+          "cold_restart_and_native_continue": true,
+          "unchanged_clock_does_not_rewrite_save": true
+        }
+      },
+      "user_save_used": false,
+      "rom_modified_for_test": false,
+      "ram_mutations_or_savestates_used": false,
+      "real_superfw_or_bios_executed": false,
+      "hardware_tested": false
+    },
+    "source_rebuild": {
+      "success": true,
+      "zig_version": "0.15.2",
+      "checks": {
+        "FR": {
+          "public_sources_match_build_hashes": true,
+          "public_rebuild_rom_bps_cache_byte_identical": true,
+          "rom_matches_html_download": true,
+          "rom_sha256": "0f14eafb6760188cf010ceace7c17ec03d69e64436b5b031001ab6228f114750"
+        },
+        "EN": {
+          "public_sources_match_build_hashes": true,
+          "public_rebuild_rom_bps_cache_byte_identical": true,
+          "rom_matches_html_download": true,
+          "rom_sha256": "32e8ad29c2130652e39729df47959f0e411f8e51d44a964f6b0ad6a86c0b8172"
+        }
+      }
+    },
+    "calendar_FR": {
+      "success": true,
+      "rom_sha256": "0f14eafb6760188cf010ceace7c17ec03d69e64436b5b031001ab6228f114750",
+      "checks": {
+        "reciprocal_1461": 36525,
+        "reciprocal_365": 1460,
+        "reciprocal_153": 1828,
+        "reciprocal_5": 1686,
+        "reciprocal_7": 36531,
+        "reciprocal_3600": 86400,
+        "reciprocal_60": 3600,
+        "reciprocal_10": 100,
+        "uint32_div86400_proof": 1,
+        "all_calendar_days_2000_2099": 36525,
+        "all_seconds_of_day_time_only": 86400,
+        "invalid_anchor_and_saturation": 9
+      },
+      "output_unaligned_tested": true,
+      "no_user_save": true,
+      "physical_hardware_tested": false
+    },
+    "calendar_EN": {
+      "success": true,
+      "rom_sha256": "32e8ad29c2130652e39729df47959f0e411f8e51d44a964f6b0ad6a86c0b8172",
+      "checks": {
+        "reciprocal_1461": 36525,
+        "reciprocal_365": 1460,
+        "reciprocal_153": 1828,
+        "reciprocal_5": 1686,
+        "reciprocal_7": 36531,
+        "reciprocal_3600": 86400,
+        "reciprocal_60": 3600,
+        "reciprocal_10": 100,
+        "uint32_div86400_proof": 1,
+        "all_calendar_days_2000_2099": 36525,
+        "all_seconds_of_day_time_only": 86400,
+        "invalid_anchor_and_saturation": 9
+      },
+      "output_unaligned_tested": true,
+      "no_user_save": true,
+      "physical_hardware_tested": false
+    }
+  }
+}

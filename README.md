@@ -1,5 +1,7 @@
 # NyBy RTC — Pokémon Unbound EN / FR
 
+> **Nouvelle bêta v1.5 / New v1.5 beta :** [Télécharger / Download](https://github.com/neylibry/nyby-unbound-rtc/releases/tag/v1.5-beta1) · [Guide et sources / Guide and source](beta/v1.5-beta1/README.md). Import du réglage manuel SuperFW, confirmation START et réglage direct. Tests PC FR/EN réussis ; trajet SuperFW/BIOS et essai GBA encore à valider. / Imports SuperFW's manual timestamp; START confirmation and direct adjustment. PC checks passed; full firmware/BIOS path and hardware test pending.
+
 Une horloge manuelle pour jouer à Unbound sur **vraie GBA + SuperCard sous SuperFW 0.21**, sans puce RTC. / A manual clock for Unbound on **real GBA + SuperCard running SuperFW 0.21**, without an RTC chip.
 
 **v1.1RC1 · 17/10/2026 · Kit communauté r4 · code original MIT**

@@ -328,5 +328,13 @@
     }
   ],
   "original_code_license": "MIT",
-  "runtime_and_installer_unchanged_from": "community-3-FR-EN-documentation"
+  "runtime_and_installer_unchanged_from": "community-3-FR-EN-documentation",
+  "additional_packages": [
+    {
+      "version": "1.5-beta1",
+      "path": "beta/v1.5-beta1",
+      "manifest_sha256": "2855e9ba20ec7fb94cf8856a88adb164c7375187a290d1292bb5028c18e65495",
+      "status": "public beta; hardware test pending"
+    }
+  ]
 }

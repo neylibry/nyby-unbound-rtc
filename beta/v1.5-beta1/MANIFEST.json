@@ -1,0 +1,354 @@
+{
+  "project": "NyBy RTC",
+  "version": "1.5-beta1",
+  "rom_included": false,
+  "save_included": false,
+  "personal_data_included": false,
+  "files": [
+    {
+      "path": "APERCU-EN.png",
+      "bytes": 3919,
+      "sha256": "08126b6cd1aeea0e48b2cfb52addf82e4630d8aa5bd2609f3004b1b7400f86cd"
+    },
+    {
+      "path": "APERCU-FR.png",
+      "bytes": 3961,
+      "sha256": "97815843d7f20e3450229ef7f8fb0858715286af434d902c23427801adacc1a9"
+    },
+    {
+      "path": "CREDITS-FR-EN.md",
+      "bytes": 3350,
+      "sha256": "3a0ec47c984890ade574791b162b003b46f5f57bec1c400238dfdcc4f41a904c"
+    },
+    {
+      "path": "docs/AUTOMATED-TESTS.json",
+      "bytes": 52241,
+      "sha256": "c42ba6ede70f3a4d95cfd7797ecafaff697f849a7c4a1a5770ec9ee22c9e08c1"
+    },
+    {
+      "path": "docs/BASE-PIPELINE.json",
+      "bytes": 867,
+      "sha256": "3cee53abb05a8c77503dfda9e4c25cd85b82464a667caf16e095c9cff0a112e3"
+    },
+    {
+      "path": "docs/build-EN.json",
+      "bytes": 8599,
+      "sha256": "748b792b6526e15009c0df417497f285adf1a29044202bf89c52d80ae7735e62"
+    },
+    {
+      "path": "docs/build-FR.json",
+      "bytes": 8598,
+      "sha256": "8652e6efb6744983619f502e79b5ae88af6a6c776579ee2d1df8c26f258ab992"
+    },
+    {
+      "path": "docs/superfw-bridge-EN.json",
+      "bytes": 2029,
+      "sha256": "c41fe08336fcfa610bf595a940d5b0da2b9e908bcebf287baf56d8d8ed30862d"
+    },
+    {
+      "path": "docs/superfw-bridge-FR.json",
+      "bytes": 2029,
+      "sha256": "21a9883e5ac97c1a1c841db6a8018cb31f3d31dc19db6614ac51f9bbb937468a"
+    },
+    {
+      "path": "INSTALLATION-FR-EN.txt",
+      "bytes": 2373,
+      "sha256": "b05955cf446d17dfa079b5cab4eb52e25197a88e104c06aadd10d79a2f830d4d"
+    },
+    {
+      "path": "INSTALLER-FR-EN.html",
+      "bytes": 53935,
+      "sha256": "6aec89ab77ef936ba30bf7babc6b58f01b3557629bc8ed54b6b79a166b877227"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 1082,
+      "sha256": "ad3666c71d1a6acc0879426cf43fc55d2e6305e9b7a4e9852d0f878ec824a909"
+    },
+    {
+      "path": "LICENSING-FR-EN.md",
+      "bytes": 2417,
+      "sha256": "99d3cdccc85d1e33edc465208598e0fbbd3e224757fa34384b45b762caa1d65e"
+    },
+    {
+      "path": "MANUEL-EN.png",
+      "bytes": 4199,
+      "sha256": "d10bf07e42aa1a1831227a4089c5f9dc79320402e451427ff9e1db9ce9814f7b"
+    },
+    {
+      "path": "MANUEL-FR.png",
+      "bytes": 4320,
+      "sha256": "06152dca508ac9fd15ca6402cf7f048a6d4a6ad55deb935be10ab463dffbbb3b"
+    },
+    {
+      "path": "outils-python/Appliquer-patch-Windows.cmd",
+      "bytes": 332,
+      "sha256": "00e85787dbe277ff4d0aa67289d48952a5120b9c30392c24c42df52f49e13ec2"
+    },
+    {
+      "path": "outils-python/appliquer_patch.py",
+      "bytes": 4104,
+      "sha256": "bfe35e75cd7bf44b63cd85f104a6183af045bd0eb63ff95b319dcebbd9ea284e"
+    },
+    {
+      "path": "outils-python/patch_formats.py",
+      "bytes": 10018,
+      "sha256": "8798919cefbf7adaea8378db300cdd47ea213b077d10d43d6cf37f5213c4c474"
+    },
+    {
+      "path": "outils-python/patches/Unbound-EN-RTC-NyBy-v1.5-beta1.bps",
+      "bytes": 6024,
+      "sha256": "c07705849d3547f60ea6e1823069589a1016e5f698e6af171f4305f2d6a66fff"
+    },
+    {
+      "path": "outils-python/patches/Unbound-FR-RTC-NyBy-v1.5-beta1.bps",
+      "bytes": 6043,
+      "sha256": "bef97e3261bc98d7dbd61d91421256d21b27541bc67f16a9684b0ac416025eca"
+    },
+    {
+      "path": "outils-python/release.json",
+      "bytes": 4032,
+      "sha256": "6e4e56641b30bf3869edd3e82f60bebeffb28ea0319a9a81156c522b92c2da14"
+    },
+    {
+      "path": "patches/Unbound-EN-RTC-NyBy-v1.5-beta1.bps",
+      "bytes": 6024,
+      "sha256": "c07705849d3547f60ea6e1823069589a1016e5f698e6af171f4305f2d6a66fff"
+    },
+    {
+      "path": "patches/Unbound-FR-RTC-NyBy-v1.5-beta1.bps",
+      "bytes": 6043,
+      "sha256": "bef97e3261bc98d7dbd61d91421256d21b27541bc67f16a9684b0ac416025eca"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2327,
+      "sha256": "640ba14679413cca1b44156f47267b3045f007990a6af075ea6c7f4c3abf5d10"
+    },
+    {
+      "path": "README_EN.md",
+      "bytes": 4488,
+      "sha256": "26596c55d672bd2b1e173451f1941ab3ee508460f6cebd04610cae90e8618b25"
+    },
+    {
+      "path": "README_FR.md",
+      "bytes": 5139,
+      "sha256": "7c999f173f59366603637ef36d163553b8791f333e9485dbc663493246c4398d"
+    },
+    {
+      "path": "RELEASE-FR-EN.md",
+      "bytes": 3530,
+      "sha256": "ba72469a189dfe752fb1a439903cdb7a4fe0bfb325bec1397e108c7fa7e75999"
+    },
+    {
+      "path": "release.json",
+      "bytes": 4032,
+      "sha256": "6e4e56641b30bf3869edd3e82f60bebeffb28ea0319a9a81156c522b92c2da14"
+    },
+    {
+      "path": "SD/en/.superfw/config/Unbound EN 2111 RTC NyBy v1.5 BETA1.config",
+      "bytes": 48,
+      "sha256": "7a8464a8f497abdeeb67d024180e6c6b5a24949524099f8038cedfd394ee2b06"
+    },
+    {
+      "path": "SD/en/.superfw/patches/Unbound EN 2111 RTC NyBy v1.5 BETA1.patch",
+      "bytes": 800,
+      "sha256": "da9f59d1a62581d39a36825bae2492336eaadd53923c65c1ac4e3f10e924dff4"
+    },
+    {
+      "path": "SD/en/Unbound EN 2111 RTC NyBy v1.5 BETA1.patch",
+      "bytes": 800,
+      "sha256": "da9f59d1a62581d39a36825bae2492336eaadd53923c65c1ac4e3f10e924dff4"
+    },
+    {
+      "path": "SD/fr/.superfw/config/Unbound FR 179 RTC NyBy v1.5 BETA1.config",
+      "bytes": 48,
+      "sha256": "7a8464a8f497abdeeb67d024180e6c6b5a24949524099f8038cedfd394ee2b06"
+    },
+    {
+      "path": "SD/fr/.superfw/patches/Unbound FR 179 RTC NyBy v1.5 BETA1.patch",
+      "bytes": 800,
+      "sha256": "4ce8303abd9757db0c2d14223259a851ad38cb153f2bab297e7a65124eea5764"
+    },
+    {
+      "path": "SD/fr/Unbound FR 179 RTC NyBy v1.5 BETA1.patch",
+      "bytes": 800,
+      "sha256": "4ce8303abd9757db0c2d14223259a851ad38cb153f2bab297e7a65124eea5764"
+    },
+    {
+      "path": "sources/installer/installer-core.js",
+      "bytes": 8964,
+      "sha256": "1232fd8a37a43cd8f53104730ea57a395466bbde966ea2b009f803cc9666c297"
+    },
+    {
+      "path": "sources/installer/installer.template.html",
+      "bytes": 17598,
+      "sha256": "eb28d87660171f60cee5d07d13d70f86f32455d3325058122807982e372b9cb9"
+    },
+    {
+      "path": "sources/installer/payload.json",
+      "bytes": 28571,
+      "sha256": "67e8bb7f0c28a316e6e6f603b1715091705a2cb8c3de7e368b8b05ac506b944a"
+    },
+    {
+      "path": "sources/installer/rebuild.py",
+      "bytes": 499,
+      "sha256": "5522febd3d128fe75fd02563ce969c5e4775ca802a5999aa004027040c3e9005"
+    },
+    {
+      "path": "sources/README-FR-EN.md",
+      "bytes": 3779,
+      "sha256": "a5efbeaa116c9a1b35515c0fc8be830e8c3848bc52ccfe996d2424c069b46bc5"
+    },
+    {
+      "path": "sources/rebuild-cache.py",
+      "bytes": 3033,
+      "sha256": "22c3620920b69773329b183a0cb15e5729346be9956fd3cb3ab893f921a85a0f"
+    },
+    {
+      "path": "sources/rtc-manuel/banner.h",
+      "bytes": 2858,
+      "sha256": "bf2bef64ab420059068f756ee49ae29abe9cd00fcc06aeb97e78282099116008"
+    },
+    {
+      "path": "sources/rtc-manuel/banner_font.h",
+      "bytes": 1856,
+      "sha256": "fe832477e718e87bfc42f97c343a6de2e9ea5281509e673780e523472bb4db3b"
+    },
+    {
+      "path": "sources/rtc-manuel/build.py",
+      "bytes": 6706,
+      "sha256": "9a0735c02a1434c386e7f9914e11a9a1c2c4a3624fa28e23b17086be0c844347"
+    },
+    {
+      "path": "sources/rtc-manuel/build_info.h",
+      "bytes": 76,
+      "sha256": "5072e92a95971fa46bb08dda85a68e626187a226a45e556d9645925a17cbe159"
+    },
+    {
+      "path": "sources/rtc-manuel/clock.c",
+      "bytes": 2449,
+      "sha256": "db58943896c2aadb5ac500f484844cf9e57ebf8103d30ab67ec7d54746cb5f2e"
+    },
+    {
+      "path": "sources/rtc-manuel/font.h",
+      "bytes": 1574,
+      "sha256": "0ed360d90e025df4f4cc19196d7cce61e43830d7ef212c49c0a1708dc502e8d5"
+    },
+    {
+      "path": "sources/rtc-manuel/link.ld",
+      "bytes": 378,
+      "sha256": "da4648f5e06e9d8525866b41d0b290cfb510505c3199bbb6aa406ec0e1a1b697"
+    },
+    {
+      "path": "sources/rtc-manuel/lowlevel.S",
+      "bytes": 1077,
+      "sha256": "751e6e16ccbd9b8cdad4aaf56269096729fa6fb30986a5ed36ec21bb579c5dba"
+    },
+    {
+      "path": "sources/rtc-manuel/manual.h",
+      "bytes": 1839,
+      "sha256": "6a3d3c4632166dfe8aea3c9e5c9ba46cb6b96dec87f60976ea93212d2a87ed62"
+    },
+    {
+      "path": "sources/rtc-manuel/patch_formats.py",
+      "bytes": 10018,
+      "sha256": "8798919cefbf7adaea8378db300cdd47ea213b077d10d43d6cf37f5213c4c474"
+    },
+    {
+      "path": "sources/rtc-manuel/rtc.h",
+      "bytes": 1205,
+      "sha256": "cda723a2f2c845e29ed1ad94c093de9b103300eff43a1a63c2484418935ad2be"
+    },
+    {
+      "path": "sources/rtc-manuel/rtc_fast.S",
+      "bytes": 4765,
+      "sha256": "ed827a0d17159d68fc96765b6445541f6e114b0cdf25cacbdf374192dae5b503"
+    },
+    {
+      "path": "sources/rtc-manuel/superfw_import.S",
+      "bytes": 1870,
+      "sha256": "cb47b82496ee9b2c5b88731a6e78bae32d0bb707de666c239f7f4eb9d7a0983e"
+    },
+    {
+      "path": "sources/rtc-manuel/ui.c",
+      "bytes": 6243,
+      "sha256": "906b2685bfe885031b1b192caa0b72db4d3ec5d45d695cfcfa8b0144b48878e5"
+    },
+    {
+      "path": "sources/rtc-manuel-en/banner.h",
+      "bytes": 2858,
+      "sha256": "bf2bef64ab420059068f756ee49ae29abe9cd00fcc06aeb97e78282099116008"
+    },
+    {
+      "path": "sources/rtc-manuel-en/banner_font.h",
+      "bytes": 1856,
+      "sha256": "fe832477e718e87bfc42f97c343a6de2e9ea5281509e673780e523472bb4db3b"
+    },
+    {
+      "path": "sources/rtc-manuel-en/build.py",
+      "bytes": 6708,
+      "sha256": "35ae35aae430e8638c8e9a4dd2a7d8ea156d36a623217ae6caf66f9a2cd9858b"
+    },
+    {
+      "path": "sources/rtc-manuel-en/build_info.h",
+      "bytes": 76,
+      "sha256": "461f963d63e3195ef36b5e7c2a13e2d13936d5519a464823f445cf480a2bcc5b"
+    },
+    {
+      "path": "sources/rtc-manuel-en/clock.c",
+      "bytes": 2449,
+      "sha256": "db58943896c2aadb5ac500f484844cf9e57ebf8103d30ab67ec7d54746cb5f2e"
+    },
+    {
+      "path": "sources/rtc-manuel-en/font.h",
+      "bytes": 1574,
+      "sha256": "0ed360d90e025df4f4cc19196d7cce61e43830d7ef212c49c0a1708dc502e8d5"
+    },
+    {
+      "path": "sources/rtc-manuel-en/link.ld",
+      "bytes": 378,
+      "sha256": "da4648f5e06e9d8525866b41d0b290cfb510505c3199bbb6aa406ec0e1a1b697"
+    },
+    {
+      "path": "sources/rtc-manuel-en/lowlevel.S",
+      "bytes": 1077,
+      "sha256": "751e6e16ccbd9b8cdad4aaf56269096729fa6fb30986a5ed36ec21bb579c5dba"
+    },
+    {
+      "path": "sources/rtc-manuel-en/manual.h",
+      "bytes": 1839,
+      "sha256": "6a3d3c4632166dfe8aea3c9e5c9ba46cb6b96dec87f60976ea93212d2a87ed62"
+    },
+    {
+      "path": "sources/rtc-manuel-en/patch_formats.py",
+      "bytes": 10018,
+      "sha256": "8798919cefbf7adaea8378db300cdd47ea213b077d10d43d6cf37f5213c4c474"
+    },
+    {
+      "path": "sources/rtc-manuel-en/rtc.h",
+      "bytes": 1205,
+      "sha256": "cda723a2f2c845e29ed1ad94c093de9b103300eff43a1a63c2484418935ad2be"
+    },
+    {
+      "path": "sources/rtc-manuel-en/rtc_fast.S",
+      "bytes": 4765,
+      "sha256": "ed827a0d17159d68fc96765b6445541f6e114b0cdf25cacbdf374192dae5b503"
+    },
+    {
+      "path": "sources/rtc-manuel-en/superfw_import.S",
+      "bytes": 1870,
+      "sha256": "cb47b82496ee9b2c5b88731a6e78bae32d0bb707de666c239f7f4eb9d7a0983e"
+    },
+    {
+      "path": "sources/rtc-manuel-en/ui.c",
+      "bytes": 6243,
+      "sha256": "906b2685bfe885031b1b192caa0b72db4d3ec5d45d695cfcfa8b0144b48878e5"
+    },
+    {
+      "path": "tests/installer.cjs",
+      "bytes": 11441,
+      "sha256": "efa27895caa41c7f3a8892012a46f92d1d6479f2717c1c8d0b7c75698971b2ba"
+    }
+  ]
+}
