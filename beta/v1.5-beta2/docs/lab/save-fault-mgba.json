@@ -1,0 +1,152 @@
+{
+  "success": true,
+  "languages": {
+    "FR": {
+      "baseline": {
+        "none": {
+          "success": true,
+          "error_screen_seen": false,
+          "can_continue_without_memorizing": false,
+          "changed_bytes": 3,
+          "only_record_modified": true,
+          "rom_sha256": "0f14eafb6760188cf010ceace7c17ec03d69e64436b5b031001ab6228f114750"
+        },
+        "read-error": {
+          "success": true,
+          "error_screen_seen": true,
+          "can_continue_without_memorizing": true,
+          "changed_bytes": 0,
+          "only_record_modified": true,
+          "rom_sha256": "0f14eafb6760188cf010ceace7c17ec03d69e64436b5b031001ab6228f114750"
+        },
+        "program-error": {
+          "success": true,
+          "error_screen_seen": true,
+          "can_continue_without_memorizing": true,
+          "changed_bytes": 0,
+          "only_record_modified": true,
+          "rom_sha256": "0f14eafb6760188cf010ceace7c17ec03d69e64436b5b031001ab6228f114750"
+        },
+        "block-read-error": {
+          "success": true,
+          "error_screen_seen": false,
+          "can_continue_without_memorizing": false,
+          "changed_bytes": 3,
+          "only_record_modified": true,
+          "rom_sha256": "0f14eafb6760188cf010ceace7c17ec03d69e64436b5b031001ab6228f114750"
+        }
+      },
+      "candidate": {
+        "none": {
+          "success": true,
+          "error_screen_seen": false,
+          "can_continue_without_memorizing": false,
+          "changed_bytes": 3,
+          "only_record_modified": true,
+          "rom_sha256": "aaadfb0bb11c25fc2943be51acecdf53336d3b3148e3f1a16320e92d35359ba8",
+          "native_save_and_cold_continue": true,
+          "unchanged_setting_does_not_rewrite": true
+        },
+        "read-error": {
+          "success": true,
+          "error_screen_seen": true,
+          "can_continue_without_memorizing": true,
+          "changed_bytes": 0,
+          "only_record_modified": true,
+          "rom_sha256": "aaadfb0bb11c25fc2943be51acecdf53336d3b3148e3f1a16320e92d35359ba8"
+        },
+        "program-error": {
+          "success": true,
+          "error_screen_seen": true,
+          "can_continue_without_memorizing": true,
+          "changed_bytes": 0,
+          "only_record_modified": true,
+          "rom_sha256": "aaadfb0bb11c25fc2943be51acecdf53336d3b3148e3f1a16320e92d35359ba8"
+        },
+        "block-read-error": {
+          "success": true,
+          "error_screen_seen": true,
+          "can_continue_without_memorizing": true,
+          "changed_bytes": 3,
+          "only_record_modified": true,
+          "rom_sha256": "aaadfb0bb11c25fc2943be51acecdf53336d3b3148e3f1a16320e92d35359ba8"
+        }
+      }
+    },
+    "EN": {
+      "baseline": {
+        "none": {
+          "success": true,
+          "error_screen_seen": false,
+          "can_continue_without_memorizing": false,
+          "changed_bytes": 3,
+          "only_record_modified": true,
+          "rom_sha256": "32e8ad29c2130652e39729df47959f0e411f8e51d44a964f6b0ad6a86c0b8172"
+        },
+        "read-error": {
+          "success": true,
+          "error_screen_seen": true,
+          "can_continue_without_memorizing": true,
+          "changed_bytes": 0,
+          "only_record_modified": true,
+          "rom_sha256": "32e8ad29c2130652e39729df47959f0e411f8e51d44a964f6b0ad6a86c0b8172"
+        },
+        "program-error": {
+          "success": true,
+          "error_screen_seen": true,
+          "can_continue_without_memorizing": true,
+          "changed_bytes": 0,
+          "only_record_modified": true,
+          "rom_sha256": "32e8ad29c2130652e39729df47959f0e411f8e51d44a964f6b0ad6a86c0b8172"
+        },
+        "block-read-error": {
+          "success": true,
+          "error_screen_seen": false,
+          "can_continue_without_memorizing": false,
+          "changed_bytes": 3,
+          "only_record_modified": true,
+          "rom_sha256": "32e8ad29c2130652e39729df47959f0e411f8e51d44a964f6b0ad6a86c0b8172"
+        }
+      },
+      "candidate": {
+        "none": {
+          "success": true,
+          "error_screen_seen": false,
+          "can_continue_without_memorizing": false,
+          "changed_bytes": 3,
+          "only_record_modified": true,
+          "rom_sha256": "660b3ccbd2023e49ee4920b7770161f79235e0f438555422f04dd72291237964",
+          "native_save_and_cold_continue": true,
+          "unchanged_setting_does_not_rewrite": true
+        },
+        "read-error": {
+          "success": true,
+          "error_screen_seen": true,
+          "can_continue_without_memorizing": true,
+          "changed_bytes": 0,
+          "only_record_modified": true,
+          "rom_sha256": "660b3ccbd2023e49ee4920b7770161f79235e0f438555422f04dd72291237964"
+        },
+        "program-error": {
+          "success": true,
+          "error_screen_seen": true,
+          "can_continue_without_memorizing": true,
+          "changed_bytes": 0,
+          "only_record_modified": true,
+          "rom_sha256": "660b3ccbd2023e49ee4920b7770161f79235e0f438555422f04dd72291237964"
+        },
+        "block-read-error": {
+          "success": true,
+          "error_screen_seen": true,
+          "can_continue_without_memorizing": true,
+          "changed_bytes": 3,
+          "only_record_modified": true,
+          "rom_sha256": "660b3ccbd2023e49ee4920b7770161f79235e0f438555422f04dd72291237964"
+        }
+      }
+    }
+  },
+  "synthetic_only": true,
+  "actual_superfw_or_bios_executed": false,
+  "hardware_tested": false
+}

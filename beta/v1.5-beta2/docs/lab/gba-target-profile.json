@@ -1,0 +1,94 @@
+{
+  "date": "2026-10-19",
+  "platform": "AGB / GBA",
+  "cpu": {
+    "architecture": "ARMv4T ARM7TDMI",
+    "frequency_hz": 16777216,
+    "overclock": false,
+    "throttle_host_cpu_to_16mhz": false
+  },
+  "memory": {
+    "ewram_bytes": 262144,
+    "iwram_bytes": 32768,
+    "vram_bytes": 98304,
+    "palette_bytes": 1024,
+    "oam_bytes": 1024,
+    "game_rom_bytes": 33554432,
+    "game_save_flash_bytes": 131072,
+    "host_rss_is_guest_ram": false
+  },
+  "video": {
+    "width": 240,
+    "height": 160,
+    "scanlines": 228,
+    "cycles_per_scanline": 1232,
+    "cycles_per_frame": 280896,
+    "nominal_frames_per_second_exact": 59.72750056960583,
+    "frame_period_ms_exact": 16.742706298828125,
+    "source_gba_color_bits": 15,
+    "output_format_local": "RGB565",
+    "output_stride_pixels_local": 256,
+    "renderer": "software, framebuffer path; no hardware GL context provided",
+    "emulator_frameskip": false,
+    "interframe_blending": false,
+    "lcd_response_simulated": false
+  },
+  "emulator": {
+    "library_version": "0.11-212-7a12d6d",
+    "sha256": "e17b80da269de68155074c39759fe3e88af84b228e83266db550ff2c8fee729e",
+    "source_ref": "7a12d6d",
+    "bios": "built-in HLE fallback",
+    "bios_checksum_observed": "B6FA50C5",
+    "proprietary_bios_provided": false,
+    "options_required": {
+      "mgba_frameskip": "disabled",
+      "mgba_frameskip_interval": "0",
+      "mgba_idle_optimization": "Don't Remove",
+      "mgba_color_correction": "OFF",
+      "mgba_interframe_blending": "OFF",
+      "mgba_audio_low_pass_filter": "disabled"
+    },
+    "internal_debug_exports": false,
+    "global_cycles_64bit_usable_local": false
+  },
+  "timing_observation": {
+    "simulated_cycles": 28089607,
+    "simulated_seconds": 1.674271047115326,
+    "ppu_frames": 100,
+    "cycles_minus_full_frames": 7
+  },
+  "cartridge": {
+    "supercard_hardware_emulated": false,
+    "superfw_0_21_firmware_executed": false,
+    "sdcard_controller_emulated": false,
+    "sdram_refresh_and_extra_arbitration_emulated": false,
+    "directsaving_sd_write_latency_emulated": false,
+    "superfw_timestamp_handoff": "explicit test fixture, not hardware firmware validation",
+    "waitcnt": "Record actual value per scenario; native and SuperFW compatibility images need separate labelled profiles."
+  },
+  "instrumentation": {
+    "mode": "private test ROM only",
+    "allowed_measurements": [
+      "PPU frames / simulated seconds",
+      "guest callback2 calls / simulated seconds",
+      "VBlank spacing between callback invocations",
+      "RTC routine calls and microbench cycles",
+      "guest SRAM byte deltas and native sector validity",
+      "target ROM payload size, RAM link allocations, stack high-water",
+      "host throughput separately labelled"
+    ],
+    "not_claimable": [
+      "CPU load percent from wallclock retro_run duration",
+      "useful gameplay FPS from distinct image hashes",
+      "SuperCard SD reliability from native flash emulator tests",
+      "real hardware cycle-perfect validation from HLE emulator"
+    ]
+  },
+  "sources": {
+    "cpu": "https://github.com/mgba-emu/mgba/blob/7a12d6d/include/mgba/internal/gba/gba.h",
+    "video": "https://github.com/mgba-emu/mgba/blob/7a12d6d/include/mgba/internal/gba/video.h",
+    "gbatek": "https://mgba-emu.github.io/gbatek/#lcddimensionsandtimings",
+    "mGBA_accuracy": "https://mgba.io/2017/04/30/emulation-accuracy/",
+    "superfw": "https://github.com/davidgfnet/superfw/tree/368f27fa93ccc100b26ad49157e0ecdbf80c484e"
+  }
+}

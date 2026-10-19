@@ -1,0 +1,64 @@
+{
+  "success": true,
+  "date": "2026-10-19",
+  "hardware_tested": false,
+  "published": false,
+  "fixed_issues": [
+    "full_sector_write_verification_bypassed_by_superfw_cache",
+    "retry_reread_discarded_original_data_after_partial_write"
+  ],
+  "atomic_power_fail_safety": false,
+  "persistent_ram_added": 0,
+  "languages": {
+    "FR": {
+      "beta_reference_unchanged": true,
+      "beta_rom_sha256": "0f14eafb6760188cf010ceace7c17ec03d69e64436b5b031001ab6228f114750",
+      "candidate_rom_sha256": "aaadfb0bb11c25fc2943be51acecdf53336d3b3148e3f1a16320e92d35359ba8",
+      "rom_bytes_before": 5804,
+      "rom_bytes_after": 5880,
+      "rom_delta": 76,
+      "observed_temporary_stack_before": 356,
+      "observed_temporary_stack_after": 868,
+      "stack_delta": 512,
+      "native_write_hook_sector_cases": 32,
+      "record_one_bit_error_cases": 32,
+      "record_random_word_cases": 2048,
+      "baseline_fault_scenarios": 13,
+      "candidate_fault_scenarios": 15,
+      "power_cut_prefixes": 15,
+      "mgba_scenarios_per_variant": 4
+    },
+    "EN": {
+      "beta_reference_unchanged": true,
+      "beta_rom_sha256": "32e8ad29c2130652e39729df47959f0e411f8e51d44a964f6b0ad6a86c0b8172",
+      "candidate_rom_sha256": "660b3ccbd2023e49ee4920b7770161f79235e0f438555422f04dd72291237964",
+      "rom_bytes_before": 5784,
+      "rom_bytes_after": 5860,
+      "rom_delta": 76,
+      "observed_temporary_stack_before": 356,
+      "observed_temporary_stack_after": 868,
+      "stack_delta": 512,
+      "native_write_hook_sector_cases": 32,
+      "record_one_bit_error_cases": 32,
+      "record_random_word_cases": 2048,
+      "baseline_fault_scenarios": 13,
+      "candidate_fault_scenarios": 15,
+      "power_cut_prefixes": 15,
+      "mgba_scenarios_per_variant": 4
+    }
+  },
+  "source_evidence": {
+    "cfru_save": {
+      "path": "<local-workspace>/gba-checkup/rtc-recherche/rom/sources-cfru/src/save.c",
+      "sha256": "a1e1f4a30de48c323e807273d11877fb21e8f21bc38dc4ed0c9aefc3b36aae4c"
+    },
+    "superfw_patcher": {
+      "path": "<local-workspace>/gba-checkup/rtc-manuel/v1.5-superfw-research/vendor/v0.21/src/patcher.c",
+      "sha256": "c918e3f6edb5b41b27d3f2b990e937851c6285b42ab07f4d933caee45ac70515"
+    },
+    "superfw_patches": {
+      "path": "<local-workspace>/gba-checkup/rtc-manuel/v1.5-superfw-research/vendor/v0.21/src/patches.S",
+      "sha256": "ff35eef367f0c53165c7124bc368c442f92abddb201f43c6a898da557ff481bd"
+    }
+  }
+}

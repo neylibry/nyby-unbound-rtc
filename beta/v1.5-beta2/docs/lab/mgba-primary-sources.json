@@ -1,0 +1,116 @@
+[
+  {
+    "url": "https://raw.githubusercontent.com/mgba-emu/mgba/7a12d6d/src/platform/libretro/libretro.c",
+    "path": "src/platform/libretro/libretro.c",
+    "bytes": 71038,
+    "sha256": "79f25f38e20efa0507b59ab513b5528afe8957e74f764cebff96b53b0ca62c63"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mgba-emu/mgba/7a12d6d/src/platform/libretro/libretro_core_options.h",
+    "path": "src/platform/libretro/libretro_core_options.h",
+    "bytes": 22519,
+    "sha256": "de13ddec5f4095b2c3f4013f0a53875466d8750c7577a530353aee708fcf6a25"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mgba-emu/mgba/7a12d6d/include/mgba/internal/gba/gba.h",
+    "path": "include/mgba/internal/gba/gba.h",
+    "bytes": 4429,
+    "sha256": "b50fc8ae1467f9ac1c6be3ba8452e22027571ff5c886695edb9be529d7962d4e"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mgba-emu/mgba/7a12d6d/include/mgba/internal/gba/video.h",
+    "path": "include/mgba/internal/gba/video.h",
+    "bytes": 7500,
+    "sha256": "5121b0486b889ff134deafbfeac42afa9dc0e1e134affb106c6b6bcf78824500"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mgba-emu/mgba/7a12d6d/include/mgba/internal/gba/memory.h",
+    "path": "include/mgba/internal/gba/memory.h",
+    "bytes": 5138,
+    "sha256": "fca671fc3bc5ab06641f6259ebf092688e1ba1ddd8eb80e4fba9a43cda44fb41"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mgba-emu/mgba/7a12d6d/src/gba/core.c",
+    "path": "src/gba/core.c",
+    "bytes": 65486,
+    "sha256": "f66fbfc4d7310c9ff14753f323d9f62a82165c7620acfa367042a2eb3db6a5c4"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mgba-emu/mgba/7a12d6d/src/gba/cart/unlicensed.c",
+    "path": "src/gba/cart/unlicensed.c",
+    "bytes": 9244,
+    "sha256": "6228809ba4f50c3d2d3d66978bb3a36505b80da6c945eafdbe43100a29cd9dd0"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mgba-emu/mgba/7a12d6d/src/gba/memory.c",
+    "path": "src/gba/memory.c",
+    "bytes": 65084,
+    "sha256": "501dbbca7d5d7cbaa86240de2d6a4e2e1186b50f74dde11bcf2f323c4af8c437"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mgba-emu/mgba/7a12d6d/include/mgba/internal/gba/serialize.h",
+    "path": "include/mgba/internal/gba/serialize.h",
+    "bytes": 15644,
+    "sha256": "766ad3c333226e11f2d55e3336c6552ea69604bc1f276584c69512e522bfd0d8"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mgba-emu/mgba/7a12d6d/src/gba/serialize.c",
+    "path": "src/gba/serialize.c",
+    "bytes": 9745,
+    "sha256": "23947295749e6eeb27ab13d2a6d4c18bf88b587bcf3109e6d3e6bab5a5658dc3"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mgba-emu/mgba/7a12d6d/src/core/timing.c",
+    "path": "src/core/timing.c",
+    "bytes": 3758,
+    "sha256": "868cf68e38ed1d1e25a3f3fd3e35515f4561e8a5e8d4a3c294653ab485606af0"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mgba-emu/mgba/7a12d6d/include/mgba/core/timing.h",
+    "path": "include/mgba/core/timing.h",
+    "bytes": 1600,
+    "sha256": "0bc98ea66ded4856a258786dc19c3c2a6e19cf4c1046211b93d9304729aa1915"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mgba-emu/mgba/7a12d6d/include/mgba/internal/arm/arm.h",
+    "path": "include/mgba/internal/arm/arm.h",
+    "bytes": 5022,
+    "sha256": "47822ffc4592230f6045dd2d8677dec5d72f518bff0b42e15ff26b5c77330bef"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mgba-emu/mgba/7a12d6d/src/arm/arm.c",
+    "path": "src/arm/arm.c",
+    "bytes": 7340,
+    "sha256": "c241587e974ac29aa09ed4992c9244c7ac65fad938e61d45836dc457f57129d2"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mgba-emu/mgba/7a12d6d/src/core/interface.c",
+    "path": "src/core/interface.c",
+    "bytes": 4561,
+    "sha256": "070ba2eb9f6385754d5b74e66630a896c7c7c34071f1e6afd90b07092efb8737"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mgba-emu/mgba/7a12d6d/include/mgba/core/interface.h",
+    "path": "include/mgba/core/interface.h",
+    "bytes": 4748,
+    "sha256": "da6ea4e344c46be5943859a24c0149c12a803b3e951c07140cc795cab09651de"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mgba-emu/mgba/7a12d6d/src/core/serialize.c",
+    "path": "src/core/serialize.c",
+    "bytes": 15793,
+    "sha256": "45fb69d5da0c0c4c135efb2641c7d1c6140d575b1819f60a45985ebfa0081f3c"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mgba-emu/mgba/7a12d6d/include/mgba/core/serialize.h",
+    "path": "include/mgba/core/serialize.h",
+    "bytes": 1834,
+    "sha256": "c1301365f7f24c8842e84b51324cc419e5ea01843f5366e9edbbf1cdf40f5c49"
+  },
+  {
+    "url": "https://raw.githubusercontent.com/mgba-emu/mgba/7a12d6d/src/gba/cart/gpio.c",
+    "path": "src/gba/cart/gpio.c",
+    "bytes": 16920,
+    "sha256": "1a79dde124fec11a8d847e51529bf0297bae0a147efa55e302abd1958059a711"
+  }
+]

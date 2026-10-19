@@ -1,0 +1,145 @@
+{
+  "schema_version": 2,
+  "project": "NyBy RTC — Unbound EN/FR SuperFW bridge",
+  "author": "NyBy",
+  "version": "1.5-beta2",
+  "release_date": "2026-10-19",
+  "status": "beta; automated PC validation; real SuperFW/BIOS and GBA test pending",
+  "rom_included": false,
+  "save_included": false,
+  "additional_permanent_ram_bytes": 0,
+  "settings_bytes": 4,
+  "save_format_changed": false,
+  "known_options_issue_resolved": false,
+  "inputs": [
+    {
+      "name": "Unbound 2.1.1.1 FR Antony 2.1.179 without NyBy RTC",
+      "variant": "fr",
+      "bytes": 33554432,
+      "sha256": "55bd66a6cd6a54b36b1c90b750541dfd0d621466bfb1ddee1e222f6207ad4164",
+      "patch": "patches/Unbound-FR-RTC-NyBy-v1.5-beta2.bps",
+      "patch_sha256": "9e43a4c47d5cb4fd8531f998fc95f3def2e1f650eb0353cc05490cc39efe6045",
+      "patch_bytes": 6119
+    },
+    {
+      "name": "Unbound 2.1.1.1 EN without NyBy RTC",
+      "variant": "en",
+      "bytes": 33554432,
+      "sha256": "7aa25bbf568f7cfcf6ee1cf2e9e6ff637350b3d0705c2375cabb6baa7d9739f7",
+      "patch": "patches/Unbound-EN-RTC-NyBy-v1.5-beta2.bps",
+      "patch_sha256": "0417512aaccf60f2836668f96c0b423dc120190aba706bcd32d850de8e12d9c7",
+      "patch_bytes": 6100
+    }
+  ],
+  "variants": [
+    {
+      "id": "fr",
+      "game": "Unbound 2.1.1.1 FR Antony 2.1.179",
+      "menu_language": "fr",
+      "target": {
+        "filename": "Unbound FR 179 RTC NyBy v1.5 BETA2.gba",
+        "bytes": 33554432,
+        "sha256": "4ff5b89a80c343475a1622d83554a555f9557bf776d2d2b4cf8cf4ab99fe062c",
+        "crc32": "EC3D0603"
+      },
+      "payload_bytes": 5880,
+      "sd_folder": "SD/fr",
+      "superfw_cache": {
+        "bytes": 800,
+        "sha256": "f394eb3ef42b84c461985bcfacd7c746b8211823fa59dff57fd8a46a78650501"
+      },
+      "validation": {
+        "pc_checked": true,
+        "physical_gba_tested": false,
+        "real_superfw_bios_path_tested": false,
+        "options_issue_resolved": false
+      }
+    },
+    {
+      "id": "en",
+      "game": "Unbound 2.1.1.1 EN",
+      "menu_language": "en",
+      "target": {
+        "filename": "Unbound EN 2111 RTC NyBy v1.5 BETA2.gba",
+        "bytes": 33554432,
+        "sha256": "f36d4ad987f5061a4f714f9d5338581b1cd4bb19062aba8c47935055d58b1b96",
+        "crc32": "C68A8FE9"
+      },
+      "payload_bytes": 5860,
+      "sd_folder": "SD/en",
+      "superfw_cache": {
+        "bytes": 800,
+        "sha256": "4a8dff9ed73b65fa1eb22c39d205b1e2b9649d038c64b4bcfa9605f4e6a7e8e7"
+      },
+      "validation": {
+        "pc_checked": true,
+        "physical_gba_tested": false,
+        "real_superfw_bios_path_tested": false,
+        "options_issue_resolved": false
+      }
+    }
+  ],
+  "required_superfw": {
+    "target_version": "0.21",
+    "patchmode": "PatchEngine",
+    "directsaving": true,
+    "rtc": true,
+    "igm": false,
+    "cheats": false
+  },
+  "physical_test_scope": "Neither FR nor EN v1.5 beta2 has been tested on real GBA",
+  "browser_installer": {
+    "filename": "INSTALLER-FR-EN.html",
+    "offline": true,
+    "languages": [
+      "fr",
+      "en"
+    ],
+    "source_sha256_checked": true,
+    "output_sha256_checked": true,
+    "optional_native_save_copy": true,
+    "network_access": false,
+    "direct_sd_access": false
+  },
+  "preparation_workflow": {
+    "base": "Own English FireRed USA v1.0 ROM",
+    "english": [
+      "FireRed USA v1.0",
+      "Unbound 2.1.1.1 patch",
+      "NyBy RTC EN 1.5-beta2"
+    ],
+    "french": [
+      "FireRed USA v1.0",
+      "Unbound 2.1.1.1 patch",
+      "Antony FR 2.1.179",
+      "NyBy RTC FR 1.5-beta2"
+    ],
+    "installer_scope": "Final RTC step only; supply already prepared Unbound without a previous RTC patch",
+    "unbound_patch_bundled": false,
+    "translation_patch_bundled": false,
+    "interface_language_changes_game_language": false
+  },
+  "clock_source": "Manually configured SuperFW timestamp, then game frame counter; no powered-off tracking",
+  "save_verification": {
+    "method": "Exact comparison of 4096 bytes in eight aligned 512-byte reads",
+    "retain_original_sector_buffer_on_retry": true,
+    "force_repair_when_setting_returns_to_previous_value": true,
+    "power_failure_atomicity_guaranteed": false,
+    "record_offset_in_native_save": "0x1FFF0",
+    "record_bytes": 4
+  },
+  "resource_delta_vs_beta1": {
+    "rom_payload_bytes": 76,
+    "temporary_startup_stack_bytes": 512,
+    "additional_permanent_ram_bytes": 0,
+    "startup_mod_stack_observed_bytes": 868,
+    "native_driver_stack_excluded": true,
+    "in_game_rtc_runtime_changed": false
+  },
+  "validation_provenance": {
+    "engineering_campaign": "C1 laboratory, 2026-10-19",
+    "code_equivalence_proof": "docs/C1-TO-BETA2-PROVENANCE.json",
+    "final_release_checks": "docs/AUTOMATED-TESTS.json",
+    "full_superfw_bios_sd_path_tested": false
+  }
+}

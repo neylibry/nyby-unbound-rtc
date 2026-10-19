@@ -335,6 +335,12 @@
       "path": "beta/v1.5-beta1",
       "manifest_sha256": "2855e9ba20ec7fb94cf8856a88adb164c7375187a290d1292bb5028c18e65495",
       "status": "public beta; hardware test pending"
+    },
+    {
+      "version": "1.5-beta2",
+      "path": "beta/v1.5-beta2",
+      "manifest_sha256": "9f143452e362737ea64566687cf3d2c1441cad9d4ebe3729293e81364c2f9b93",
+      "status": "public beta; hardware test pending"
     }
   ]
 }

@@ -1,0 +1,98 @@
+{
+  "campaign": "C1 laboratory, 2026-10-19",
+  "equivalent_release": "1.5-beta2",
+  "equivalence_proof": "../C1-TO-BETA2-PROVENANCE.json",
+  "files": [
+    {
+      "laboratory_source": "SUMMARY.json",
+      "source_sha256": "6f10c44622bebba801451dd96150155144d8d2b0ab0592ac0b3840ce60154685",
+      "packaged_file": "summary.json",
+      "packaged_sha256": "6f10c44622bebba801451dd96150155144d8d2b0ab0592ac0b3840ce60154685",
+      "local_paths_redacted": true
+    },
+    {
+      "laboratory_source": "timing-memory/summary.json",
+      "source_sha256": "7858dd8f501149ec8bcee9cabe44b486dfa6b05e2f949b48374e40ed9aad1ff7",
+      "packaged_file": "timing-summary.json",
+      "packaged_sha256": "6217e0a655dc0003f5ad658d79db0f8ca936bfc5e31366175b6bec344d50b1c2",
+      "local_paths_redacted": true
+    },
+    {
+      "laboratory_source": "timing-memory/timing-memory.json",
+      "source_sha256": "321bac093dfdafffd94b85c8d4a79a8ef4b695327b2b6f15970e6470fe3fb5c6",
+      "packaged_file": "timing-samples.json",
+      "packaged_sha256": "d7346567180de2974aa6051bb8001b7e27ee7f0c23428d41d2d50fd9db8b94ce",
+      "local_paths_redacted": true
+    },
+    {
+      "laboratory_source": "timing-memory/candidate1-summary.json",
+      "source_sha256": "a6e08e098175a068ab57249c9723f3884906c5006639d523fde25b3e469fe802",
+      "packaged_file": "c1-memory-summary.json",
+      "packaged_sha256": "41698c6440b94a73629776606f727a5af5d0f451346dc853dd80802593d52334",
+      "local_paths_redacted": true
+    },
+    {
+      "laboratory_source": "save-audit/summary.json",
+      "source_sha256": "786a7883bf75c42fc2bf5d12fe965d036bd5fe1ba6b99e30a5b90855e43d4a19",
+      "packaged_file": "save-fault-summary.json",
+      "packaged_sha256": "91dd61192b70f0ce56b3c15237ca364e88ac8c417c6e77ccfb756d81f85e0ad5",
+      "local_paths_redacted": true
+    },
+    {
+      "laboratory_source": "save-audit/results.json",
+      "source_sha256": "873f73fdedf5c6e335e49c237f8a499f289caf0f0bc3dce790cab73b2fb2ace7",
+      "packaged_file": "save-fault-results.json",
+      "packaged_sha256": "873f73fdedf5c6e335e49c237f8a499f289caf0f0bc3dce790cab73b2fb2ace7",
+      "local_paths_redacted": true
+    },
+    {
+      "laboratory_source": "save-audit/mgba-results.json",
+      "source_sha256": "10ed9d40bc6f7626f7ae848a61cd68b09e93ccb62270e6e22ebcca196d70bf41",
+      "packaged_file": "save-fault-mgba.json",
+      "packaged_sha256": "10ed9d40bc6f7626f7ae848a61cd68b09e93ccb62270e6e22ebcca196d70bf41",
+      "local_paths_redacted": true
+    },
+    {
+      "laboratory_source": "save-audit/stress-c1/results.json",
+      "source_sha256": "60e0b10b040628192ca3ba1af464598fcb51725646aa28e77d328abd74f71cff",
+      "packaged_file": "native-stress-c1.json",
+      "packaged_sha256": "f2942f3fff1fea5f8d471880ac19fb3a7b253142fe87265c50490cb217481d3f",
+      "local_paths_redacted": true
+    },
+    {
+      "laboratory_source": "gameplay/results/gameplay-results.json",
+      "source_sha256": "4e48308049ecb78e5dd5d0b49cd2e00870e799b124efb4ad12fb75071bb8996c",
+      "packaged_file": "gameplay-results.json",
+      "packaged_sha256": "4e48308049ecb78e5dd5d0b49cd2e00870e799b124efb4ad12fb75071bb8996c",
+      "local_paths_redacted": true
+    },
+    {
+      "laboratory_source": "fidelity/gba-target-profile.json",
+      "source_sha256": "9d4811419120acc5899aad8da1e3e85453ce96f32982da34b6c4602d5a0226d7",
+      "packaged_file": "gba-target-profile.json",
+      "packaged_sha256": "0fb8221272c9fee960c5dd93855c10583b8287e08609083fffe060922d3cb596",
+      "local_paths_redacted": true
+    },
+    {
+      "laboratory_source": "fidelity/local-core-profile.json",
+      "source_sha256": "b1ed2779844d4bfe5b8f61c18b0fd006ee329bbe6f8843f9b1c2299a92a2845e",
+      "packaged_file": "local-core-profile.json",
+      "packaged_sha256": "5476e459f5420728715fbd486a6dd80d8bfd5bd7d4b2d5f4bb5a46ac27e4eff0",
+      "local_paths_redacted": true
+    },
+    {
+      "laboratory_source": "fidelity/strict-profile-probe.json",
+      "source_sha256": "499304c408c4f3229659cad826d6555ec3bd5cd1389610a9364af100fef740f6",
+      "packaged_file": "strict-profile-probe.json",
+      "packaged_sha256": "1497025fc3471d0b6e4902e0391d6ec9fa7801484e64a368360d15af935269af",
+      "local_paths_redacted": true
+    },
+    {
+      "laboratory_source": "fidelity/sources-proof.json",
+      "source_sha256": "264e2afbc165e0cbb22e32607cf5727a706e51a5203d9340b97a48cf4f5e96e6",
+      "packaged_file": "mgba-primary-sources.json",
+      "packaged_sha256": "79dd94ad920958c4f6b4d009e2cf723494c20cfbc056ac78f5436d1e7339279e",
+      "local_paths_redacted": true
+    }
+  ]
+}

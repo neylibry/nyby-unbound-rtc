@@ -1,0 +1,269 @@
+{
+  "success": true,
+  "date": "2026-10-19",
+  "reference": "1.5-beta1",
+  "candidate": "1.5-candidate1",
+  "cpu_hz": 16777216,
+  "ppu_frame_cycles": 280896,
+  "display_fps": 59.72750056960583,
+  "screen": [
+    240,
+    160
+  ],
+  "memory_bytes": {
+    "ewram": 262144,
+    "iwram": 32768,
+    "vram": 98304
+  },
+  "bios": "mGBA HLE",
+  "supercard_sd_emulated": false,
+  "physical_hardware_tested": false,
+  "strict_frameskip_disabled": true,
+  "idle_loop_optimization_disabled": true,
+  "rtc_datetime_cycles_with_deployed_trampoline": 1035.0,
+  "rtc_time_cycles_with_deployed_trampoline": 585.0,
+  "one_datetime_call_per_frame_budget_percent": 0.3684637730690362,
+  "permanent_ram_allocation_added_bytes": 0,
+  "reserved_undefined_bank_state_bytes": 8,
+  "existing_borrowed_flash_buffer_bytes": 4096,
+  "runtime_stack_max_bytes": 24,
+  "startup_mod_stack_observed_bytes": 868,
+  "startup_stack_delta_bytes": 512,
+  "rom_payload_delta_bytes": 76,
+  "runtime_binary_unchanged": true,
+  "fixed_issues": [
+    "full_sector_write_verification_bypassed_by_superfw_cache",
+    "retry_reread_discarded_original_data_after_partial_write"
+  ],
+  "power_loss_atomicity_guaranteed": false,
+  "timer_samples": 6048,
+  "cold_boots": 24,
+  "native_saves": 8,
+  "installer_engine_checks": 29,
+  "browser_workflows": 11,
+  "verified_zips": 10,
+  "browser_http_requests": 0,
+  "gameplay": [
+    {
+      "language": "FR",
+      "version": "unbound-native",
+      "scene": "room-idle",
+      "callback2_fps": 59.72750056960583,
+      "ppu_frames": 600,
+      "frames_without_callback2": 0,
+      "rtc_reads_per_300_frames": null,
+      "estimated_rtc_cpu_budget_percent": null
+    },
+    {
+      "language": "FR",
+      "version": "unbound-native",
+      "scene": "room-move-right",
+      "callback2_fps": 59.72750056960583,
+      "ppu_frames": 600,
+      "frames_without_callback2": 0,
+      "rtc_reads_per_300_frames": null,
+      "estimated_rtc_cpu_budget_percent": null
+    },
+    {
+      "language": "FR",
+      "version": "unbound-native",
+      "scene": "pause-menu",
+      "callback2_fps": 59.130225563909775,
+      "ppu_frames": 600,
+      "frames_without_callback2": 6,
+      "rtc_reads_per_300_frames": null,
+      "estimated_rtc_cpu_budget_percent": null
+    },
+    {
+      "language": "FR",
+      "version": "beta1",
+      "scene": "room-idle",
+      "callback2_fps": 59.72750056960583,
+      "ppu_frames": 600,
+      "frames_without_callback2": 0,
+      "rtc_reads_per_300_frames": {
+        "datetime": 5,
+        "time": 0
+      },
+      "estimated_rtc_cpu_budget_percent": 0.006141062884483937
+    },
+    {
+      "language": "FR",
+      "version": "beta1",
+      "scene": "room-move-right",
+      "callback2_fps": 59.72750056960583,
+      "ppu_frames": 600,
+      "frames_without_callback2": 0,
+      "rtc_reads_per_300_frames": {
+        "datetime": 5,
+        "time": 0
+      },
+      "estimated_rtc_cpu_budget_percent": 0.006141062884483937
+    },
+    {
+      "language": "FR",
+      "version": "beta1",
+      "scene": "pause-menu",
+      "callback2_fps": 59.130225563909775,
+      "ppu_frames": 600,
+      "frames_without_callback2": 6,
+      "rtc_reads_per_300_frames": {
+        "datetime": 295,
+        "time": 0
+      },
+      "estimated_rtc_cpu_budget_percent": 0.3623227101845523
+    },
+    {
+      "language": "FR",
+      "version": "candidate",
+      "scene": "room-idle",
+      "callback2_fps": 59.72750056960583,
+      "ppu_frames": 600,
+      "frames_without_callback2": 0,
+      "rtc_reads_per_300_frames": {
+        "datetime": 5,
+        "time": 0
+      },
+      "estimated_rtc_cpu_budget_percent": 0.006141062884483937
+    },
+    {
+      "language": "FR",
+      "version": "candidate",
+      "scene": "room-move-right",
+      "callback2_fps": 59.72750056960583,
+      "ppu_frames": 600,
+      "frames_without_callback2": 0,
+      "rtc_reads_per_300_frames": {
+        "datetime": 5,
+        "time": 0
+      },
+      "estimated_rtc_cpu_budget_percent": 0.006141062884483937
+    },
+    {
+      "language": "FR",
+      "version": "candidate",
+      "scene": "pause-menu",
+      "callback2_fps": 59.130225563909775,
+      "ppu_frames": 600,
+      "frames_without_callback2": 6,
+      "rtc_reads_per_300_frames": {
+        "datetime": 295,
+        "time": 0
+      },
+      "estimated_rtc_cpu_budget_percent": 0.3623227101845523
+    },
+    {
+      "language": "EN",
+      "version": "unbound-native",
+      "scene": "room-idle",
+      "callback2_fps": 59.72750056960583,
+      "ppu_frames": 600,
+      "frames_without_callback2": 0,
+      "rtc_reads_per_300_frames": null,
+      "estimated_rtc_cpu_budget_percent": null
+    },
+    {
+      "language": "EN",
+      "version": "unbound-native",
+      "scene": "room-move-right",
+      "callback2_fps": 59.72750056960583,
+      "ppu_frames": 600,
+      "frames_without_callback2": 0,
+      "rtc_reads_per_300_frames": null,
+      "estimated_rtc_cpu_budget_percent": null
+    },
+    {
+      "language": "EN",
+      "version": "unbound-native",
+      "scene": "pause-menu",
+      "callback2_fps": 58.73204222677907,
+      "ppu_frames": 600,
+      "frames_without_callback2": 10,
+      "rtc_reads_per_300_frames": null,
+      "estimated_rtc_cpu_budget_percent": null
+    },
+    {
+      "language": "EN",
+      "version": "beta1",
+      "scene": "room-idle",
+      "callback2_fps": 59.72750056960583,
+      "ppu_frames": 600,
+      "frames_without_callback2": 0,
+      "rtc_reads_per_300_frames": {
+        "datetime": 5,
+        "time": 0
+      },
+      "estimated_rtc_cpu_budget_percent": 0.006141062884483937
+    },
+    {
+      "language": "EN",
+      "version": "beta1",
+      "scene": "room-move-right",
+      "callback2_fps": 59.72750056960583,
+      "ppu_frames": 600,
+      "frames_without_callback2": 0,
+      "rtc_reads_per_300_frames": {
+        "datetime": 5,
+        "time": 0
+      },
+      "estimated_rtc_cpu_budget_percent": 0.006141062884483937
+    },
+    {
+      "language": "EN",
+      "version": "beta1",
+      "scene": "pause-menu",
+      "callback2_fps": 58.831588061061744,
+      "ppu_frames": 600,
+      "frames_without_callback2": 9,
+      "rtc_reads_per_300_frames": {
+        "datetime": 295,
+        "time": 0
+      },
+      "estimated_rtc_cpu_budget_percent": 0.3623227101845523
+    },
+    {
+      "language": "EN",
+      "version": "candidate",
+      "scene": "room-idle",
+      "callback2_fps": 59.72750056960583,
+      "ppu_frames": 600,
+      "frames_without_callback2": 0,
+      "rtc_reads_per_300_frames": {
+        "datetime": 5,
+        "time": 0
+      },
+      "estimated_rtc_cpu_budget_percent": 0.006141062884483937
+    },
+    {
+      "language": "EN",
+      "version": "candidate",
+      "scene": "room-move-right",
+      "callback2_fps": 59.72750056960583,
+      "ppu_frames": 600,
+      "frames_without_callback2": 0,
+      "rtc_reads_per_300_frames": {
+        "datetime": 5,
+        "time": 0
+      },
+      "estimated_rtc_cpu_budget_percent": 0.006141062884483937
+    },
+    {
+      "language": "EN",
+      "version": "candidate",
+      "scene": "pause-menu",
+      "callback2_fps": 58.831588061061744,
+      "ppu_frames": 600,
+      "frames_without_callback2": 9,
+      "rtc_reads_per_300_frames": {
+        "datetime": 295,
+        "time": 0
+      },
+      "estimated_rtc_cpu_budget_percent": 0.3623227101845523
+    }
+  ],
+  "gameplay_instrumentation_overhead_included": true,
+  "gameplay_scene_scope": "early-game room idle, movement and pause menu; not battle or dense maps",
+  "candidate_local_only": true,
+  "sd_accessed": false,
+  "public_beta_modified": false
+}

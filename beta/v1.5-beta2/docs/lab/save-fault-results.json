@@ -1,0 +1,2703 @@
+{
+  "scope": {
+    "actual_machine_code": true,
+    "synthetic_native_sram_only": true,
+    "cycle_accurate": false,
+    "native_flash_driver_or_superfw_sd_controller_executed": false,
+    "hardware_tested": false,
+    "power_loss_is_illustrative_model_not_physical_sd_simulation": true
+  },
+  "languages": {
+    "FR": {
+      "cache_proof": {
+        "verify_functions_replaced_with_return_zero": [
+          "0x081DEB64",
+          "0x081DEBFC"
+        ],
+        "native_program_verify_call_target": "0x81deb64",
+        "rom_sha256": "0f14eafb6760188cf010ceace7c17ec03d69e64436b5b031001ab6228f114750",
+        "fixture_sha256": "3d5318e07f96a3c327a3ad026f624a84503a5f276338b044113a7217ff2b1f1c",
+        "sector31_non_ff_bytes": 4096,
+        "sector31_not_proven_empty_or_disposable": true
+      },
+      "crc": {
+        "roundtrip_minute": true,
+        "single_bit_errors_rejected": 32,
+        "invalid_sentinels_and_range_rejected": true,
+        "random_words_tested": 2048,
+        "random_words_accepted": 33,
+        "not_a_cryptographic_checksum": true,
+        "crc6_cannot_prove_absence_of_torn_writes": true
+      },
+      "baseline": {
+        "native_write_hook": {
+          "all_32_sectors_checked": true,
+          "only_sector31_record_mutated": true,
+          "native_arguments_and_return_value_preserved": true,
+          "native_body_executed_here": false
+        },
+        "none": {
+          "returned": true,
+          "frames": 14,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 4080,
+              "bytes": 4
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "initial-read-error": {
+          "returned": true,
+          "frames": 14,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 4080,
+              "bytes": 4
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ec0ed7a0",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "prewrite-read-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 0,
+          "error_screen_seen": true,
+          "changed_bytes": 0,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "e30ad780",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "prewrite-partial-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 0,
+          "error_screen_seen": true,
+          "changed_bytes": 0,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "e30ad780",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "write-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 0,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "e30ad780",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "partial-write-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 3584,
+          "changed_outside_record": 3580,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ffffffff",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "complete-but-return-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "readback-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 4080,
+              "bytes": 4
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "corrupt-record": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 4080,
+              "bytes": 4
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1e0bd76c",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "silent-corrupt-neighbor": {
+          "returned": true,
+          "frames": 14,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 4080,
+              "bytes": 4
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 4,
+          "changed_outside_record": 1,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "retry-after-transient-read-error": {
+          "returned": true,
+          "frames": 37,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 4080,
+              "bytes": 4
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "retry-once-silent-corrupt-neighbor": {
+          "returned": true,
+          "frames": 14,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 4080,
+              "bytes": 4
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 4,
+          "changed_outside_record": 1,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "retry-once-partial-write-error": {
+          "returned": true,
+          "frames": 37,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 4080,
+              "bytes": 4
+            }
+          ],
+          "write_calls": 2,
+          "error_screen_seen": true,
+          "changed_bytes": 3583,
+          "changed_outside_record": 3580,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        }
+      },
+      "candidate": {
+        "native_write_hook": {
+          "all_32_sectors_checked": true,
+          "only_sector31_record_mutated": true,
+          "native_arguments_and_return_value_preserved": true,
+          "native_body_executed_here": false
+        },
+        "none": {
+          "returned": true,
+          "frames": 14,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 512
+            },
+            {
+              "offset": 512,
+              "bytes": 512
+            },
+            {
+              "offset": 1024,
+              "bytes": 512
+            },
+            {
+              "offset": 1536,
+              "bytes": 512
+            },
+            {
+              "offset": 2048,
+              "bytes": 512
+            },
+            {
+              "offset": 2560,
+              "bytes": 512
+            },
+            {
+              "offset": 3072,
+              "bytes": 512
+            },
+            {
+              "offset": 3584,
+              "bytes": 512
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "initial-read-error": {
+          "returned": true,
+          "frames": 14,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 512
+            },
+            {
+              "offset": 512,
+              "bytes": 512
+            },
+            {
+              "offset": 1024,
+              "bytes": 512
+            },
+            {
+              "offset": 1536,
+              "bytes": 512
+            },
+            {
+              "offset": 2048,
+              "bytes": 512
+            },
+            {
+              "offset": 2560,
+              "bytes": 512
+            },
+            {
+              "offset": 3072,
+              "bytes": 512
+            },
+            {
+              "offset": 3584,
+              "bytes": 512
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ec0ed7a0",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "prewrite-read-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 0,
+          "error_screen_seen": true,
+          "changed_bytes": 0,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "e30ad780",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "prewrite-partial-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 0,
+          "error_screen_seen": true,
+          "changed_bytes": 0,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "e30ad780",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "write-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 0,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "e30ad780",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "partial-write-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 3584,
+          "changed_outside_record": 3580,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ffffffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "complete-but-return-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "readback-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 512
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "corrupt-record": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 512
+            },
+            {
+              "offset": 512,
+              "bytes": 512
+            },
+            {
+              "offset": 1024,
+              "bytes": 512
+            },
+            {
+              "offset": 1536,
+              "bytes": 512
+            },
+            {
+              "offset": 2048,
+              "bytes": 512
+            },
+            {
+              "offset": 2560,
+              "bytes": 512
+            },
+            {
+              "offset": 3072,
+              "bytes": 512
+            },
+            {
+              "offset": 3584,
+              "bytes": 512
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1e0bd76c",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "silent-corrupt-neighbor": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 512
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 4,
+          "changed_outside_record": 1,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "retry-after-transient-read-error": {
+          "returned": true,
+          "frames": 37,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 512
+            },
+            {
+              "offset": 512,
+              "bytes": 512
+            },
+            {
+              "offset": 1024,
+              "bytes": 512
+            },
+            {
+              "offset": 1536,
+              "bytes": 512
+            },
+            {
+              "offset": 2048,
+              "bytes": 512
+            },
+            {
+              "offset": 2560,
+              "bytes": 512
+            },
+            {
+              "offset": 3072,
+              "bytes": 512
+            },
+            {
+              "offset": 3584,
+              "bytes": 512
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "retry-once-silent-corrupt-neighbor": {
+          "returned": true,
+          "frames": 37,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 512
+            },
+            {
+              "offset": 0,
+              "bytes": 512
+            },
+            {
+              "offset": 512,
+              "bytes": 512
+            },
+            {
+              "offset": 1024,
+              "bytes": 512
+            },
+            {
+              "offset": 1536,
+              "bytes": 512
+            },
+            {
+              "offset": 2048,
+              "bytes": 512
+            },
+            {
+              "offset": 2560,
+              "bytes": 512
+            },
+            {
+              "offset": 3072,
+              "bytes": 512
+            },
+            {
+              "offset": 3584,
+              "bytes": 512
+            }
+          ],
+          "write_calls": 2,
+          "error_screen_seen": true,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "retry-once-partial-write-error": {
+          "returned": true,
+          "frames": 37,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 512
+            },
+            {
+              "offset": 512,
+              "bytes": 512
+            },
+            {
+              "offset": 1024,
+              "bytes": 512
+            },
+            {
+              "offset": 1536,
+              "bytes": 512
+            },
+            {
+              "offset": 2048,
+              "bytes": 512
+            },
+            {
+              "offset": 2560,
+              "bytes": 512
+            },
+            {
+              "offset": 3072,
+              "bytes": 512
+            },
+            {
+              "offset": 3584,
+              "bytes": 512
+            }
+          ],
+          "write_calls": 2,
+          "error_screen_seen": true,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "retry-after-partial-write-reedit-DOWN": {
+          "returned": true,
+          "frames": 37,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 512
+            },
+            {
+              "offset": 512,
+              "bytes": 512
+            },
+            {
+              "offset": 1024,
+              "bytes": 512
+            },
+            {
+              "offset": 1536,
+              "bytes": 512
+            },
+            {
+              "offset": 2048,
+              "bytes": 512
+            },
+            {
+              "offset": 2560,
+              "bytes": 512
+            },
+            {
+              "offset": 3072,
+              "bytes": 512
+            },
+            {
+              "offset": 3584,
+              "bytes": 512
+            }
+          ],
+          "write_calls": 2,
+          "error_screen_seen": true,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "5b0bd784",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "retry-after-partial-write-reedit-UP": {
+          "returned": true,
+          "frames": 37,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 512
+            },
+            {
+              "offset": 512,
+              "bytes": 512
+            },
+            {
+              "offset": 1024,
+              "bytes": 512
+            },
+            {
+              "offset": 1536,
+              "bytes": 512
+            },
+            {
+              "offset": 2048,
+              "bytes": 512
+            },
+            {
+              "offset": 2560,
+              "bytes": 512
+            },
+            {
+              "offset": 3072,
+              "bytes": 512
+            },
+            {
+              "offset": 3584,
+              "bytes": 512
+            }
+          ],
+          "write_calls": 2,
+          "error_screen_seen": true,
+          "changed_bytes": 0,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "e30ad780",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        }
+      },
+      "power_cut_prefixes": [
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 4096,
+          "changed_outside_record": 4092,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ffffffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 0,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 3584,
+          "changed_outside_record": 3580,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ffffffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 512,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 3072,
+          "changed_outside_record": 3068,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ffffffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 1024,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 2560,
+          "changed_outside_record": 2556,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ffffffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 1536,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 2048,
+          "changed_outside_record": 2044,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ffffffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 2048,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 1536,
+          "changed_outside_record": 1532,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ffffffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 2560,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 1024,
+          "changed_outside_record": 1020,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ffffffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 3072,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 512,
+          "changed_outside_record": 508,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ffffffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 3584,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 16,
+          "changed_outside_record": 12,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ffffffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 4080,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 16,
+          "changed_outside_record": 12,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1fffffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 4081,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 16,
+          "changed_outside_record": 12,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 4082,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 15,
+          "changed_outside_record": 12,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd7ff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 4083,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 15,
+          "changed_outside_record": 12,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 4084,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 4,
+          "changed_outside_record": 1,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 4095,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 4096,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        }
+      ],
+      "candidate_payload_bytes": 5880,
+      "baseline_payload_bytes": 5804
+    },
+    "EN": {
+      "cache_proof": {
+        "verify_functions_replaced_with_return_zero": [
+          "0x081DEB64",
+          "0x081DEBFC"
+        ],
+        "native_program_verify_call_target": "0x81deb64",
+        "rom_sha256": "32e8ad29c2130652e39729df47959f0e411f8e51d44a964f6b0ad6a86c0b8172",
+        "fixture_sha256": "e17c570ab5013641ed61805c07be1e114ebc28bdbeded5d7d81f86a02dd18b8a",
+        "sector31_non_ff_bytes": 4096,
+        "sector31_not_proven_empty_or_disposable": true
+      },
+      "crc": {
+        "roundtrip_minute": true,
+        "single_bit_errors_rejected": 32,
+        "invalid_sentinels_and_range_rejected": true,
+        "random_words_tested": 2048,
+        "random_words_accepted": 33,
+        "not_a_cryptographic_checksum": true,
+        "crc6_cannot_prove_absence_of_torn_writes": true
+      },
+      "baseline": {
+        "native_write_hook": {
+          "all_32_sectors_checked": true,
+          "only_sector31_record_mutated": true,
+          "native_arguments_and_return_value_preserved": true,
+          "native_body_executed_here": false
+        },
+        "none": {
+          "returned": true,
+          "frames": 14,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 4080,
+              "bytes": 4
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "initial-read-error": {
+          "returned": true,
+          "frames": 14,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 4080,
+              "bytes": 4
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ec0ed7a0",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "prewrite-read-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 0,
+          "error_screen_seen": true,
+          "changed_bytes": 0,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "e30ad780",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "prewrite-partial-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 0,
+          "error_screen_seen": true,
+          "changed_bytes": 0,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "e30ad780",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "write-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 0,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "e30ad780",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "partial-write-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 3584,
+          "changed_outside_record": 3580,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ffffffff",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "complete-but-return-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "readback-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 4080,
+              "bytes": 4
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "corrupt-record": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 4080,
+              "bytes": 4
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1e0bd76c",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "silent-corrupt-neighbor": {
+          "returned": true,
+          "frames": 14,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 4080,
+              "bytes": 4
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 4,
+          "changed_outside_record": 1,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "retry-after-transient-read-error": {
+          "returned": true,
+          "frames": 37,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 4080,
+              "bytes": 4
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "retry-once-silent-corrupt-neighbor": {
+          "returned": true,
+          "frames": 14,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 4080,
+              "bytes": 4
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 4,
+          "changed_outside_record": 1,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        },
+        "retry-once-partial-write-error": {
+          "returned": true,
+          "frames": 37,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 4080,
+              "bytes": 4
+            }
+          ],
+          "write_calls": 2,
+          "error_screen_seen": true,
+          "changed_bytes": 3583,
+          "changed_outside_record": 3580,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 356,
+          "power_cut_model_triggered": false
+        }
+      },
+      "candidate": {
+        "native_write_hook": {
+          "all_32_sectors_checked": true,
+          "only_sector31_record_mutated": true,
+          "native_arguments_and_return_value_preserved": true,
+          "native_body_executed_here": false
+        },
+        "none": {
+          "returned": true,
+          "frames": 14,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 512
+            },
+            {
+              "offset": 512,
+              "bytes": 512
+            },
+            {
+              "offset": 1024,
+              "bytes": 512
+            },
+            {
+              "offset": 1536,
+              "bytes": 512
+            },
+            {
+              "offset": 2048,
+              "bytes": 512
+            },
+            {
+              "offset": 2560,
+              "bytes": 512
+            },
+            {
+              "offset": 3072,
+              "bytes": 512
+            },
+            {
+              "offset": 3584,
+              "bytes": 512
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "initial-read-error": {
+          "returned": true,
+          "frames": 14,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 512
+            },
+            {
+              "offset": 512,
+              "bytes": 512
+            },
+            {
+              "offset": 1024,
+              "bytes": 512
+            },
+            {
+              "offset": 1536,
+              "bytes": 512
+            },
+            {
+              "offset": 2048,
+              "bytes": 512
+            },
+            {
+              "offset": 2560,
+              "bytes": 512
+            },
+            {
+              "offset": 3072,
+              "bytes": 512
+            },
+            {
+              "offset": 3584,
+              "bytes": 512
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ec0ed7a0",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "prewrite-read-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 0,
+          "error_screen_seen": true,
+          "changed_bytes": 0,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "e30ad780",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "prewrite-partial-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 0,
+          "error_screen_seen": true,
+          "changed_bytes": 0,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "e30ad780",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "write-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 0,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "e30ad780",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "partial-write-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 3584,
+          "changed_outside_record": 3580,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ffffffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "complete-but-return-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "readback-error": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 512
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "corrupt-record": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 512
+            },
+            {
+              "offset": 512,
+              "bytes": 512
+            },
+            {
+              "offset": 1024,
+              "bytes": 512
+            },
+            {
+              "offset": 1536,
+              "bytes": 512
+            },
+            {
+              "offset": 2048,
+              "bytes": 512
+            },
+            {
+              "offset": 2560,
+              "bytes": 512
+            },
+            {
+              "offset": 3072,
+              "bytes": 512
+            },
+            {
+              "offset": 3584,
+              "bytes": 512
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1e0bd76c",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "silent-corrupt-neighbor": {
+          "returned": true,
+          "frames": 32,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 512
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 4,
+          "changed_outside_record": 1,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "retry-after-transient-read-error": {
+          "returned": true,
+          "frames": 37,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 512
+            },
+            {
+              "offset": 512,
+              "bytes": 512
+            },
+            {
+              "offset": 1024,
+              "bytes": 512
+            },
+            {
+              "offset": 1536,
+              "bytes": 512
+            },
+            {
+              "offset": 2048,
+              "bytes": 512
+            },
+            {
+              "offset": 2560,
+              "bytes": 512
+            },
+            {
+              "offset": 3072,
+              "bytes": 512
+            },
+            {
+              "offset": 3584,
+              "bytes": 512
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": true,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "retry-once-silent-corrupt-neighbor": {
+          "returned": true,
+          "frames": 37,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 512
+            },
+            {
+              "offset": 0,
+              "bytes": 512
+            },
+            {
+              "offset": 512,
+              "bytes": 512
+            },
+            {
+              "offset": 1024,
+              "bytes": 512
+            },
+            {
+              "offset": 1536,
+              "bytes": 512
+            },
+            {
+              "offset": 2048,
+              "bytes": 512
+            },
+            {
+              "offset": 2560,
+              "bytes": 512
+            },
+            {
+              "offset": 3072,
+              "bytes": 512
+            },
+            {
+              "offset": 3584,
+              "bytes": 512
+            }
+          ],
+          "write_calls": 2,
+          "error_screen_seen": true,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "retry-once-partial-write-error": {
+          "returned": true,
+          "frames": 37,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 512
+            },
+            {
+              "offset": 512,
+              "bytes": 512
+            },
+            {
+              "offset": 1024,
+              "bytes": 512
+            },
+            {
+              "offset": 1536,
+              "bytes": 512
+            },
+            {
+              "offset": 2048,
+              "bytes": 512
+            },
+            {
+              "offset": 2560,
+              "bytes": 512
+            },
+            {
+              "offset": 3072,
+              "bytes": 512
+            },
+            {
+              "offset": 3584,
+              "bytes": 512
+            }
+          ],
+          "write_calls": 2,
+          "error_screen_seen": true,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "retry-after-partial-write-reedit-DOWN": {
+          "returned": true,
+          "frames": 37,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 512
+            },
+            {
+              "offset": 512,
+              "bytes": 512
+            },
+            {
+              "offset": 1024,
+              "bytes": 512
+            },
+            {
+              "offset": 1536,
+              "bytes": 512
+            },
+            {
+              "offset": 2048,
+              "bytes": 512
+            },
+            {
+              "offset": 2560,
+              "bytes": 512
+            },
+            {
+              "offset": 3072,
+              "bytes": 512
+            },
+            {
+              "offset": 3584,
+              "bytes": 512
+            }
+          ],
+          "write_calls": 2,
+          "error_screen_seen": true,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "5b0bd784",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        },
+        "retry-after-partial-write-reedit-UP": {
+          "returned": true,
+          "frames": 37,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 512
+            },
+            {
+              "offset": 512,
+              "bytes": 512
+            },
+            {
+              "offset": 1024,
+              "bytes": 512
+            },
+            {
+              "offset": 1536,
+              "bytes": 512
+            },
+            {
+              "offset": 2048,
+              "bytes": 512
+            },
+            {
+              "offset": 2560,
+              "bytes": 512
+            },
+            {
+              "offset": 3072,
+              "bytes": 512
+            },
+            {
+              "offset": 3584,
+              "bytes": 512
+            }
+          ],
+          "write_calls": 2,
+          "error_screen_seen": true,
+          "changed_bytes": 0,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "e30ad780",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": false
+        }
+      },
+      "power_cut_prefixes": [
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 4096,
+          "changed_outside_record": 4092,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ffffffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 0,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 3584,
+          "changed_outside_record": 3580,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ffffffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 512,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 3072,
+          "changed_outside_record": 3068,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ffffffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 1024,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 2560,
+          "changed_outside_record": 2556,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ffffffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 1536,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 2048,
+          "changed_outside_record": 2044,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ffffffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 2048,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 1536,
+          "changed_outside_record": 1532,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ffffffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 2560,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 1024,
+          "changed_outside_record": 1020,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ffffffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 3072,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 512,
+          "changed_outside_record": 508,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ffffffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 3584,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 16,
+          "changed_outside_record": 12,
+          "changed_outside_sector31": 0,
+          "setting_hex": "ffffffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 4080,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 16,
+          "changed_outside_record": 12,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1fffffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 4081,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 16,
+          "changed_outside_record": 12,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bffff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 4082,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 15,
+          "changed_outside_record": 12,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd7ff",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 4083,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 15,
+          "changed_outside_record": 12,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 4084,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 4,
+          "changed_outside_record": 1,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 4095,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        },
+        {
+          "returned": false,
+          "frames": 12,
+          "reads": [
+            {
+              "offset": 0,
+              "bytes": 4096
+            },
+            {
+              "offset": 0,
+              "bytes": 4096
+            }
+          ],
+          "write_calls": 1,
+          "error_screen_seen": false,
+          "changed_bytes": 3,
+          "changed_outside_record": 0,
+          "changed_outside_sector31": 0,
+          "setting_hex": "1f0bd76c",
+          "temporary_stack_watermark_bytes": 868,
+          "power_cut_model_triggered": true,
+          "prefix_bytes_programmed": 4096,
+          "cold_boot_does_not_crash": true,
+          "recovery_of_neighbor_data_guaranteed": false
+        }
+      ],
+      "candidate_payload_bytes": 5860,
+      "baseline_payload_bytes": 5784
+    }
+  },
+  "success": true
+}
