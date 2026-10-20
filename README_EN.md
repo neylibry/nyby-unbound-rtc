@@ -1,118 +1,69 @@
-# Unbound EN + FR — NyBy Manual Clock v1.1RC1
+# NyBy RTC — Stable 1.1
 
-**By NyBy · Released: 17 October 2026 · EN + FR community package**
+A manual-start clock for **Pokémon Unbound on a real Game Boy Advance**, designed for **SuperCard + SuperFW 0.21 without a hardware RTC**.
 
-## What does this mod do?
+[Download the stable release](https://github.com/neylibry/nyby-unbound-rtc/releases/latest) · [Français](README_FR.md) · [Developer documentation](docs/ARCHITECTURE.md) · [MIT](LICENSE)
 
-Pokémon Unbound uses a clock for day/night cycles and time- or calendar-based activities. A SuperCard without a hardware RTC cannot provide the cartridge clock the game expects, which can leave time-dependent features stalled or unavailable.
+Enter the real date and time at startup, then press **START**. The last entered setting is prefilled next time. A small ARM runtime advances the calendar during play. SuperFW RTC emulation is disabled for this game.
 
-This mod adds a small **240 × 160** menu for the original GBA screen. Enter the current date and time at startup. The game then receives a clock that advances while you play. Your last entered setting is remembered to make the next adjustment easier.
+**NyBy accepted the French Stable 1.1 build on his real GBA.** English passes PC and source-rebuild checks; English hardware validation has not been reported. [Validation scope](docs/VALIDATION.md).
 
-It supplies usable date/time readings **without adding RTC hardware**. It cannot track time while the console is off: correct the setting at every launch. It remembers the last value you entered, not the time of your last save or shutdown. Sleep or an interrupted video counter may also pause the clock.
+## Install
 
-Native game rules and restrictions still apply. This mod does not add extra content or guarantee that every daily event resets after a manual date change.
+1. Keep a PC backup of your native `.sav` and working installation.
+2. Prepare your own ROM in the order below. This project supplies **only the final RTC patch**.
+3. Open `INSTALLER-FR-EN.html`, `INSTALLER-FR.html` or `INSTALLER-EN.html` from the release, including offline.
+4. Select clean prepared Unbound. Optionally select a matching-language native **128 KiB `.sav`**: its bytes are copied unchanged under the new filename.
+5. Download and extract the personal ZIP, then copy its contents to the SD root, merging `.superfw`. Adjust `SAVEGAME` if configured differently. Preserve newer saves before replacing files.
+6. Use the supplied cache/profile: **PatchEngine and DirectSaving enabled; SuperFW RTC, IGM and cheats disabled**.
+7. On GBA: **left/right** selects a field, **up/down** changes it, **START** remembers the setting and launches the game. Select Continue to resume.
 
-## Compatibility and release status
-
-- **Games: original English Pokémon Unbound 2.1.1.1, or the same game with Antony's French translation 2.1.179.**
-- **Target hardware: a real GBA and a SuperCard running SuperFW 0.21**, without a hardware RTC.
-- The game keeps its language. **The GBA clock menu is English for the EN ROM and French for the FR ROM.** The installer recognizes the prepared build you supply by its fingerprint. Plain FireRed, other translations and game versions are not accepted.
-- “v1.1RC1” identifies the RTC mod version. Runtime clock reads are optimized in ARM7TDMI assembly; the required game build is unchanged.
-- The earlier beta was tested on a real GBA for time setting, saving and resuming. **A user report on 17 October 2026 confirms smooth gameplay with the optimized version on a real GBA.** This is qualitative feedback, without measured FPS.
-- **The intermittent disappearing Options choices issue remains open.** A hardware fix has not been confirmed. The release is still identified as RC1.
-- The new **English variant has passed PC checks: exhaustive calendar, native saving, clock edits and two cold restarts. A real-GBA test of this variant is still pending.**
-- Other flash carts, firmware and emulators have not been validated.
-
-## Prepare the ROM in the correct order
-
-**Both paths start with your own English-language Pokémon FireRed USA v1.0 ROM.** First apply the Unbound patch to obtain English Unbound 2.1.1.1. For French gameplay, apply the French translation next, before the RTC patch.
-
-| Desired game language | Preparation order |
+| Game language | Preparation order |
 |---|---|
-| English | FireRed USA v1.0 → Unbound 2.1.1.1 patch → **NyBy RTC EN patch** |
-| French | FireRed USA v1.0 → Unbound 2.1.1.1 patch → Antony French 2.1.179 translation patch → **NyBy RTC FR patch** |
+| English | **English FireRed USA v1.0** → Unbound 2.1.1.1 → NyBy RTC EN 1.1 |
+| French | **English FireRed USA v1.0** → Unbound 2.1.1.1 → Antony FR 2.1.179 translation → NyBy RTC FR 1.1 |
 
-**The NyBy package handles only the final step.** It does not apply the Unbound or French translation patches. Complete those steps before selecting your file in this installer. Original project references are in `CREDITS-FR-EN.md`.
+The prepared ROM's SHA-256 selects the patch; the page language does not translate the game. The installer verifies the output, accepts its own current output without patching twice, and rejects older RTC builds. A Python fallback is in `outils-python/`.
 
-“Automatic recognition” checks the SHA-256 fingerprint of your **already prepared file** against supported builds and selects the matching RTC patch. It does not select your game language or translate English Unbound into French. The installer’s Français/English selector changes only its interface. Updates from our previous French RTC versions are also supported.
+No ROM, personal save, BIOS, firmware image, Unbound patch or translation patch is distributed. The HTML uploads nothing and does not access the SD directly. The ZIP it generates contains your ROM and possibly your save: **do not redistribute that personal ZIP**.
 
-## Easy installation — no Python required
+## Behavior and limits
 
-1. Fully extract the **community package** on your PC. Open `INSTALLER-FR-EN.html` in a modern browser. It works offline: no account, server, or software installation is required.
-2. Select your already prepared Unbound file from the workflow above in step 1. Only the matching RTC patch is selected automatically; input size, SHA-256 and output are verified. An already patched EN or FR NyBy v1.1RC1 ROM is recognized and reused without applying another patch.
-3. Optionally select this game's **native 128 KiB .sav file** in step 2 to keep your progress. Keep a separate backup on your PC. Save states are not native saves. Choose a save matching the language of your ROM. This does not convert French saves to English or vice versa. The tool copies the bytes without conversion; it cannot tell whether this is your newest save or whether its internal game data is corrupt.
-4. Click **Prepare the SD ZIP**, then **Save your personal ZIP**. This new ZIP contains your ROM and optionally your save: **keep it for your personal use**. The original community package is the one to share; it contains no ROM or player save.
-5. Extract your personal ZIP on your PC. Copy **its contents**, not its enclosing folder, to the SD card root. Merge `.superfw` without replacing settings for other games. Back up existing files with matching names on your PC before replacing them. Show hidden files if needed.
-6. Safely eject the card. Select the new ROM in SuperFW and check the launch options below.
+- Time advances during powered-on play from the existing native VBlank counter.
+- The remembered value is the **last manually entered setting**, with minute precision. Powered-off time is not tracked; update it each session.
+- No new permanent RAM, timer or IRQ hook is allocated by the RTC runtime.
+- The startup-only UI is 240 × 160, uses two video pages, buttons and no animations/dropdowns.
 
-Processing happens inside your browser, without uploading files, downloading ROMs, or writing directly to your SD. The generated personal ZIP is about 32 MiB because it contains your ROM.
+Long periods with VBlank interrupts blocked can lose counts; oscillator tolerance has not been measured. Native Unbound date-change restrictions still apply. Copying a save does not repair, convert or validate its game data. Only the input fingerprints in [`release.json`](release.json) are supported.
 
-### Required SuperFW options
+## Developer entry points
 
-| Option | Value |
+| Document | Contents |
 |---|---|
-| Patching mode | **PatchEngine**, instead of the internal database |
-| Saving | **DirectSaving enabled** |
-| SuperFW RTC | **Disabled** |
-| SuperFW in-game menu / IGM | **Disabled** |
-| Cheats | **Disabled** |
+| [Architecture](docs/ARCHITECTURE.md) | ROM/RAM/video maps, hooks, ARM/Thumb ABI, banked anchor and firmware boundaries |
+| [Save format](docs/SAVE-FORMAT.md) | Four-byte record, CRC6, full-sector verification, retries and failure behavior |
+| [Build and reproduce](docs/BUILD.md) | Zig 0.15.2 commands, expected hashes, tests, HTML generation and cache responsibilities |
+| [Validation](docs/VALIDATION.md) | Owner hardware acceptance, PC evidence, provenance and unmeasured quantities |
+| [Contributing](CONTRIBUTING.md) | Modification workflow, parity, invariants, porting and bug reports |
+| [Changelog](CHANGELOG.md) | Stable 1.1 changes |
 
-**Do not run “Generate patches”: caches for this exact ROM are already supplied.** Installing this mod on a card already running SuperFW 0.21 does not require flashing firmware.
+| Resource | Stable 1.1 |
+|---|---:|
+| Full payload, FR / EN | 4,968 / 4,948 bytes |
+| ARM RTC engine including literal pool | 652 bytes |
+| Additional permanent RAM | 0 bytes |
+| Startup own stack frame | 112 bytes |
+| Mod drawing / verification stack paths | 332 / 664 bytes |
+| Settings record | 4 bytes |
 
-Expected French files (for the EN variant, use `Unbound EN 2111 RTC NyBy v1.1 RC1` as the base filename everywhere):
+Stack figures exclude native drivers, BIOS, IRQs and outer callers. They are static mod-side figures, not measured full hardware peaks. No whole-game FPS or CPU-percentage improvement is claimed.
 
-```text
-Unbound FR 179 RTC NyBy v1.1 RC1.gba
-Unbound FR 179 RTC NyBy v1.1 RC1.patch
-.superfw/patches/Unbound FR 179 RTC NyBy v1.1 RC1.patch
-.superfw/config/Unbound FR 179 RTC NyBy v1.1 RC1.config
-SAVEGAME/Unbound FR 179 RTC NyBy v1.1 RC1.sav  (if you added a save)
-```
+Sources: [`sources/rtc-manuel/`](sources/rtc-manuel) (FR), [`sources/rtc-manuel-en/`](sources/rtc-manuel-en) (EN), [`sources/installer/`](sources/installer), [`tests/`](tests). The clock is handwritten ARM7TDMI assembly; startup and persistence use freestanding C compiled to Thumb. The BIOS wrapper is four bytes of Thumb assembly. Python and JavaScript run only on PC.
 
-`SAVEGAME` is the folder used in our test setup. If SuperFW is configured to use a different folder, put the .sav there. ROM and save must have exactly matching base filenames. Only remove an older installation after backing up its ROM, save and settings on your PC and checking that your game resumes correctly.
+## Development and credits
 
-## Using the clock and quitting
+NyBy needed this tool but could not write the required code himself. The project was mainly **vibe-coded with Codex**, with NyBy directing it and testing it on his GBA. It is shared freely because other players may need it too. Assembly is used where benefits can be established from compiled output and recorded tests. A separate Codex agent reviewed the integration; this is not third-party hardware certification.
 
-| Button | Action |
-|---|---|
-| Left / right | Select day, month, year, hour, or minute |
-| Up / down | Change the value; hold to repeat |
-| A | Open / confirm the list |
-| B, inside a list | Cancel the change |
-| START | Remember the setting and start the game |
+Original NyBy code is **MIT**, including modification and redistribution with the notice preserved. Pokémon, Unbound, Antony's translation and SuperFW retain their own rights. [Credits](CREDITS-FR-EN.md) · [License scope](LICENSING-FR-EN.md).
 
-Use 24-hour time; seconds restart at zero. The game's original schedule is preserved: morning 05:00–07:59, daytime 08:00–16:59, evening 17:00–19:59, night 20:00–04:59. The Time Turner item can shift the game by twelve hours.
-
-If Unbound asks whether you use GPemu, JohnGBA or NoGBA, answer **NO**, then press A: this setup uses a real GBA.
-
-To quit, save from the game's menu, wait for its completion confirmation, then power off. The supplied profile uses DirectSaving.
-
-## Troubleshooting
-
-| Symptom | What to check |
-|---|---|
-| White screen before the clock menu | Select PatchEngine and check both .patch caches, their exact filenames, and the profile. The internal database caused a white screen during testing. |
-| PatchEngine unavailable | Check that the external cache is present and recognized. Do not regenerate patches for this ROM. |
-| New Game instead of Continue | Check the exact .sav filename and SuperFW's configured save directory. Preserve your original save. |
-| ROM rejected | Check supported hashes in `release.json`. Do not force the patch onto another version. |
-| Save rejected | Use a native 131072-byte .sav. Blank files and save states are rejected. |
-| MEMOIRE NON ENREGISTREE | A retries; B continues without remembering the setting. Check the SD and DirectSaving before continuing important progress. |
-| Missing Options choices | Still an open issue; keep IGM disabled. RC1 is not a confirmed fix for it. |
-
-For a useful report, provide GBA/cart model, SuperFW version, game and mod versions, launch options, reproduction steps and observed behavior. Do not post your ROM or save in a public comment.
-
-## Other methods and source code
-
-The four BPS patches are in `patches/`: one for original English Unbound and three for the French inputs. `SD/en/` contains English caches and the profile; `SD/fr/` contains the French set. For manual installation, copy only the contents of the subfolder matching your ROM. An external BPS patcher can be used; retain the expected output filename and then copy the contents of `SD/en/` or `SD/fr/`, matching your ROM.
-
-The Python 3.10+ method remains in `outils-python/`: run `Appliquer-patch-Windows.cmd` or `py -3 appliquer_patch.py "path\source.gba"`. It creates only a ROM in `outils-python/ROM-patchee/`; it does not include your save or copy SD assets.
-
-See `docs/VERIFICATION-FR-EN.md` for tests and limitations. Module and installer sources are in `sources/`. Compiler and emulator tools are not bundled.
-
-Credits: RTC module **NyBy**; Unbound **Skeli and team**; French translation **Antony**; SuperFW **davidgfnet**. Independent project, without official affiliation. See `CREDITS-FR-EN.md` for links and details.
-
-## Licensing and development
-
-Original NyBy code is [MIT-licensed](LICENSE); see the [scope](LICENSING-FR-EN.md).
-
-Substantial parts of the code and documentation were generated with Codex (AI), directed by NyBy. NyBy defined the requirements and performed the reported GBA testing. Hardware feedback concerns the French build; English hardware testing is still pending.
+Release: **2026-10-21**. The GBA build/footer remains **2026-10-20**, preserving the exact owner-tested ROM bytes.

@@ -1,0 +1,2 @@
+#define NYBY_FOOTER "V1.1 STABLE 20/10/2026"
+#define NYBY_EN 1

@@ -14,6 +14,9 @@ This is an independent add-on. It contains no game ROM, translation package, fir
 
 Code original NyBy : [MIT](LICENSE), [portée / scope](LICENSING-FR-EN.md).
 
-Des parties importantes du code et de la documentation ont été générées avec Codex (IA), sous la direction de NyBy. NyBy a défini le besoin et effectué les essais sur sa GBA. Les tests matériels rapportés concernent la FR ; l'EN reste à confirmer sur console.
+Le projet a été principalement « vibecodé » avec Codex sous la direction de NyBy, qui ne sait pas écrire lui-même le code nécessaire. Il avait besoin d’une horloge pour jouer à Unbound sur sa SuperCard sans RTC et partage librement l’outil pour d’autres joueurs. Le C compilé ARM/Thumb et les fonctions écrites en assembleur limitent le travail et la mémoire pendant la partie ; le petit menu ne s’exécute qu’au démarrage. **Stable 1.1 FR a été validée par NyBy sur GBA le 21/10/2026 ; la version EN reste validée sur PC uniquement.**
 
-Substantial parts of the code and documentation were generated with Codex (AI), directed by NyBy. NyBy defined the requirements and performed the reported GBA testing. Hardware feedback concerns the French build; English hardware testing is still pending.
+This project was mainly vibe-coded with Codex under NyBy’s direction; he cannot write the required code himself. He needed a clock for Unbound on his SuperCard without an RTC and freely shares the tool for other players. Compiled ARM/Thumb C and assembly functions keep runtime work and memory small; the minimal menu only runs at startup. **NyBy accepted Stable 1.1 FR on real GBA on 2026-10-21; EN remains PC validated only.**
+
+
+Stable 1.1 utilise un réglage manuel indépendant de l’heure SuperFW. / Stable 1.1 uses manual startup time independently of the SuperFW clock.

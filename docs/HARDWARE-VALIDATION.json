@@ -1,0 +1,18 @@
+{
+  "status": "owner-reported pass",
+  "date": "2026-10-21",
+  "variant": "fr",
+  "rom_filename": "Unbound FR 179 RTC NyBy v1.1 Stable.gba",
+  "rom_sha256": "12f11cfe5dd61063d0bea22cdb8dacb99740c73c89d513720ca6aecbad095a00",
+  "platform": "Real GBA with standard-proportion LCD; SuperCard; SuperFW 0.21",
+  "confirmation": "cette version passe les teste et est prete a être balancer sur gitub en nouvelle version principale",
+  "requested_acceptance_protocol": [
+    "Manual time and saved-game resume",
+    "Options",
+    "Battle and Spheal capture",
+    "Save, restart and clock progression"
+  ],
+  "scope": "Owner confirms the installed French build passes the requested tests; no independent instrumentation or per-scenario timings supplied",
+  "english_hardware_tested": false,
+  "no_fps_or_absolute_wall_clock_accuracy_measurement_claimed": true
+}

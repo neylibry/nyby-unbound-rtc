@@ -139,9 +139,8 @@ rtc_time:
 .type rtc_now_fast,%function
 rtc_now_fast:
     mrs r2,cpsr
-    orr r3,r2,#0x80
-    bic r3,r3,#0x1f
-    orr r3,r3,#0x1b
+    bic r3,r2,#0x1f
+    orr r3,r3,#0x9b           /* UND + IRQ mask; all other CPSR bits preserved */
     msr cpsr_c,r3
     mov r0,lr
     mov r1,sp
@@ -149,11 +148,11 @@ rtc_now_fast:
     ldr r2,=0x03003114
     ldr r2,[r2]
     sub r2,r2,r1
-    mov r3,#0x44000
-    orr r3,r3,#0x940
+    mov r3,#0x1100
+    orr r3,r3,#0x25
     umull r1,r12,r2,r3
-    mov r1,r1,lsr #24
-    orr r1,r1,r12,lsl #8
+    mov r1,r1,lsr #18
+    orr r1,r1,r12,lsl #14      /* 280896/2^24 = 4389/2^18 exactly */
     ldr r2,=3155759999
     cmp r0,r2
     movhi r0,r2
@@ -183,7 +182,7 @@ rtc_hms_fast:
     load16 r1,37283
     mul r12,r0,r1
     mov r12,r12,lsr #27
-    ldr r1,=3600
+    mov r1,#3600             /* exact ARM immediate: no ROM data load */
     mul r3,r1,r12
     sub r2,r0,r3
     load16 r1,2185

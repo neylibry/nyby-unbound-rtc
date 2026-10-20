@@ -1,0 +1,19 @@
+{
+  "passed": true,
+  "zips_verified": 10,
+  "cases": [
+    "engine-fr-with-save.zip",
+    "engine-fr-without-save.zip",
+    "engine-en-with-save.zip",
+    "engine-en-without-save.zip",
+    "browser-fr-with-save.zip",
+    "browser-fr-without-save.zip",
+    "browser-fr-already-patched.zip",
+    "browser-en-with-save.zip",
+    "browser-en-without-save.zip",
+    "browser-en-already-patched.zip"
+  ],
+  "python_fallback_exact_and_refuses_overwrite": true,
+  "personal_save_used": false,
+  "sd_accessed": false
+}

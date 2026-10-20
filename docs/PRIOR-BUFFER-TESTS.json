@@ -1,0 +1,13 @@
+{
+  "passed": true,
+  "native_pc_execution": true,
+  "gba_emulation": false,
+  "cases": 4180,
+  "single_byte_corruptions_detected": 4096,
+  "read_errors_detected": 8,
+  "clean_and_retry_cases": 76,
+  "source_and_canaries_unchanged": true,
+  "full_read_contract": "8 x 512 bytes",
+  "production_source_sha256": "7add98e671811dee47c35204040de3fb6f0bb2bd0fe343329fe8c752fa93fd35",
+  "scope": "Native PC execution of exact verify.c plus mocked read callback; not ARM execution or a hardware test."
+}

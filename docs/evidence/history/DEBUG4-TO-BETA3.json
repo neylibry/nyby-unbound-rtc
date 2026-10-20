@@ -1,0 +1,48 @@
+{
+  "FR": {
+    "source_reference": "Audited DEBUG4 combined source",
+    "source_code_unchanged_except_version_metadata": true,
+    "unchanged_source_hashes": {
+      "clock.c": "db58943896c2aadb5ac500f484844cf9e57ebf8103d30ab67ec7d54746cb5f2e",
+      "ui.c": "fb7eaf718883f943b236f873c15030cb1611c7acbfe110952249f7e6c3980fb4",
+      "verify.c": "7add98e671811dee47c35204040de3fb6f0bb2bd0fe343329fe8c752fa93fd35",
+      "lowlevel.S": "ace00d54ef2a3e1fbe341a2fa64a0bff3a8cfb4810da9f84f75900b85a689470",
+      "rtc_fast.S": "2a773fa423f3b7e4924f1c032d30a0438b2823ed5f38d30d016e206e905b58a1",
+      "font.h": "0ed360d90e025df4f4cc19196d7cce61e43830d7ef212c49c0a1708dc502e8d5",
+      "rtc.h": "f45f068cf8c035c90276101f6d4d4a20242cb2a52dda10d630dcc469583b3749",
+      "link.ld": "da4648f5e06e9d8525866b41d0b290cfb510505c3199bbb6aa406ec0e1a1b697",
+      "banner.h": "91e297613f1716ec353d303116f18bf0c75a4770ba722540fd61617ee7ccf7d2",
+      "banner_font.h": "1babd0e650bdf1d03355e392441bae5ae5c369f77be7e977a2d3681038e01664",
+      "manual.h": "d7aa2bef6d726c51d2ff22deac8fb685fb4502b8378843438ab7ca6ffbe147d9",
+      "footer_gen.py": "bcc1b841ceaa67bb3a8754c329832e1883135cf55dde993d7ede6c6d7f262766"
+    },
+    "rtc_652_sha256": "366f5188608b554f76b0aa9d9526fff5727aac82748fcebca8b63f63cdfc83a6",
+    "debug4_target_sha256": "704977d94d30d83dc5e3e16c0aba713cf12c48074081cecd7fd55b57c125f435",
+    "beta3_target_sha256": "d7057b66baf15015f8e1de55403e0de577c72d0b857018288ccd3f176465bbed",
+    "payload_bytes": 5002,
+    "footer": "V1.5 B3 MANUAL CLOCK 20/10/2026"
+  },
+  "EN": {
+    "source_reference": "Audited DEBUG4 combined source",
+    "source_code_unchanged_except_version_metadata": true,
+    "unchanged_source_hashes": {
+      "clock.c": "db58943896c2aadb5ac500f484844cf9e57ebf8103d30ab67ec7d54746cb5f2e",
+      "ui.c": "fb7eaf718883f943b236f873c15030cb1611c7acbfe110952249f7e6c3980fb4",
+      "verify.c": "7add98e671811dee47c35204040de3fb6f0bb2bd0fe343329fe8c752fa93fd35",
+      "lowlevel.S": "ace00d54ef2a3e1fbe341a2fa64a0bff3a8cfb4810da9f84f75900b85a689470",
+      "rtc_fast.S": "2a773fa423f3b7e4924f1c032d30a0438b2823ed5f38d30d016e206e905b58a1",
+      "font.h": "0ed360d90e025df4f4cc19196d7cce61e43830d7ef212c49c0a1708dc502e8d5",
+      "rtc.h": "f45f068cf8c035c90276101f6d4d4a20242cb2a52dda10d630dcc469583b3749",
+      "link.ld": "da4648f5e06e9d8525866b41d0b290cfb510505c3199bbb6aa406ec0e1a1b697",
+      "banner.h": "91e297613f1716ec353d303116f18bf0c75a4770ba722540fd61617ee7ccf7d2",
+      "banner_font.h": "1babd0e650bdf1d03355e392441bae5ae5c369f77be7e977a2d3681038e01664",
+      "manual.h": "d7aa2bef6d726c51d2ff22deac8fb685fb4502b8378843438ab7ca6ffbe147d9",
+      "footer_gen.py": "bcc1b841ceaa67bb3a8754c329832e1883135cf55dde993d7ede6c6d7f262766"
+    },
+    "rtc_652_sha256": "366f5188608b554f76b0aa9d9526fff5727aac82748fcebca8b63f63cdfc83a6",
+    "debug4_target_sha256": "c4c66afad6d06dacbabceaf83e2b4a8c33398b5b1505fe733d7b63df0cba9de0",
+    "beta3_target_sha256": "c683579f95b7990e1d8d8c86445ac80fce969f1b5c8fd583000850126a239a5e",
+    "payload_bytes": 4982,
+    "footer": "V1.5 B3 MANUAL CLOCK 20/10/2026"
+  }
+}

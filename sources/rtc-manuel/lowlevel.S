@@ -6,9 +6,8 @@
 .type anchor_get,%function
 anchor_get:
     mrs r2,cpsr
-    orr r3,r2,#0x80
-    bic r3,r3,#0x1f
-    orr r3,r3,#0x1b
+    bic r3,r2,#0x1f
+    orr r3,r3,#0x9b           /* UND + IRQ mask; all other CPSR bits preserved */
     msr cpsr_c,r3
     mov r0,lr
     mov r1,sp
@@ -18,9 +17,8 @@ anchor_get:
 .type anchor_set,%function
 anchor_set:
     mrs r2,cpsr
-    orr r3,r2,#0x80
-    bic r3,r3,#0x1f
-    orr r3,r3,#0x1b
+    bic r3,r2,#0x1f
+    orr r3,r3,#0x9b           /* UND + IRQ mask; all other CPSR bits preserved */
     msr cpsr_c,r3
     mov lr,r0
     mov sp,r1
@@ -58,3 +56,18 @@ original_write_sector:
     ldr r3,=0x080D99E1
     bx r3
 .ltorg
+
+/* BIOS CpuFastSet, only for aligned transfers of a multiple of 32 bytes.
+ * r0=source address, r1=destination, r2=word count | (fill ? 1<<24 : 0).
+ * BIOS preserves the callee-saved registers; caller-saved/flags may change.
+ */
+.section .text.video_fast_set,"ax",%progbits
+.balign 2
+.thumb
+.thumb_func
+.global video_fast_set
+.type video_fast_set,%function
+video_fast_set:
+    swi 0x0c
+    bx lr
+.size video_fast_set,.-video_fast_set

@@ -1,95 +1,210 @@
 {
-  "project": "NyBy manual RTC",
-  "version": "1.1-rc1",
-  "edition": "community-4-MIT-publication",
+  "project": "NyBy Unbound RTC",
+  "version": "1.1",
+  "release_date": "2026-10-21",
+  "build_date": "2026-10-20",
   "rom_included": false,
   "save_included": false,
-  "personal_data_included": false,
   "files": [
     {
-      "path": "ANNONCE-FR-EN.md",
-      "bytes": 5579,
-      "sha256": "4ca092d49c4b70465fc0a4b0e4ec11e3b1a9ff39bff07fb9c954dffb95cb18c6"
+      "path": ".gitattributes",
+      "bytes": 142,
+      "sha256": "7d73bc2ad55812cf22ae1e1569cae3ae8ba06913309b89b69e19488502f9a756"
     },
     {
-      "path": "APERCU-EN.png",
-      "bytes": 4562,
-      "sha256": "0e7a6141e97eb32d947ee62142b9b2712627ab744daa341c127deb1954a330a1"
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "bytes": 1134,
+      "sha256": "c7bf8afc2c5f41e7c675ff8f6cf7dd5682fc89f0c0ab62f2ca5c1847bd78a558"
     },
     {
-      "path": "APERCU.png",
-      "bytes": 4737,
-      "sha256": "418547dd993bb69e17dd9a68edd7dd93ef5297e6172e7826ed154e278b3287b3"
+      "path": ".gitignore",
+      "bytes": 399,
+      "sha256": "c93017aa2c7c08dec00f0196dbd2bd9fcafe369a966660d1b47fdd78676cc754"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "bytes": 1432,
+      "sha256": "ae6e4e855e7c1fa2abdbc3445a569293a33b781ec804c6259f8c44ccbe2032e2"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "bytes": 3253,
+      "sha256": "b121756521f7c6bd2ee4ee8307e6d5a48ab9a208900a4a04904ee76ad48fd320"
     },
     {
       "path": "CREDITS-FR-EN.md",
-      "bytes": 2902,
-      "sha256": "370d689ae23bad23c227c72bf46bd0bba262beb8aba3d75ec147dde02499f98c"
+      "bytes": 3522,
+      "sha256": "9ef12f80fca77d82cf171d9394daefdd8879c5107459f0b820b1c830f365f837"
     },
     {
-      "path": "DEMARRAGE-RAPIDE-FR-EN.txt",
-      "bytes": 5071,
-      "sha256": "bccff629333eed6d308a55c4eeb2f928d25a4e1986fe4640620a2a7d3a821e68"
+      "path": "docs/ARCHITECTURE.md",
+      "bytes": 8506,
+      "sha256": "20a030ad2a79f4f8cfdf972ae70e628e442995e3e54577d020b75bc3928ea609"
     },
     {
-      "path": "docs/EN-VALIDATION.json",
-      "bytes": 3431,
-      "sha256": "c7abe6f8e34a92b0ef30ae2936b05a127818917a28163a7d06a0a371cff72ca3"
+      "path": "docs/build-EN.json",
+      "bytes": 8729,
+      "sha256": "7889fd1811e6168dc8592ef1daeff72507ed76902f0563f2ebf41d8335aa5095"
     },
     {
-      "path": "docs/INSTALLER-TESTS.json",
-      "bytes": 4322,
-      "sha256": "2d379a4cdaa84f37c0aedfc316f6a3e09d400f9177032bfa6019160ac39a0cff"
+      "path": "docs/build-FR.json",
+      "bytes": 8728,
+      "sha256": "811fc922975d8bcc88ac346852c6c03a6f465f4c38d97c11fa36292dcd6c2bbd"
     },
     {
-      "path": "docs/publication/ANNONCE-COURTE-FR.md",
-      "bytes": 1783,
-      "sha256": "715613c78a9683a483c547f42fe7a11a3fbf8b0919d6bc62739380c21ecda5df"
+      "path": "docs/BUILD.md",
+      "bytes": 5655,
+      "sha256": "6161638880775ec8d987f63ca45c4b527d3ec1cf77f7c0e147e11b3400bc0a5b"
     },
     {
-      "path": "docs/publication/Discord-FR-EN.md",
-      "bytes": 2037,
-      "sha256": "72d54c99ba1b5d71171710db954d1fe28549307379b6b4bb8c4e5c894a655ae1"
+      "path": "docs/evidence/history/AUDIT-INGENIEUR-GBA-FR-EN.md",
+      "bytes": 6880,
+      "sha256": "76edfe4628c909d01ec45626f2d0386944f89fdc78f1793782e124e358d454ea"
     },
     {
-      "path": "docs/publication/GBAtemp-EN.bbcode.txt",
-      "bytes": 2859,
-      "sha256": "d756b50b7031457bd65d65f81fd4c0226f0ae3df6dc3ef3240a2e77a68219c12"
+      "path": "docs/evidence/history/AUTOMATED-TESTS.json",
+      "bytes": 870,
+      "sha256": "3081c51b9ab8c7972879f3d82c8074c3decc5a7d18a64065c55de7811589b25b"
     },
     {
-      "path": "docs/publication/README-FR-EN.md",
-      "bytes": 5263,
-      "sha256": "2173b4c1a164b001fdcaa6679f6551f61b10211fc749be1b0581fa64a53361cd"
+      "path": "docs/evidence/history/BASE-PIPELINE.json",
+      "bytes": 786,
+      "sha256": "18ede55f48ddea4a6158027e24ad32a13c52a4ebadabd993ca48bfe1de1e7c1b"
     },
     {
-      "path": "docs/publication/Reddit-Unbound-EN.md",
-      "bytes": 2318,
-      "sha256": "1803e6c3b38091fa778699b47246063b1dec1ce6a4cf0e86bdf0a54d2dcdb3fe"
+      "path": "docs/evidence/history/DEBUG4-TO-BETA3.json",
+      "bytes": 3175,
+      "sha256": "56f173ef0902ac8bb8b5dd2560d8a0a05ed51fac781933470ac99dd4a74832f4"
     },
     {
-      "path": "docs/publication/RELEASE-FR-EN.md",
-      "bytes": 4398,
-      "sha256": "30ede3221dcb1bd51919f5b64447f2a96ac85f56e676af6772f975f758086a86"
+      "path": "docs/evidence/history/FINALIZATION-PROVENANCE.json",
+      "bytes": 753,
+      "sha256": "2bde53f98854153fa3185bf4bb797c16ef3d14e82fb216d5c233da0094b014fd"
     },
     {
-      "path": "docs/publication/Romhack-Plaza-EN.md",
-      "bytes": 3739,
-      "sha256": "d153a7d52481eacf289e1f923df254338ac4df835343906352b8356d67047ffe"
+      "path": "docs/evidence/history/INDEPENDENT-AUDIT.json",
+      "bytes": 6032,
+      "sha256": "f208468e074d75ae83f01f79e6338381443aedfbafed5651c0af58d67ba5e67b"
     },
     {
-      "path": "docs/VERIFICATION-FR-EN.md",
-      "bytes": 4002,
-      "sha256": "2839f367c6b3c2572de3c25c70bcf5a2a3372940710fd0b4a7a0e421edb16a46"
+      "path": "docs/evidence/history/NEW-BASE_PIPELINE.json",
+      "bytes": 786,
+      "sha256": "18ede55f48ddea4a6158027e24ad32a13c52a4ebadabd993ca48bfe1de1e7c1b"
     },
     {
-      "path": "EMPREINTES-SHA256.txt",
-      "bytes": 714,
-      "sha256": "ba56a92b2f1c23eca2bead32b6bbd9f568377ca1da90ce44e26123bf7654ddb1"
+      "path": "docs/evidence/history/NEW-BROWSER.json",
+      "bytes": 1049,
+      "sha256": "0abec5daf5af6de12c0cabd10f558fefe8da246735ca7219584dcd8a575fe93d"
+    },
+    {
+      "path": "docs/evidence/history/NEW-DOWNLOADS.json",
+      "bytes": 2423,
+      "sha256": "cb750f8ca7b5df9da9b1621df3c9c3ec3bd9bd1e9a57ffae31617b2581ec1d3f"
+    },
+    {
+      "path": "docs/evidence/history/NEW-INSTALLER_ENGINE.json",
+      "bytes": 1312,
+      "sha256": "42bfa3e0e57e3106b10f078936bf43cd7aaae6f371be853a179e472b6f6897b9"
+    },
+    {
+      "path": "docs/evidence/stable11-browser-tests.json",
+      "bytes": 1110,
+      "sha256": "20c57f8247064c477c5fb686ba352ccf72a3c815e94d68de9bd26fa9f0bdf3ad"
+    },
+    {
+      "path": "docs/evidence/stable11-download-tests.json",
+      "bytes": 2423,
+      "sha256": "cb750f8ca7b5df9da9b1621df3c9c3ec3bd9bd1e9a57ffae31617b2581ec1d3f"
+    },
+    {
+      "path": "docs/evidence/stable11-engine-tests.json",
+      "bytes": 1274,
+      "sha256": "e1ab97f2934c2b30a8981dc46525b02434460fd1bde1880c120afd63a11f4c3a"
+    },
+    {
+      "path": "docs/evidence/stable11-public-browser-tests.json",
+      "bytes": 1030,
+      "sha256": "57f7def360c660426e9733899015ab06678d436f712c6670cb944aec4d4ff54e"
+    },
+    {
+      "path": "docs/evidence/stable11-public-download-tests.json",
+      "bytes": 530,
+      "sha256": "1b4871725d07035338f5c5246f87c7c9d62b1b8e7c92e0e26fe7c2fe9550c79b"
+    },
+    {
+      "path": "docs/evidence/stable11-public-engine-tests.json",
+      "bytes": 1244,
+      "sha256": "e49e3d44a49f27c79ecf26c15f93b90f7b28143a1bbb20473ac3a492dbf06f53"
+    },
+    {
+      "path": "docs/evidence/stable11-public-native-tests.json",
+      "bytes": 729,
+      "sha256": "321afc10d8cb62c626106e0dfafdecf8e0d4fcfc493ed0da373cff266e91fc04"
+    },
+    {
+      "path": "docs/evidence/stable11-public-source-rebuilds.json",
+      "bytes": 806,
+      "sha256": "e82885d0647da52bc0a98c9acae6c951d0d61f992ed9ae662133feba46b57c7e"
+    },
+    {
+      "path": "docs/HARDWARE-VALIDATION.json",
+      "bytes": 873,
+      "sha256": "b0721398c2503c94fc9d8d031cbc7f12d099b55b82bfc39879f20d49aaf3b5cc"
+    },
+    {
+      "path": "docs/PRIOR-BUFFER-TESTS.json",
+      "bytes": 509,
+      "sha256": "a92e3af6cb22afb0cf85fcdf3fba44163c338d91cf053c12ace80dd2f121ee2d"
+    },
+    {
+      "path": "docs/PRIOR-UI-TESTS.json",
+      "bytes": 2063,
+      "sha256": "d038a4a617cae985c200f680712ca1cdbbc45eac9c69c70291f1cef933d5946a"
+    },
+    {
+      "path": "docs/PUBLICATION-CHECKS.json",
+      "bytes": 1375,
+      "sha256": "300783062d8382c8dfa88de4bc7197c5786f39bbefa20fad7365ff27c7dd8e0f"
+    },
+    {
+      "path": "docs/RTC-MATH-TESTS.json",
+      "bytes": 743,
+      "sha256": "511732990fcaf62c008b9096b3aea333b6f57e0d898ab7f5d2066941f21089e5"
+    },
+    {
+      "path": "docs/SAVE-FORMAT.md",
+      "bytes": 3358,
+      "sha256": "c75e7dea43d173e711674aeb855cb4d960b32b87a69841197418e70ea6a87084"
+    },
+    {
+      "path": "docs/STABLE11-PROVENANCE.json",
+      "bytes": 3226,
+      "sha256": "0c87f6b9008a1bf19067d3a80bbe358b769f1769cc6b0385207517511db566a9"
+    },
+    {
+      "path": "docs/VALIDATION.md",
+      "bytes": 4331,
+      "sha256": "cab3c6c2709a0a21aa45b14f4136f4807be62ef9b01aae371193e61221006c47"
+    },
+    {
+      "path": "INSTALLATION-FR-EN.txt",
+      "bytes": 2641,
+      "sha256": "c7bed71dd7f179baac7f1e7ba8e3fb338e2d9ca1de915e9547a3f8444f002e94"
+    },
+    {
+      "path": "INSTALLER-EN.html",
+      "bytes": 53590,
+      "sha256": "b2fa6a2546cebdd728e038189072bacf14e1b569f216b9b98a8f4ef2e8898edf"
     },
     {
       "path": "INSTALLER-FR-EN.html",
-      "bytes": 64259,
-      "sha256": "78afceefbcf2c229c24fcdfd3156938ba494a995efd11acc628c3fb956ae8219"
+      "bytes": 53581,
+      "sha256": "0fd529584e6f4b6be167fe09d464296b5744b33a7397f04a225ff5a7a409a4d2"
+    },
+    {
+      "path": "INSTALLER-FR.html",
+      "bytes": 53581,
+      "sha256": "0fd529584e6f4b6be167fe09d464296b5744b33a7397f04a225ff5a7a409a4d2"
     },
     {
       "path": "LICENSE",
@@ -108,8 +223,8 @@
     },
     {
       "path": "outils-python/appliquer_patch.py",
-      "bytes": 4104,
-      "sha256": "bfe35e75cd7bf44b63cd85f104a6183af045bd0eb63ff95b319dcebbd9ea284e"
+      "bytes": 4137,
+      "sha256": "06d141b5ec58630adfb0d1a6b421e1fad7d6546128259da9246fcc447ac8ea26"
     },
     {
       "path": "outils-python/patch_formats.py",
@@ -117,124 +232,124 @@
       "sha256": "8798919cefbf7adaea8378db300cdd47ea213b077d10d43d6cf37f5213c4c474"
     },
     {
-      "path": "outils-python/patches/MAJ-beta1-vers-NyBy-v1.1RC1.bps",
-      "bytes": 4572,
-      "sha256": "6df298a0f83a380e1b0f0c8c744e57b9d3309e9db39de29af53d07384f03c9c4"
+      "path": "outils-python/patches/Unbound-EN-RTC-NyBy-v1.1.bps",
+      "bytes": 5200,
+      "sha256": "b3204f0e45821f31497bafe3fe9b927f4c5272b453d63cf9477ceb75fee0ade1"
     },
     {
-      "path": "outils-python/patches/MAJ-v1.0-vers-NyBy-v1.1RC1.bps",
-      "bytes": 2855,
-      "sha256": "48b7abdc8c5aab38cfd554dc041f2571265d02199fb586a7411287767b8194b8"
-    },
-    {
-      "path": "outils-python/patches/Unbound-EN2111-RTC-NyBy-v1.1RC1.bps",
-      "bytes": 4730,
-      "sha256": "014eb67e6801166fa447ada6705caf00b3998c0ff0f2fd4053be7d42b2e56c3b"
-    },
-    {
-      "path": "outils-python/patches/Unbound-FR179-RTC-NyBy-v1.1RC1.bps",
-      "bytes": 4739,
-      "sha256": "634d9108fa6e19a9ee299944e3e5d332bb1fcf68768116612673cbe35430fae9"
+      "path": "outils-python/patches/Unbound-FR-RTC-NyBy-v1.1.bps",
+      "bytes": 5219,
+      "sha256": "512f0f6471f998b650328fafdb4e330d3afb81bdb2805804891fd30c924d41b3"
     },
     {
       "path": "outils-python/release.json",
-      "bytes": 5246,
-      "sha256": "f2b25cd0981b126acfabc13e047b0bdb2dbb69160cca5f092ecff14be8f379e8"
+      "bytes": 6029,
+      "sha256": "7ccbb9f5618651aa6e2778472229005fc5311cf1eb7cf0ffe0ef12d9eed10d6e"
     },
     {
-      "path": "patches/MAJ-beta1-vers-NyBy-v1.1RC1.bps",
-      "bytes": 4572,
-      "sha256": "6df298a0f83a380e1b0f0c8c744e57b9d3309e9db39de29af53d07384f03c9c4"
+      "path": "patches/Unbound-EN-RTC-NyBy-v1.1.bps",
+      "bytes": 5200,
+      "sha256": "b3204f0e45821f31497bafe3fe9b927f4c5272b453d63cf9477ceb75fee0ade1"
     },
     {
-      "path": "patches/MAJ-v1.0-vers-NyBy-v1.1RC1.bps",
-      "bytes": 2855,
-      "sha256": "48b7abdc8c5aab38cfd554dc041f2571265d02199fb586a7411287767b8194b8"
+      "path": "patches/Unbound-FR-RTC-NyBy-v1.1.bps",
+      "bytes": 5219,
+      "sha256": "512f0f6471f998b650328fafdb4e330d3afb81bdb2805804891fd30c924d41b3"
     },
     {
-      "path": "patches/Unbound-EN2111-RTC-NyBy-v1.1RC1.bps",
-      "bytes": 4730,
-      "sha256": "014eb67e6801166fa447ada6705caf00b3998c0ff0f2fd4053be7d42b2e56c3b"
-    },
-    {
-      "path": "patches/Unbound-FR179-RTC-NyBy-v1.1RC1.bps",
-      "bytes": 4739,
-      "sha256": "634d9108fa6e19a9ee299944e3e5d332bb1fcf68768116612673cbe35430fae9"
+      "path": "README.md",
+      "bytes": 5630,
+      "sha256": "ee4afcddc8b611728cb7bb20ab81fb568a4106c7529fd6e48ba53991f1a86821"
     },
     {
       "path": "README_EN.md",
-      "bytes": 9893,
-      "sha256": "33342b6ec5ebb5ff832e8b261c65defea3bdb7c63e19a11730a26c84c388aa2c"
+      "bytes": 5630,
+      "sha256": "ee4afcddc8b611728cb7bb20ab81fb568a4106c7529fd6e48ba53991f1a86821"
     },
     {
       "path": "README_FR.md",
-      "bytes": 11091,
-      "sha256": "7f2772234daa096849ed3330fad06c16c6cbbbecd7353032a2d0f87089f08f57"
+      "bytes": 5872,
+      "sha256": "91994e8e2a789d6b0f7a66ea9d988b5a46e0c6b53e1cdd663c5f74374fdcdb23"
+    },
+    {
+      "path": "RELEASE-FR-EN.md",
+      "bytes": 5394,
+      "sha256": "9a27ec916b176a74133b8ae5c10511945c4ba4ab3bd3496d36b4383eb0230531"
     },
     {
       "path": "release.json",
-      "bytes": 5246,
-      "sha256": "f2b25cd0981b126acfabc13e047b0bdb2dbb69160cca5f092ecff14be8f379e8"
+      "bytes": 6029,
+      "sha256": "7ccbb9f5618651aa6e2778472229005fc5311cf1eb7cf0ffe0ef12d9eed10d6e"
     },
     {
-      "path": "SD/en/.superfw/config/Unbound EN 2111 RTC NyBy v1.1 RC1.config",
-      "bytes": 56,
-      "sha256": "8071e0b1052d7c216b30a24a29ec3049430414788ef08d5d9dea42d8278096d1"
+      "path": "SD/en/.superfw/config/Unbound EN 2111 RTC NyBy v1.1 Stable.config",
+      "bytes": 48,
+      "sha256": "6cef9ff1a5d4edc59a2aa9b5cbcf4e624d9d7d30186da8316b74d05357cbaa95"
     },
     {
-      "path": "SD/en/.superfw/patches/Unbound EN 2111 RTC NyBy v1.1 RC1.patch",
+      "path": "SD/en/.superfw/patches/Unbound EN 2111 RTC NyBy v1.1 Stable.patch",
       "bytes": 800,
       "sha256": "482d381235d50dd98202b9e7d20050aee8cd3cd1f0a22d7b03bb781abb2af017"
     },
     {
-      "path": "SD/en/Unbound EN 2111 RTC NyBy v1.1 RC1.patch",
+      "path": "SD/en/Unbound EN 2111 RTC NyBy v1.1 Stable.patch",
       "bytes": 800,
       "sha256": "482d381235d50dd98202b9e7d20050aee8cd3cd1f0a22d7b03bb781abb2af017"
     },
     {
-      "path": "SD/fr/.superfw/config/Unbound FR 179 RTC NyBy v1.1 RC1.config",
-      "bytes": 56,
-      "sha256": "8071e0b1052d7c216b30a24a29ec3049430414788ef08d5d9dea42d8278096d1"
+      "path": "SD/fr/.superfw/config/Unbound FR 179 RTC NyBy v1.1 Stable.config",
+      "bytes": 48,
+      "sha256": "6cef9ff1a5d4edc59a2aa9b5cbcf4e624d9d7d30186da8316b74d05357cbaa95"
     },
     {
-      "path": "SD/fr/.superfw/patches/Unbound FR 179 RTC NyBy v1.1 RC1.patch",
+      "path": "SD/fr/.superfw/patches/Unbound FR 179 RTC NyBy v1.1 Stable.patch",
       "bytes": 800,
       "sha256": "482d381235d50dd98202b9e7d20050aee8cd3cd1f0a22d7b03bb781abb2af017"
     },
     {
-      "path": "SD/fr/Unbound FR 179 RTC NyBy v1.1 RC1.patch",
+      "path": "SD/fr/Unbound FR 179 RTC NyBy v1.1 Stable.patch",
       "bytes": 800,
       "sha256": "482d381235d50dd98202b9e7d20050aee8cd3cd1f0a22d7b03bb781abb2af017"
     },
     {
       "path": "sources/installer/installer-core.js",
-      "bytes": 8964,
-      "sha256": "1232fd8a37a43cd8f53104730ea57a395466bbde966ea2b009f803cc9666c297"
+      "bytes": 9114,
+      "sha256": "427ecf8023859581436aa67af82e8ff6a526fecf98880df25740715bfd7d665a"
     },
     {
       "path": "sources/installer/installer.template.html",
-      "bytes": 17578,
-      "sha256": "6f8e85e0bc59acb2cc15b51c41c77e3f5c2248bea0b9738f648e30ffaf46ba27"
+      "bytes": 17399,
+      "sha256": "6b8d7d61ac825af9337224f903c3ab445aef475b437a9a705e3234bb667d3299"
     },
     {
       "path": "sources/installer/payload.json",
-      "bytes": 39243,
-      "sha256": "416a85d310d296ac78ed73690a258372a79f212430d7928c0c5eab7ae9630a0b"
+      "bytes": 28722,
+      "sha256": "b44e47b3c980308df56d4ddb0e5a6cf19ccc43284ae2633f35aa389927208bbf"
     },
     {
       "path": "sources/installer/rebuild.py",
-      "bytes": 499,
-      "sha256": "5522febd3d128fe75fd02563ce969c5e4775ca802a5999aa004027040c3e9005"
+      "bytes": 771,
+      "sha256": "1e7dd3ad73e77740f8dc20338ce9d9a94a26ab6f811e22fb0c36ab7f11240dbf"
     },
     {
-      "path": "sources/README-FR-EN.md",
-      "bytes": 1374,
-      "sha256": "6afbfca0bee9db587b73cb1c097f3f11c67e1bdefee1cc7b9df0392b2ca12ed5"
+      "path": "sources/rtc-manuel/banner.h",
+      "bytes": 2755,
+      "sha256": "91e297613f1716ec353d303116f18bf0c75a4770ba722540fd61617ee7ccf7d2"
+    },
+    {
+      "path": "sources/rtc-manuel/banner_font.h",
+      "bytes": 977,
+      "sha256": "1babd0e650bdf1d03355e392441bae5ae5c369f77be7e977a2d3681038e01664"
     },
     {
       "path": "sources/rtc-manuel/build.py",
-      "bytes": 6603,
-      "sha256": "40ef7c60bfdb25edf7899da03a3b2754a336087b14c12e1974a504e2c65f3a50"
+      "bytes": 6922,
+      "sha256": "5880dbd8371941810ed0d5be1e99ff08ae25c5767b83937b1aefec4d76e877b6"
+    },
+    {
+      "path": "sources/rtc-manuel/build_info.h",
+      "bytes": 65,
+      "sha256": "b0a2f988463ec5170855ac1dee791543344991b6a0c22ea460833443f3033ff8"
     },
     {
       "path": "sources/rtc-manuel/clock.c",
@@ -243,8 +358,18 @@
     },
     {
       "path": "sources/rtc-manuel/font.h",
-      "bytes": 1783,
-      "sha256": "44dbc4d7b85042ba141b4016547f56118a5ed3616c20b1622681058b81702cee"
+      "bytes": 1574,
+      "sha256": "0ed360d90e025df4f4cc19196d7cce61e43830d7ef212c49c0a1708dc502e8d5"
+    },
+    {
+      "path": "sources/rtc-manuel/footer.h",
+      "bytes": 243,
+      "sha256": "74a63c73c8449b5f8d3e153f080140607f69f65de5c9b8b0451c1437f24aaf8a"
+    },
+    {
+      "path": "sources/rtc-manuel/footer_gen.py",
+      "bytes": 1195,
+      "sha256": "bcc1b841ceaa67bb3a8754c329832e1883135cf55dde993d7ede6c6d7f262766"
     },
     {
       "path": "sources/rtc-manuel/link.ld",
@@ -253,8 +378,13 @@
     },
     {
       "path": "sources/rtc-manuel/lowlevel.S",
-      "bytes": 1077,
-      "sha256": "751e6e16ccbd9b8cdad4aaf56269096729fa6fb30986a5ed36ec21bb579c5dba"
+      "bytes": 1669,
+      "sha256": "ace00d54ef2a3e1fbe341a2fa64a0bff3a8cfb4810da9f84f75900b85a689470"
+    },
+    {
+      "path": "sources/rtc-manuel/manual.h",
+      "bytes": 2074,
+      "sha256": "d7aa2bef6d726c51d2ff22deac8fb685fb4502b8378843438ab7ca6ffbe147d9"
     },
     {
       "path": "sources/rtc-manuel/patch_formats.py",
@@ -263,23 +393,43 @@
     },
     {
       "path": "sources/rtc-manuel/rtc.h",
-      "bytes": 1205,
-      "sha256": "cda723a2f2c845e29ed1ad94c093de9b103300eff43a1a63c2484418935ad2be"
+      "bytes": 1373,
+      "sha256": "f45f068cf8c035c90276101f6d4d4a20242cb2a52dda10d630dcc469583b3749"
     },
     {
       "path": "sources/rtc-manuel/rtc_fast.S",
-      "bytes": 4765,
-      "sha256": "ed827a0d17159d68fc96765b6445541f6e114b0cdf25cacbdf374192dae5b503"
+      "bytes": 5114,
+      "sha256": "2a773fa423f3b7e4924f1c032d30a0438b2823ed5f38d30d016e206e905b58a1"
     },
     {
       "path": "sources/rtc-manuel/ui.c",
-      "bytes": 7217,
-      "sha256": "3826a552f0e83697cae0dff462363dccb5e883e6ef0a78fae78f54955bd206f0"
+      "bytes": 5073,
+      "sha256": "fb7eaf718883f943b236f873c15030cb1611c7acbfe110952249f7e6c3980fb4"
+    },
+    {
+      "path": "sources/rtc-manuel/verify.c",
+      "bytes": 840,
+      "sha256": "7add98e671811dee47c35204040de3fb6f0bb2bd0fe343329fe8c752fa93fd35"
+    },
+    {
+      "path": "sources/rtc-manuel-en/banner.h",
+      "bytes": 2755,
+      "sha256": "91e297613f1716ec353d303116f18bf0c75a4770ba722540fd61617ee7ccf7d2"
+    },
+    {
+      "path": "sources/rtc-manuel-en/banner_font.h",
+      "bytes": 977,
+      "sha256": "1babd0e650bdf1d03355e392441bae5ae5c369f77be7e977a2d3681038e01664"
     },
     {
       "path": "sources/rtc-manuel-en/build.py",
-      "bytes": 6605,
-      "sha256": "b4fd33fd0e08ff0aa8cd93de1ad5d2934b83a2d82c383432ace26292f6d901d0"
+      "bytes": 6924,
+      "sha256": "911ffa1b0e354d4bc1242ff6a220ecd8bde6f31f593e07d62cd78699a8f51768"
+    },
+    {
+      "path": "sources/rtc-manuel-en/build_info.h",
+      "bytes": 65,
+      "sha256": "62871df06364dba3458f40971ac3f4020e43caab24a21e283d26fd264e06bcd9"
     },
     {
       "path": "sources/rtc-manuel-en/clock.c",
@@ -288,8 +438,18 @@
     },
     {
       "path": "sources/rtc-manuel-en/font.h",
-      "bytes": 1783,
-      "sha256": "44dbc4d7b85042ba141b4016547f56118a5ed3616c20b1622681058b81702cee"
+      "bytes": 1574,
+      "sha256": "0ed360d90e025df4f4cc19196d7cce61e43830d7ef212c49c0a1708dc502e8d5"
+    },
+    {
+      "path": "sources/rtc-manuel-en/footer.h",
+      "bytes": 243,
+      "sha256": "74a63c73c8449b5f8d3e153f080140607f69f65de5c9b8b0451c1437f24aaf8a"
+    },
+    {
+      "path": "sources/rtc-manuel-en/footer_gen.py",
+      "bytes": 1195,
+      "sha256": "bcc1b841ceaa67bb3a8754c329832e1883135cf55dde993d7ede6c6d7f262766"
     },
     {
       "path": "sources/rtc-manuel-en/link.ld",
@@ -298,8 +458,13 @@
     },
     {
       "path": "sources/rtc-manuel-en/lowlevel.S",
-      "bytes": 1077,
-      "sha256": "751e6e16ccbd9b8cdad4aaf56269096729fa6fb30986a5ed36ec21bb579c5dba"
+      "bytes": 1669,
+      "sha256": "ace00d54ef2a3e1fbe341a2fa64a0bff3a8cfb4810da9f84f75900b85a689470"
+    },
+    {
+      "path": "sources/rtc-manuel-en/manual.h",
+      "bytes": 2074,
+      "sha256": "d7aa2bef6d726c51d2ff22deac8fb685fb4502b8378843438ab7ca6ffbe147d9"
     },
     {
       "path": "sources/rtc-manuel-en/patch_formats.py",
@@ -308,39 +473,58 @@
     },
     {
       "path": "sources/rtc-manuel-en/rtc.h",
-      "bytes": 1205,
-      "sha256": "cda723a2f2c845e29ed1ad94c093de9b103300eff43a1a63c2484418935ad2be"
+      "bytes": 1373,
+      "sha256": "f45f068cf8c035c90276101f6d4d4a20242cb2a52dda10d630dcc469583b3749"
     },
     {
       "path": "sources/rtc-manuel-en/rtc_fast.S",
-      "bytes": 4765,
-      "sha256": "ed827a0d17159d68fc96765b6445541f6e114b0cdf25cacbdf374192dae5b503"
+      "bytes": 5114,
+      "sha256": "2a773fa423f3b7e4924f1c032d30a0438b2823ed5f38d30d016e206e905b58a1"
     },
     {
       "path": "sources/rtc-manuel-en/ui.c",
-      "bytes": 7358,
-      "sha256": "58ce4cb30ea0558102cf5ecb0124f0f7bd671cd11248ab55d703b0ebb271c816"
+      "bytes": 5073,
+      "sha256": "fb7eaf718883f943b236f873c15030cb1611c7acbfe110952249f7e6c3980fb4"
+    },
+    {
+      "path": "sources/rtc-manuel-en/verify.c",
+      "bytes": 840,
+      "sha256": "7add98e671811dee47c35204040de3fb6f0bb2bd0fe343329fe8c752fa93fd35"
+    },
+    {
+      "path": "tests/browser.cjs",
+      "bytes": 12741,
+      "sha256": "60eaeed2aad622381f44b128dd657936c3a985a491e5c6aacf958e9a5530b5be"
+    },
+    {
+      "path": "tests/check_release.py",
+      "bytes": 5492,
+      "sha256": "a42738b03978f6ca7816ab1b51906f22be0be0ec61298b4f9d518b4ca3c06966"
+    },
+    {
+      "path": "tests/rtc_math.c",
+      "bytes": 7438,
+      "sha256": "d9c303630d3e3f5e7ffd2f9cd08286ba9eb363b66a2e936a583eb263bce95824"
+    },
+    {
+      "path": "tests/run_native.py",
+      "bytes": 2237,
+      "sha256": "ab92cd9f96699ee53d2c0f735ef5c043873d4ff152be97fbed46d3141fff1395"
+    },
+    {
+      "path": "tests/test_installer.cjs",
+      "bytes": 3297,
+      "sha256": "5578da066d8c3439ce0d71da84aa64f2192473fbe9959607ea8b3051e65f7af1"
+    },
+    {
+      "path": "tests/verify_downloads.py",
+      "bytes": 3746,
+      "sha256": "7d76b233530fb003fb03711f608928b2543e886df99d70a3af320ab6fc85db2b"
     },
     {
       "path": "VERSION.txt",
-      "bytes": 440,
-      "sha256": "6f88d0e1944af9159dba090d99b143f5718e194f51b11bec4422f547ce586147"
-    }
-  ],
-  "original_code_license": "MIT",
-  "runtime_and_installer_unchanged_from": "community-3-FR-EN-documentation",
-  "additional_packages": [
-    {
-      "version": "1.5-beta1",
-      "path": "beta/v1.5-beta1",
-      "manifest_sha256": "2855e9ba20ec7fb94cf8856a88adb164c7375187a290d1292bb5028c18e65495",
-      "status": "public beta; hardware test pending"
-    },
-    {
-      "version": "1.5-beta2",
-      "path": "beta/v1.5-beta2",
-      "manifest_sha256": "9f143452e362737ea64566687cf3d2c1441cad9d4ebe3729293e81364c2f9b93",
-      "status": "public beta; hardware test pending"
+      "bytes": 181,
+      "sha256": "ae274f04ee766147ed8db23ca13b0a32cbb3337b26360e5ef5edb8ab6b6727bc"
     }
   ]
 }

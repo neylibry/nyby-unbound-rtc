@@ -1,0 +1,212 @@
+{
+  "archive": {
+    "sha256": "ea31b3c89000b05f44212011c434471631a868a2bc7fcbd794bb58b031a4b81f",
+    "bytes": 189130,
+    "file_count": 74,
+    "manifest_closed_and_all_hashes_exact": true,
+    "no_rom_save_bios_firmware_images": true,
+    "no_private_path_or_credential_patterns": true
+  },
+  "stage_documentary_differences": [
+    "CREDITS-FR-EN.md"
+  ],
+  "builds": {
+    "FR": {
+      "independent_compilation": true,
+      "target_sha256": "d7057b66baf15015f8e1de55403e0de577c72d0b857018288ccd3f176465bbed",
+      "payload_bytes": 5002,
+      "bps_byte_identical": true,
+      "outside_mod_ranges_unchanged": true,
+      "rtc_engine_bytes": 652,
+      "rtc_engine_sha256": "366f5188608b554f76b0aa9d9526fff5727aac82748fcebca8b63f63cdfc83a6",
+      "audited_debug4_code_unchanged": true,
+      "frames": {
+        "divmod": 16,
+        "month_days": 0,
+        "fields_seconds": 24,
+        "seconds_fields": 28,
+        "record_encode": 16,
+        "record_decode": 24,
+        "rtc_status": 0,
+        "rtc_success": 0,
+        "rtc_write_sector": 16,
+        "read_flash_checked": 16,
+        "rtc_boot": 112,
+        "screen": 24,
+        "screen_notice": 24,
+        "field_set": 8,
+        "moved_value": 16,
+        "manual_header": 8,
+        "banner_center": 24,
+        "manual_values": 88,
+        "manual_footer": 72,
+        "banner_text": 108,
+        "verify_flash_sector": 536
+      }
+    },
+    "EN": {
+      "independent_compilation": true,
+      "target_sha256": "c683579f95b7990e1d8d8c86445ac80fce969f1b5c8fd583000850126a239a5e",
+      "payload_bytes": 4982,
+      "bps_byte_identical": true,
+      "outside_mod_ranges_unchanged": true,
+      "rtc_engine_bytes": 652,
+      "rtc_engine_sha256": "366f5188608b554f76b0aa9d9526fff5727aac82748fcebca8b63f63cdfc83a6",
+      "audited_debug4_code_unchanged": true,
+      "frames": {
+        "divmod": 16,
+        "month_days": 0,
+        "fields_seconds": 24,
+        "seconds_fields": 28,
+        "record_encode": 16,
+        "record_decode": 24,
+        "rtc_status": 0,
+        "rtc_success": 0,
+        "rtc_write_sector": 16,
+        "read_flash_checked": 16,
+        "rtc_boot": 112,
+        "screen": 24,
+        "screen_notice": 24,
+        "field_set": 8,
+        "moved_value": 16,
+        "manual_header": 8,
+        "banner_center": 24,
+        "manual_values": 88,
+        "manual_footer": 72,
+        "banner_text": 108,
+        "verify_flash_sector": 536
+      }
+    }
+  },
+  "html_rebuild_exact": {
+    "INSTALLER-FR-EN.html": "ae2ebd7c0ae602688b1cffc7d43a2244def793f2bbaacab631b3f3f068cdbada",
+    "INSTALLER-FR.html": "ae2ebd7c0ae602688b1cffc7d43a2244def793f2bbaacab631b3f3f068cdbada",
+    "INSTALLER-EN.html": "6618abaa81f3ff28e05382d3431f74a7ebb87ba2c354a9e47af66897124c55fc"
+  },
+  "payload_assets_and_profiles_match_release": true,
+  "inspected_existing_generated_zips": [
+    {
+      "case": "browser-en-already-patched.zip",
+      "rom_exact": true,
+      "assets_exact": true,
+      "save_synthetic_fixture_match": null
+    },
+    {
+      "case": "browser-en-with-save.zip",
+      "rom_exact": true,
+      "assets_exact": true,
+      "save_synthetic_fixture_match": [
+        "EN.sav"
+      ]
+    },
+    {
+      "case": "browser-en-without-save.zip",
+      "rom_exact": true,
+      "assets_exact": true,
+      "save_synthetic_fixture_match": null
+    },
+    {
+      "case": "browser-fr-already-patched.zip",
+      "rom_exact": true,
+      "assets_exact": true,
+      "save_synthetic_fixture_match": null
+    },
+    {
+      "case": "browser-fr-with-save.zip",
+      "rom_exact": true,
+      "assets_exact": true,
+      "save_synthetic_fixture_match": [
+        "FR.sav"
+      ]
+    },
+    {
+      "case": "browser-fr-without-save.zip",
+      "rom_exact": true,
+      "assets_exact": true,
+      "save_synthetic_fixture_match": null
+    },
+    {
+      "case": "engine-en-with-save.zip",
+      "rom_exact": true,
+      "assets_exact": true,
+      "save_synthetic_fixture_match": [
+        "EN.sav"
+      ]
+    },
+    {
+      "case": "engine-en-without-save.zip",
+      "rom_exact": true,
+      "assets_exact": true,
+      "save_synthetic_fixture_match": null
+    },
+    {
+      "case": "engine-fr-with-save.zip",
+      "rom_exact": true,
+      "assets_exact": true,
+      "save_synthetic_fixture_match": [
+        "FR.sav"
+      ]
+    },
+    {
+      "case": "engine-fr-without-save.zip",
+      "rom_exact": true,
+      "assets_exact": true,
+      "save_synthetic_fixture_match": null
+    }
+  ],
+  "scope": {
+    "independent_rebuilds": 2,
+    "new_browser_campaign": false,
+    "arm_execution_or_emulation": false,
+    "sd_access": false,
+    "hardware_test": false,
+    "personal_save_used": false
+  },
+  "verdict": "Pass for audited PC artifacts; physical GBA/SuperCard beta3 validation remains pending.",
+  "profiles_decoded_from_delivered_files": {
+    "FR": {
+      "profile": {
+        "patchmode": 1,
+        "igm": 0,
+        "rtc": 0,
+        "directsaving": 1,
+        "cheats": 0
+      },
+      "cache_counts": {
+        "waitcnt": 7,
+        "save": 8,
+        "irq": 4,
+        "rtc": 0
+      },
+      "directsaving_reserved_rom_interval": [
+        "0x15fdc00",
+        "0x1649c00"
+      ],
+      "rtc_payload_start": "0x164c000",
+      "gap_before_rtc_payload_bytes": 9216,
+      "import_superfw_clock_operations": 0
+    },
+    "EN": {
+      "profile": {
+        "patchmode": 1,
+        "igm": 0,
+        "rtc": 0,
+        "directsaving": 1,
+        "cheats": 0
+      },
+      "cache_counts": {
+        "waitcnt": 7,
+        "save": 8,
+        "irq": 4,
+        "rtc": 0
+      },
+      "directsaving_reserved_rom_interval": [
+        "0x15fdc00",
+        "0x1649c00"
+      ],
+      "rtc_payload_start": "0x164c000",
+      "gap_before_rtc_payload_bytes": 9216,
+      "import_superfw_clock_operations": 0
+    }
+  }
+}

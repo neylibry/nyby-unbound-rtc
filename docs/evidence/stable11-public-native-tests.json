@@ -1,0 +1,17 @@
+{
+  "passed": true,
+  "checks": 65660514,
+  "calendar_cases": 328725,
+  "hms_cases": 86400,
+  "split_interval_endpoints": 99422,
+  "fraction_phase_cases": 524288,
+  "session_hours": 72,
+  "session_frames": 15481369,
+  "clamp_and_wrap_cases": 54,
+  "last_session_elapsed_seconds": 259199,
+  "frame_fraction_denominator": 262144,
+  "calendar_vectors_sha256": "e553d4ccb3a363f96edef60da752a53ee6ac2436aee0df9dd5dbae629ad726a6",
+  "production_clock_source_sha256": "db58943896c2aadb5ac500f484844cf9e57ebf8103d30ab67ec7d54746cb5f2e",
+  "test_source_sha256": "d9c303630d3e3f5e7ffd2f9cd08286ba9eb363b66a2e936a583eb263bce95824",
+  "scope": "host C model plus actual clock.c; no ARM, BIOS, game or flashcart execution"
+}

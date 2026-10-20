@@ -106,12 +106,12 @@
       const filename = encoder.encode(name), crc = crc32(data);
       const local = new Uint8Array(30 + filename.length), lv = new DataView(local.buffer);
       lv.setUint32(0, 0x04034b50, true); lv.setUint16(4, 20, true); lv.setUint16(6, 0x800, true);
-      lv.setUint16(12, ((2026 - 1980) << 9) | (10 << 5) | 17, true);
+      lv.setUint16(12, ((2026 - 1980) << 9) | (10 << 5) | 20, true);
       lv.setUint32(14, crc, true); lv.setUint32(18, data.length, true); lv.setUint32(22, data.length, true);
       lv.setUint16(26, filename.length, true); local.set(filename, 30);
       const central = new Uint8Array(46 + filename.length), cv = new DataView(central.buffer);
       cv.setUint32(0, 0x02014b50, true); cv.setUint16(4, 20, true); cv.setUint16(6, 20, true);
-      cv.setUint16(8, 0x800, true); cv.setUint16(14, ((2026 - 1980) << 9) | (10 << 5) | 17, true);
+      cv.setUint16(8, 0x800, true); cv.setUint16(14, ((2026 - 1980) << 9) | (10 << 5) | 20, true);
       cv.setUint32(16, crc, true); cv.setUint32(20, data.length, true); cv.setUint32(24, data.length, true);
       cv.setUint16(28, filename.length, true); cv.setUint32(42, offset, true); central.set(filename, 46);
       locals.push(local, data); centrals.push(central); offset += local.length + data.length;

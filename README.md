@@ -1,77 +1,69 @@
-# NyBy RTC — Pokémon Unbound EN / FR
+# NyBy RTC — Stable 1.1
 
-> **Bêta v1.5-beta2 / v1.5-beta2 beta :** [Télécharger / Download](https://github.com/neylibry/nyby-unbound-rtc/releases/tag/v1.5-beta2) · [Guides et sources / Guides and source](beta/v1.5-beta2/README.md) · [Changements techniques / Technical changes](beta/v1.5-beta2/RELEASE-FR-EN.md). Vérification complète du secteur et réessai avec tampon conservé ; moteur RTC en partie inchangé. / Full-sector verification and retained-buffer retries; unchanged in-game RTC engine. Tests PC FR/EN ; validation matérielle en attente / Hardware validation pending.
+A manual-start clock for **Pokémon Unbound on a real Game Boy Advance**, designed for **SuperCard + SuperFW 0.21 without a hardware RTC**.
 
-Une horloge manuelle pour jouer à Unbound sur **vraie GBA + SuperCard sous SuperFW 0.21**, sans puce RTC. / A manual clock for Unbound on **real GBA + SuperCard running SuperFW 0.21**, without an RTC chip.
+[Download the stable release](https://github.com/neylibry/nyby-unbound-rtc/releases/latest) · [Français](README_FR.md) · [Developer documentation](docs/ARCHITECTURE.md) · [MIT](LICENSE)
 
-**v1.1RC1 · 17/10/2026 · Kit communauté r4 · code original MIT**
+Enter the real date and time at startup, then press **START**. The last entered setting is prefilled next time. A small ARM runtime advances the calendar during play. SuperFW RTC emulation is disabled for this game.
 
-[Télécharger le kit / Download the package](https://github.com/neylibry/nyby-unbound-rtc/releases/tag/v1.1-rc1-community-r4) · [Guide français](README_FR.md) · [English guide](README_EN.md)
+**NyBy accepted the French Stable 1.1 build on his real GBA.** English passes PC and source-rebuild checks; English hardware validation has not been reported. [Validation scope](docs/VALIDATION.md).
 
-## Français
+## Install
 
-Réglez la date et l'heure au démarrage ; elles avancent pendant le jeu. Le dernier réglage saisi est mémorisé. Le temps console éteinte n'est pas compté : remettez l'heure au lancement.
+1. Keep a PC backup of your native `.sav` and working installation.
+2. Prepare your own ROM in the order below. This project supplies **only the final RTC patch**.
+3. Open `INSTALLER-FR-EN.html`, `INSTALLER-FR.html` or `INSTALLER-EN.html` from the release, including offline.
+4. Select clean prepared Unbound. Optionally select a matching-language native **128 KiB `.sav`**: its bytes are copied unchanged under the new filename.
+5. Download and extract the personal ZIP, then copy its contents to the SD root, merging `.superfw`. Adjust `SAVEGAME` if configured differently. Preserve newer saves before replacing files.
+6. Use the supplied cache/profile: **PatchEngine and DirectSaving enabled; SuperFW RTC, IGM and cheats disabled**.
+7. On GBA: **left/right** selects a field, **up/down** changes it, **START** remembers the setting and launches the game. Select Continue to resume.
 
-Les deux parcours partent de votre propre **FireRed USA v1.0 en anglais** :
-
-- **Jeu EN :** FireRed USA → patch Unbound 2.1.1.1 → patch RTC NyBy EN.
-- **Jeu FR :** FireRed USA → patch Unbound 2.1.1.1 → traduction Antony FR 2.1.179 → patch RTC NyBy FR.
-
-Ce kit effectue uniquement la dernière étape RTC. L'installateur reconnaît par SHA-256 votre fichier Unbound **déjà préparé** et sélectionne le patch RTC correspondant. Le sélecteur de langue de l'installateur change uniquement son interface.
-
-**Installation :** extraire le kit, ouvrir `INSTALLER-FR-EN.html`, choisir Unbound préparé et éventuellement son .sav natif de 128 Kio, puis générer le ZIP personnel prêt à copier sur la SD. Aucun Python, compte ou accès réseau nécessaire. Conservez une copie de votre partie avant installation.
-
-**SuperFW :** PatchEngine, DirectSaving activé, RTC SuperFW / IGM / cheats désactivés. Les caches sont fournis : ne pas les régénérer.
-
-Le kit public ne contient aucune ROM, traduction complète ou sauvegarde personnelle. Le ZIP généré avec vos fichiers est destiné à votre usage personnel.
-
-## English
-
-Set the current date/time at startup; it advances while playing. The last setting you entered is remembered. Powered-off time is not counted: adjust the clock at each launch.
-
-Both paths start from your own **English FireRed USA v1.0**:
-
-- **EN game:** FireRed USA → Unbound 2.1.1.1 patch → NyBy RTC EN patch.
-- **FR game:** FireRed USA → Unbound 2.1.1.1 patch → Antony French 2.1.179 translation → NyBy RTC FR patch.
-
-This package handles only the final RTC step. The installer fingerprints your **already prepared Unbound build** using SHA-256 and selects the matching RTC patch. Its language selector changes only the installer interface.
-
-**Setup:** extract the package, open `INSTALLER-FR-EN.html`, select prepared Unbound and optionally its native 128 KiB .sav, then generate your personal SD ZIP. No Python, account or network access required. Back up your save first.
-
-**SuperFW:** PatchEngine, DirectSaving enabled, SuperFW RTC / IGM / cheats disabled. Matching caches are included: do not regenerate them.
-
-The public package contains no ROM, complete translation or personal save. Generated ZIPs containing your files are for personal use.
-
-## État / Status
-
-- **FR :** fluidité confirmée par un utilisateur sur GBA. / Smooth gameplay reported by a user on real GBA.
-- **EN :** tests PC réussis, sauvegarde/reprise et calendrier exhaustif ; essai GBA encore à confirmer. / PC checks passed, including native save/resume and exhaustive calendar; hardware test pending.
-- **RC1 :** signalement d'affichage intermittent des choix dans les paramètres toujours ouvert. / Intermittent disappearing Options choices issue remains open.
-
-[Vérifications / Verification](docs/VERIFICATION-FR-EN.md) · [Preuves installateur / Installer checks](docs/INSTALLER-TESTS.json) · [Validation EN / EN validation](docs/EN-VALIDATION.json)
-
-## Aperçus / Previews
-
-| Français | English |
+| Game language | Preparation order |
 |---|---|
-| ![Menu RTC français](APERCU.png) | ![English RTC menu](APERCU-EN.png) |
+| English | **English FireRed USA v1.0** → Unbound 2.1.1.1 → NyBy RTC EN 1.1 |
+| French | **English FireRed USA v1.0** → Unbound 2.1.1.1 → Antony FR 2.1.179 translation → NyBy RTC FR 1.1 |
 
-## Sources et crédits / Source and credits
+The prepared ROM's SHA-256 selects the patch; the page language does not translate the game. The installer verifies the output, accepts its own current output without patching twice, and rejects older RTC builds. A Python fallback is in `outils-python/`.
 
-[Sources et reconstruction / Source and rebuilding](sources/README-FR-EN.md) · [Crédits / Credits](CREDITS-FR-EN.md) · [Texte de présentation / Release text](ANNONCE-FR-EN.md)
+No ROM, personal save, BIOS, firmware image, Unbound patch or translation patch is distributed. The HTML uploads nothing and does not access the SD directly. The ZIP it generates contains your ROM and possibly your save: **do not redistribute that personal ZIP**.
 
-RTC : **NyBy** · Unbound : **Skeli et son équipe / and team** · Traduction FR / French translation : **Antony** · SuperFW : **davidgfnet**.
+## Behavior and limits
 
-Projet indépendant. Pour signaler un problème, indiquez les versions, le matériel et les étapes de reproduction ; ne publiez pas de ROM ou de sauvegarde personnelle. / Independent project. Report versions, hardware and reproduction steps; do not post ROMs or personal saves.
+- Time advances during powered-on play from the existing native VBlank counter.
+- The remembered value is the **last manually entered setting**, with minute precision. Powered-off time is not tracked; update it each session.
+- No new permanent RAM, timer or IRQ hook is allocated by the RTC runtime.
+- The startup-only UI is 240 × 160, uses two video pages, buttons and no animations/dropdowns.
 
-## Licence et diffusion / Licensing and distribution
+Long periods with VBlank interrupts blocked can lose counts; oscillator tolerance has not been measured. Native Unbound date-change restrictions still apply. Copying a save does not repair, convert or validate its game data. Only the input fingerprints in [`release.json`](release.json) are supported.
 
-Code original NyBy : **[MIT](LICENSE)**, avec [portée FR/EN](LICENSING-FR-EN.md). / Original NyBy code: **MIT**; third-party game, translation and firmware rights remain separate.
+## Developer entry points
 
-Des parties importantes du code et de la documentation ont été générées avec Codex (IA), sous la direction de NyBy. NyBy a défini le besoin et effectué les essais sur sa GBA. Les tests matériels rapportés concernent la FR ; l'EN reste à confirmer sur console.
+| Document | Contents |
+|---|---|
+| [Architecture](docs/ARCHITECTURE.md) | ROM/RAM/video maps, hooks, ARM/Thumb ABI, banked anchor and firmware boundaries |
+| [Save format](docs/SAVE-FORMAT.md) | Four-byte record, CRC6, full-sector verification, retries and failure behavior |
+| [Build and reproduce](docs/BUILD.md) | Zig 0.15.2 commands, expected hashes, tests, HTML generation and cache responsibilities |
+| [Validation](docs/VALIDATION.md) | Owner hardware acceptance, PC evidence, provenance and unmeasured quantities |
+| [Contributing](CONTRIBUTING.md) | Modification workflow, parity, invariants, porting and bug reports |
+| [Changelog](CHANGELOG.md) | Stable 1.1 changes |
 
-Substantial parts of the code and documentation were generated with Codex (AI), directed by NyBy. NyBy defined the requirements and performed the reported GBA testing. Hardware feedback concerns the French build; English hardware testing is still pending.
+| Resource | Stable 1.1 |
+|---|---:|
+| Full payload, FR / EN | 4,968 / 4,948 bytes |
+| ARM RTC engine including literal pool | 652 bytes |
+| Additional permanent RAM | 0 bytes |
+| Startup own stack frame | 112 bytes |
+| Mod drawing / verification stack paths | 332 / 664 bytes |
+| Settings record | 4 bytes |
 
-[Textes et destinations de publication / Publication drafts and destinations](docs/publication/README-FR-EN.md).
+Stack figures exclude native drivers, BIOS, IRQs and outer callers. They are static mod-side figures, not measured full hardware peaks. No whole-game FPS or CPU-percentage improvement is claimed.
 
-r4 ajoute la licence et les documents de diffusion ; patchs et installateur identiques à r3. / r4 adds licensing and publication material; patches and installer are unchanged from r3.
+Sources: [`sources/rtc-manuel/`](sources/rtc-manuel) (FR), [`sources/rtc-manuel-en/`](sources/rtc-manuel-en) (EN), [`sources/installer/`](sources/installer), [`tests/`](tests). The clock is handwritten ARM7TDMI assembly; startup and persistence use freestanding C compiled to Thumb. The BIOS wrapper is four bytes of Thumb assembly. Python and JavaScript run only on PC.
+
+## Development and credits
+
+NyBy needed this tool but could not write the required code himself. The project was mainly **vibe-coded with Codex**, with NyBy directing it and testing it on his GBA. It is shared freely because other players may need it too. Assembly is used where benefits can be established from compiled output and recorded tests. A separate Codex agent reviewed the integration; this is not third-party hardware certification.
+
+Original NyBy code is **MIT**, including modification and redistribution with the notice preserved. Pokémon, Unbound, Antony's translation and SuperFW retain their own rights. [Credits](CREDITS-FR-EN.md) · [License scope](LICENSING-FR-EN.md).
+
+Release: **2026-10-21**. The GBA build/footer remains **2026-10-20**, preserving the exact owner-tested ROM bytes.

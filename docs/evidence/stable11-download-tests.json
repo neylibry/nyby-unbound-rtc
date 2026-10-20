@@ -1,0 +1,82 @@
+{
+  "success": true,
+  "zips_verified": 10,
+  "zip_checks": [
+    {
+      "case": "engine-fr-with-save.zip",
+      "success": true,
+      "rom_sha256_verified": true,
+      "matching_cache_and_rtc_disabled_profile": true,
+      "save_byte_identical": true
+    },
+    {
+      "case": "engine-fr-without-save.zip",
+      "success": true,
+      "rom_sha256_verified": true,
+      "matching_cache_and_rtc_disabled_profile": true,
+      "save_byte_identical": false
+    },
+    {
+      "case": "engine-en-with-save.zip",
+      "success": true,
+      "rom_sha256_verified": true,
+      "matching_cache_and_rtc_disabled_profile": true,
+      "save_byte_identical": true
+    },
+    {
+      "case": "engine-en-without-save.zip",
+      "success": true,
+      "rom_sha256_verified": true,
+      "matching_cache_and_rtc_disabled_profile": true,
+      "save_byte_identical": false
+    },
+    {
+      "case": "browser-fr-with-save.zip",
+      "success": true,
+      "rom_sha256_verified": true,
+      "matching_cache_and_rtc_disabled_profile": true,
+      "save_byte_identical": true
+    },
+    {
+      "case": "browser-fr-without-save.zip",
+      "success": true,
+      "rom_sha256_verified": true,
+      "matching_cache_and_rtc_disabled_profile": true,
+      "save_byte_identical": false
+    },
+    {
+      "case": "browser-fr-already-patched.zip",
+      "success": true,
+      "rom_sha256_verified": true,
+      "matching_cache_and_rtc_disabled_profile": true,
+      "save_byte_identical": false
+    },
+    {
+      "case": "browser-en-with-save.zip",
+      "success": true,
+      "rom_sha256_verified": true,
+      "matching_cache_and_rtc_disabled_profile": true,
+      "save_byte_identical": true
+    },
+    {
+      "case": "browser-en-without-save.zip",
+      "success": true,
+      "rom_sha256_verified": true,
+      "matching_cache_and_rtc_disabled_profile": true,
+      "save_byte_identical": false
+    },
+    {
+      "case": "browser-en-already-patched.zip",
+      "success": true,
+      "rom_sha256_verified": true,
+      "matching_cache_and_rtc_disabled_profile": true,
+      "save_byte_identical": false
+    }
+  ],
+  "html_rebuild_reproducible": true,
+  "python_fallback_exact_output": true,
+  "python_fallback_refuses_overwrite": true,
+  "html_outputs_extracted_for_static_audit": true,
+  "personal_data_used": false,
+  "sd_accessed": false
+}

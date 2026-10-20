@@ -1,0 +1,21 @@
+{
+  "success": true,
+  "downloaded_rom": false,
+  "source_preserved": true,
+  "personal_save_used": false,
+  "save_fixtures": "synthetic 128 KiB for copy tests only; no semantic game-save validation",
+  "base_sha256": "3d0c79f1627022e18765766f6cb5ea067f6b5bf7dca115552189ad65a5c3a8ac",
+  "unbound_patch_sha256": "9b321914cf4acc22f6ef842cfab837a42d5ca031b76b88cb6a9d05818c8c04fa",
+  "translation_patch_sha256": "57774a64c1e6d83550229769167c577a15f5f5630f8bcee360ca9ffe504997f2",
+  "stages": [
+    {
+      "id": "en",
+      "sha256": "7aa25bbf568f7cfcf6ee1cf2e9e6ff637350b3d0705c2375cabb6baa7d9739f7"
+    },
+    {
+      "id": "fr",
+      "sha256": "55bd66a6cd6a54b36b1c90b750541dfd0d621466bfb1ddee1e222f6207ad4164"
+    }
+  ],
+  "third_party_patches_bundled": false
+}

@@ -5,9 +5,9 @@ ROOT=Path(__file__).resolve().parent
 CHECKUP=ROOT.parent
 SOURCE=ROOT/'input.gba'
 SOURCE_SHA='55bd66a6cd6a54b36b1c90b750541dfd0d621466bfb1ddee1e222f6207ad4164'
-NAME='Unbound FR 179 RTC NyBy v1.1 RC1'
-VERSION='1.1-rc1'
-RELEASE_DATE='2026-10-17'
+NAME='Unbound FR 179 RTC NyBy v1.1 Stable'
+VERSION='1.1'
+RELEASE_DATE='2026-10-20'
 BASE=0x0964c000
 OFFSET=BASE-0x08000000
 LIMIT=0x4000
@@ -21,7 +21,7 @@ def variable(value):
         if not value:result.append(byte|128);return result
         result.append(byte);value-=1
 def make_bps(source,target,changes):
-    metadata=('Unbound FR 179 manual RTC '+VERSION+' by NyBy, '+RELEASE_DATE+': optimized ARM7TDMI runtime, compatible four-byte settings.').encode('ascii')
+    metadata=('Unbound FR 179 manual RTC '+VERSION+' by NyBy, '+RELEASE_DATE+': manual startup, isolated verification stack, BIOS UI transfers, exact ARM7TDMI RTC.').encode('ascii')
     patch=bytearray(b'BPS1')+variable(len(source))+variable(len(target))+variable(len(metadata))+metadata
     position=0
     for offset,length in sorted(changes):
@@ -60,6 +60,8 @@ def elf_read(path):
     return bytes(binary),sym
 
 def build(outname,rom=SOURCE,zig=ZIG):
+    from footer_gen import generate
+    generate(ROOT)
     rom=Path(rom).resolve(strict=True)
     source=rom.read_bytes()
     assert sha(source)==SOURCE_SHA
@@ -71,9 +73,10 @@ def build(outname,rom=SOURCE,zig=ZIG):
              '-fno-asynchronous-unwind-tables','-fomit-frame-pointer','-fno-pic','-fno-pie',
              '-ffunction-sections','-fdata-sections','-nostdlib','-c']
     objects=[]
-    for source_file in ['clock.c','ui.c','lowlevel.S','rtc_fast.S']:
+    for source_file in ['clock.c','ui.c','verify.c','lowlevel.S','rtc_fast.S']:
         obj=out/(Path(source_file).stem+'.o');objects.append(str(obj))
-        subprocess.run(flags+['-o',str(obj),source_file],cwd=ROOT,check=True)
+        extra=['-fstack-usage','-Xclang','-stack-usage-file','-Xclang',str(obj.with_suffix('.su'))] if source_file.endswith('.c') else []
+        subprocess.run(flags+extra+['-o',str(obj),source_file],cwd=ROOT,check=True)
     command=[str(zig),'build-exe','-target','arm-freestanding-eabi','-mcpu','arm7tdmi',
              '-O','ReleaseSmall','-fno-entry','-fno-strip','-T',str(ROOT/'link.ld'),
              '-femit-bin='+str(out/'clock.elf')]+objects
@@ -104,7 +107,7 @@ def build(outname,rom=SOURCE,zig=ZIG):
     (out/(name+'.bps')).write_bytes(patch)
     (out/'payload.bin').write_bytes(code)
     report={'rom_name':NAME,'version':VERSION,'author':'NyBy','release_date':RELEASE_DATE,
-            'source_files':{name:sha((ROOT/name).read_bytes()) for name in ['clock.c','ui.c','lowlevel.S','rtc_fast.S','font.h','rtc.h','link.ld']},
+            'source_files':{name:sha((ROOT/name).read_bytes()) for name in ['clock.c','ui.c','verify.c','lowlevel.S','rtc_fast.S','font.h','rtc.h','link.ld','build_info.h','banner.h','banner_font.h','manual.h','footer.h','footer_gen.py']},
             'source_sha256':sha(source),'target_sha256':sha(target),
             'target_crc32':f'{zlib.crc32(target):08X}','payload_offset':hex(OFFSET),
             'payload_bytes':len(code),'bps_bytes':len(patch),'bps_sha256':sha(patch),'symbols':symbols,
@@ -118,5 +121,5 @@ def build(outname,rom=SOURCE,zig=ZIG):
     print(json.dumps({k:report[k] for k in ('payload_bytes','bps_bytes','target_crc32','target_sha256')}))
     return out
 if __name__=='__main__':
-    p=argparse.ArgumentParser();p.add_argument('--out',default='optim-v1.1-rc1');p.add_argument('--rom',type=Path,default=SOURCE);p.add_argument('--zig',type=Path,default=ZIG)
+    p=argparse.ArgumentParser();p.add_argument('--out',default='build');p.add_argument('--rom',type=Path,default=SOURCE);p.add_argument('--zig',type=Path,default=ZIG)
     a=p.parse_args();build(a.out,a.rom,a.zig)

@@ -1,0 +1,331 @@
+{
+  "rom_name": "Unbound FR 179 RTC NyBy v1.1 Stable",
+  "version": "1.1",
+  "author": "NyBy",
+  "release_date": "2026-10-20",
+  "source_files": {
+    "clock.c": "db58943896c2aadb5ac500f484844cf9e57ebf8103d30ab67ec7d54746cb5f2e",
+    "ui.c": "fb7eaf718883f943b236f873c15030cb1611c7acbfe110952249f7e6c3980fb4",
+    "verify.c": "7add98e671811dee47c35204040de3fb6f0bb2bd0fe343329fe8c752fa93fd35",
+    "lowlevel.S": "ace00d54ef2a3e1fbe341a2fa64a0bff3a8cfb4810da9f84f75900b85a689470",
+    "rtc_fast.S": "2a773fa423f3b7e4924f1c032d30a0438b2823ed5f38d30d016e206e905b58a1",
+    "font.h": "0ed360d90e025df4f4cc19196d7cce61e43830d7ef212c49c0a1708dc502e8d5",
+    "rtc.h": "f45f068cf8c035c90276101f6d4d4a20242cb2a52dda10d630dcc469583b3749",
+    "link.ld": "da4648f5e06e9d8525866b41d0b290cfb510505c3199bbb6aa406ec0e1a1b697",
+    "build_info.h": "b0a2f988463ec5170855ac1dee791543344991b6a0c22ea460833443f3033ff8",
+    "banner.h": "91e297613f1716ec353d303116f18bf0c75a4770ba722540fd61617ee7ccf7d2",
+    "banner_font.h": "1babd0e650bdf1d03355e392441bae5ae5c369f77be7e977a2d3681038e01664",
+    "manual.h": "d7aa2bef6d726c51d2ff22deac8fb685fb4502b8378843438ab7ca6ffbe147d9",
+    "footer.h": "74a63c73c8449b5f8d3e153f080140607f69f65de5c9b8b0451c1437f24aaf8a",
+    "footer_gen.py": "bcc1b841ceaa67bb3a8754c329832e1883135cf55dde993d7ede6c6d7f262766"
+  },
+  "source_sha256": "55bd66a6cd6a54b36b1c90b750541dfd0d621466bfb1ddee1e222f6207ad4164",
+  "target_sha256": "12f11cfe5dd61063d0bea22cdb8dacb99740c73c89d513720ca6aecbad095a00",
+  "target_crc32": "CA5E4441",
+  "payload_offset": "0x164c000",
+  "payload_bytes": 4968,
+  "bps_bytes": 5219,
+  "bps_sha256": "512f0f6471f998b650328fafdb4e330d3afb81bdb2805804891fd30c924d41b3",
+  "symbols": {
+    "clock.c": {
+      "address": 0,
+      "size": 0,
+      "info": 4
+    },
+    "$t": {
+      "address": 157601940,
+      "size": 0,
+      "info": 0
+    },
+    "$d": {
+      "address": 157601948,
+      "size": 0,
+      "info": 0
+    },
+    "month_days.lengths": {
+      "address": 157601952,
+      "size": 12,
+      "info": 1
+    },
+    "ui.c": {
+      "address": 0,
+      "size": 0,
+      "info": 4
+    },
+    "screen": {
+      "address": 157599545,
+      "size": 104,
+      "info": 2
+    },
+    "screen_notice": {
+      "address": 157599649,
+      "size": 116,
+      "info": 2
+    },
+    "moved_value": {
+      "address": 157599825,
+      "size": 134,
+      "info": 2
+    },
+    "field_set": {
+      "address": 157599765,
+      "size": 60,
+      "info": 2
+    },
+    "manual_values": {
+      "address": 157600081,
+      "size": 408,
+      "info": 2
+    },
+    "video_zero": {
+      "address": 157601964,
+      "size": 4,
+      "info": 1
+    },
+    "manual_header": {
+      "address": 157599961,
+      "size": 64,
+      "info": 2
+    },
+    "banner_text": {
+      "address": 157600757,
+      "size": 320,
+      "info": 2
+    },
+    "manual_footer": {
+      "address": 157600489,
+      "size": 268,
+      "info": 2
+    },
+    "banner_center": {
+      "address": 157600025,
+      "size": 54,
+      "info": 2
+    },
+    "manual_values.labels_x": {
+      "address": 157602592,
+      "size": 5,
+      "info": 1
+    },
+    "manual_labels": {
+      "address": 157602600,
+      "size": 20,
+      "info": 1
+    },
+    "manual_values.values_x": {
+      "address": 157602587,
+      "size": 5,
+      "info": 1
+    },
+    "footer_glyphs": {
+      "address": 157602620,
+      "size": 44,
+      "info": 1
+    },
+    "banner_e_acute": {
+      "address": 157602287,
+      "size": 5,
+      "info": 1
+    },
+    "font": {
+      "address": 157602292,
+      "size": 295,
+      "info": 1
+    },
+    "banner_lower": {
+      "address": 157602157,
+      "size": 130,
+      "info": 1
+    },
+    "verify.c": {
+      "address": 0,
+      "size": 0,
+      "info": 4
+    },
+    "$a": {
+      "address": 157601944,
+      "size": 0,
+      "info": 0
+    },
+    "rtc_now_fast": {
+      "address": 157601692,
+      "size": 88,
+      "info": 2
+    },
+    "rtc_split_day_fast": {
+      "address": 157601780,
+      "size": 36,
+      "info": 2
+    },
+    "rtc_hms_fast": {
+      "address": 157601816,
+      "size": 112,
+      "info": 2
+    },
+    "__Thumbv4ABSLongBXThunk_anchor_set": {
+      "address": 157598665,
+      "size": 12,
+      "info": 2
+    },
+    "__Thumbv4ABSLongBXThunk_anchor_get": {
+      "address": 157601941,
+      "size": 12,
+      "info": 2
+    },
+    "divmod": {
+      "address": 157598677,
+      "size": 70,
+      "info": 18
+    },
+    "month_days": {
+      "address": 157598749,
+      "size": 32,
+      "info": 18
+    },
+    "fields_seconds": {
+      "address": 157598781,
+      "size": 140,
+      "info": 18
+    },
+    "seconds_fields": {
+      "address": 157598921,
+      "size": 316,
+      "info": 18
+    },
+    "record_encode": {
+      "address": 157599237,
+      "size": 112,
+      "info": 18
+    },
+    "record_decode": {
+      "address": 157599349,
+      "size": 92,
+      "info": 18
+    },
+    "rtc_status": {
+      "address": 157599441,
+      "size": 8,
+      "info": 18
+    },
+    "rtc_success": {
+      "address": 157599449,
+      "size": 4,
+      "info": 18
+    },
+    "rtc_write_sector": {
+      "address": 157599453,
+      "size": 38,
+      "info": 18
+    },
+    "anchor_get": {
+      "address": 157601160,
+      "size": 0,
+      "info": 18
+    },
+    "original_write_sector": {
+      "address": 157601269,
+      "size": 0,
+      "info": 18
+    },
+    "read_flash_checked": {
+      "address": 157599493,
+      "size": 48,
+      "info": 18
+    },
+    "rtc_boot": {
+      "address": 157597697,
+      "size": 960,
+      "info": 18
+    },
+    "original_init": {
+      "address": 157601249,
+      "size": 0,
+      "info": 18
+    },
+    "video_fast_set": {
+      "address": 157601285,
+      "size": 4,
+      "info": 18
+    },
+    "verify_flash_sector": {
+      "address": 157601077,
+      "size": 82,
+      "info": 18
+    },
+    "anchor_set": {
+      "address": 157601192,
+      "size": 0,
+      "info": 18
+    },
+    "frame_seconds": {
+      "address": 157601224,
+      "size": 0,
+      "info": 18
+    },
+    "rtc_datetime": {
+      "address": 157601289,
+      "size": 352,
+      "info": 18
+    },
+    "rtc_time": {
+      "address": 157601641,
+      "size": 52,
+      "info": 18
+    }
+  },
+  "patched_ranges": [
+    {
+      "offset": "0x4c4",
+      "size": 8,
+      "before_sha256": "bab178f9ef2d1d3b8023b40317b6c3d5e43867bf69cb8d14804afbfa9797656e",
+      "after_sha256": "7d3dd414d3f6eb18db8290b681fbe31d325a4ea1db23b2a63615980adb46ce3a"
+    },
+    {
+      "offset": "0xd99d8",
+      "size": 8,
+      "before_sha256": "26c5757a3d78e9c3f9b0e7bc37ff45353d71872c23efa8d6d3e8eb3253f32f82",
+      "after_sha256": "c7b34414a332a451b72d7a40f6eadc83078557cdff431045f9225d032a2df192"
+    },
+    {
+      "offset": "0xa0b1dc",
+      "size": 8,
+      "before_sha256": "d41a74d9a98f59c7aec1de030f7bac4100d9077051b156d636abd22114ac4474",
+      "after_sha256": "eb74d28b63d9974a5446e2c86101c5f571398873456eaef68a57ec849394f9d9"
+    },
+    {
+      "offset": "0xa0b2c4",
+      "size": 8,
+      "before_sha256": "79cf9063bd3901edee9cd7f99e42084a8767938b0dd30d8d77ea1d57ba1514f7",
+      "after_sha256": "12d0d34ab4394c65eca48d8c36a6975a78087d2cf75a7199d64067313f586779"
+    },
+    {
+      "offset": "0xa0b2d4",
+      "size": 8,
+      "before_sha256": "0433ade146f8e0b66a3dda89c2f9cdb4bc75c750ac8a2391053d112bb3ec7ead",
+      "after_sha256": "a250db46dc7d239822bcf57fcf11eed4d927bf4c11cd7af9538cfa2ec5b3da2a"
+    },
+    {
+      "offset": "0xa0b334",
+      "size": 8,
+      "before_sha256": "ea34451bd95d3328efd0623774c1c95e87af2f107d44bf0ba51b1e37509731fc",
+      "after_sha256": "b29cbec7119991266d4c3b345eb7c7073eb662a60a6dd40a2f09c8d2d50b2953"
+    },
+    {
+      "offset": "0xa0b398",
+      "size": 8,
+      "before_sha256": "546382c703fc68766373158260f90d704d738e98ecb1edb2e0ae5c3afe52bc96",
+      "after_sha256": "12d0d34ab4394c65eca48d8c36a6975a78087d2cf75a7199d64067313f586779"
+    },
+    {
+      "offset": "0x164c000",
+      "size": 4968,
+      "before_sha256": "b12abd876a4e2b3099e357851896bf445582e791b31d955bfb8b07bc7bd4afb0",
+      "after_sha256": "089b331fdf45baab31f8d58505ac5202dd8dfa9662682899ba0692edfdf0cf7f"
+    }
+  ],
+  "toolchain": "Zig 0.15.2 cc/Clang, ARM7TDMI Thumb/ARM, -Oz, no libc",
+  "firmware_modified": false,
+  "source_unchanged": true,
+  "persistence": "4-byte CRC6/minute record at sector31 offset0xFF0",
+  "clock": "entered seconds plus VBlank frames*280896/16777216"
+}

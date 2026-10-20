@@ -58,7 +58,7 @@ def apply_release(source, output=None):
 
 def main():
     parser = argparse.ArgumentParser(description='NyBy RTC - application locale / offline patching')
-    parser.add_argument('source', nargs='?', help='ROM VF FR179 ou beta1 / French FR179 or beta1 ROM')
+    parser.add_argument('source', nargs='?', help='Unbound EN 2.1.1.1 ou FR 2.1.179 sans RTC / Clean Unbound EN 2.1.1.1 or FR 2.1.179')
     parser.add_argument('--output', type=Path, help='Nouveau fichier .gba / New .gba file (must not exist)')
     args = parser.parse_args()
     source = args.source

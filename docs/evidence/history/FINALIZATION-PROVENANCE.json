@@ -1,0 +1,20 @@
+{
+  "success": true,
+  "audited_snapshot_sha256": "ea31b3c89000b05f44212011c434471631a868a2bc7fcbd794bb58b031a4b81f",
+  "all_existing_files_preserved_except": [
+    {
+      "path": "CREDITS-FR-EN.md",
+      "before_sha256": "96c32d283a2439b54283982e6c7528da81786e39a40e7bbc2ac3095253f02d37",
+      "after_sha256": "2ebe589d70542fd4a07358c11ecd79b46bf4d26a3c6e809a4e0d15e4ba6db25e",
+      "scope": "documentation only"
+    }
+  ],
+  "added_files": [
+    "docs/AUDIT-INGENIEUR-GBA-FR-EN.md",
+    "docs/INDEPENDENT-AUDIT.json",
+    "docs/FINALIZATION-PROVENANCE.json"
+  ],
+  "original_code_html_bps_profiles_and_cache_unchanged": true,
+  "manifest_and_zip_regenerated_after_documentary_additions": true,
+  "hardware_validation": false
+}

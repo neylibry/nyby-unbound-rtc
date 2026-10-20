@@ -1,0 +1,32 @@
+name: Bug report
+description: Report a reproducible RTC or installer issue
+body:
+  - type: markdown
+    attributes:
+      value: "Do not upload a ROM, BIOS, personal save or generated personal ZIP. See docs/VALIDATION.md."
+  - type: input
+    id: version
+    attributes:
+      label: RTC version and game language
+      placeholder: Stable 1.1 / FR Antony 2.1.179
+    validations:
+      required: true
+  - type: textarea
+    id: hardware
+    attributes:
+      label: Hardware and firmware
+      description: GBA model, flashcart, SuperFW, SD type; or browser/OS for installer issues.
+    validations:
+      required: true
+  - type: textarea
+    id: settings
+    attributes:
+      label: Launch settings and SHA-256 fingerprints
+      description: PatchEngine / DirectSaving / RTC / IGM / cheats. Do not include private paths or account tokens.
+  - type: textarea
+    id: steps
+    attributes:
+      label: Steps, expected result and actual result
+      description: Manual entry used? Location/action? Audio/buttons still work? Does a clean baseline reproduce it?
+    validations:
+      required: true

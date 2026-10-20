@@ -1,0 +1,33 @@
+NYBY RTC Stable 1.1 — 20/10/2026
+1. Garder une copie PC de la sauvegarde et de l’ancienne installation.
+2. Extraire le ZIP personnel sur PC ; copier son contenu à la racine SD,
+   en fusionnant .superfw. Le programme ne modifie jamais directement la carte.
+3. Utiliser les caches et profils Stable 1.1 fournis : PatchEngine, DirectSaving activé,
+   RTC SuperFW DÉSACTIVÉE, IGM et cheats désactivés. Aucun flashage du firmware.
+4. Au démarrage GBA : gauche/droite sélectionne le champ, haut/bas change sa valeur,
+   START mémorise le réglage et lance le jeu. Choisir ensuite Continuer.
+   Le dernier réglage saisi est prérempli ; remettre l’heure réelle à chaque session.
+5. Le .sav facultatif est copié à l’identique sous le nom de la nouvelle ROM dans
+   SAVEGAME. Adapter ce dossier si SuperFW est configuré autrement.
+   Employer une sauvegarde de la même langue ; aucune conversion FR/EN.
+6. Ne jamais remplacer une sauvegarde plus récente sans copie PC préalable.
+L’heure avance pendant le jeu ; aucun temps console éteinte n’est calculé.
+Le format du réglage est inchangé. La copie .sav ne répare ni ne valide son contenu.
+STABLE 1.1 : tests FR validés par NyBy sur GBA/SuperCard SuperFW 0.21 ; EN contrôlée sur PC. Les scénarios de capture/paramètres passent le test FR du propriétaire ; cause antérieure non démontrée.
+
+NYBY RTC Stable 1.1 — 2026-10-20
+1. Keep a PC backup of your save and previous installation.
+2. Extract your personal ZIP on PC; copy its contents to the SD root, merging
+   .superfw. This installer never writes directly to the card.
+3. Use the supplied Stable 1.1 caches and profiles: PatchEngine, DirectSaving enabled,
+   SuperFW RTC DISABLED, IGM and cheats disabled. No firmware flashing is needed.
+4. On GBA: left/right selects a field, up/down changes its value,
+   START remembers the setting and launches the game. Then select Continue.
+   The last entered setting is prefilled; set the real time each session.
+5. An optional .sav is copied unchanged with the new ROM filename into SAVEGAME.
+   Adjust this folder if SuperFW is configured differently.
+   Use a save matching your ROM language; no FR/EN conversion is performed.
+6. Never replace a newer save without making a PC backup first.
+Time advances during play; powered-off time is not counted.
+The setting format is unchanged. Copying .sav does not repair or validate its data.
+STABLE 1.1: FR owner acceptance passed on GBA/SuperCard SuperFW 0.21; EN PC checked. The owner reports the FR capture/Options acceptance tests pass; the earlier root cause was not proven.

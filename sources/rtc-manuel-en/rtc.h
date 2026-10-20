@@ -21,10 +21,12 @@ u32 rtc_time(RtcInfo *out);
 u32 rtc_status(RtcInfo *out);
 u32 rtc_success(void);
 u32 rtc_write_sector(u32 sector,u8 *buffer);
+void video_fast_set(const volatile void *source,volatile void *destination,u32 control);
 #define FRAMES (*(volatile u32*)0x03003114)
 #define NATIVE_READ ((void(*)(u16,u32,void*,u32))0x081DEA99)
 #define NATIVE_READ_STATUS ((u32(*)(u16,u32,void*,u32))0x081DEA99)
 int read_flash_checked(u32 offset,void *buffer,u32 count);
+int verify_flash_sector(const u8 *expected);
 #define NATIVE_WRITE ((u32(*)(u32,u8*))0x080D99D9)
 #define NATIVE_PROGRAM_VERIFY ((u32(*)(u16,u8*))0x081DEC95)
 #define BOOT_BUFFER ((u8*)0x02039A38)

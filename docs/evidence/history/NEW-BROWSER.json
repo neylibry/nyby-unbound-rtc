@@ -1,0 +1,24 @@
+{
+  "success": true,
+  "browser": "155.0.8059.85",
+  "offline": true,
+  "file_url": true,
+  "checks": [
+    "INSTALLER-EN.html default language and offline startup",
+    "INSTALLER-FR.html default language and offline startup",
+    "French beta screen; empty submission disabled",
+    "fr clean Unbound -> actual HTML ZIP without save; interface language independent",
+    "fr clean Unbound -> actual HTML ZIP with native save; interface language independent",
+    "en clean Unbound -> actual HTML ZIP without save; interface language independent",
+    "en clean Unbound -> actual HTML ZIP with native save; interface language independent",
+    "fr already-patched beta output accepted",
+    "en already-patched beta output accepted",
+    "unrecognized ROM rejected; stale download cleared",
+    "raw FireRed rejected; stale download cleared",
+    "Blank save rejected in HTML",
+    "360px viewport and language switching after completion"
+  ],
+  "javascript_errors": 0,
+  "http_requests": 0,
+  "personal_save_used": false
+}

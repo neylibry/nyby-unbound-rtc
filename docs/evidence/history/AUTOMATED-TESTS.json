@@ -1,0 +1,26 @@
+{
+  "success": true,
+  "version": "1.5-beta3",
+  "new_campaign": {
+    "clean_bases_rebuilt_from_personal_firered": true,
+    "installer_engine_checks": 29,
+    "browser_checks": 13,
+    "zips_independently_verified": 10,
+    "http_requests": 0,
+    "javascript_errors": 0,
+    "save_fixtures": "synthetic copy tests; not native game-save integrity validation",
+    "html_rebuild_reproducible": true,
+    "python_fallback_output_exact_and_refuses_overwrite": true
+  },
+  "prior_campaign_preserved_by_source_and_binary_provenance": {
+    "rtc_math_assertions": 65660514,
+    "ui_render_comparisons": 24866,
+    "verification_cases": 4180
+  },
+  "arm_or_gba_or_bios_emulation_used": false,
+  "physical_gba_tested": false,
+  "complete_flashcart_sd_path_tested": false,
+  "personal_save_used": false,
+  "sd_modified": false,
+  "published": false
+}

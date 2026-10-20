@@ -1,0 +1,46 @@
+{
+  "FR": {
+    "passed": true,
+    "cases": 12433,
+    "all_vram_palette_io_equal": true,
+    "bgcnt_address_evaluations_reference": 2756,
+    "bgcnt_address_evaluations_optimized": 43,
+    "bios_mock_calls": 190,
+    "frame_wait_mock_calls": 289,
+    "game_or_arm_emulation": false,
+    "source_hashes": {
+      "reference": {
+        "original_ui_sha256": "3f74e2832d016ea2d1b4841c2985fbcefccd30635c4132bc8f4a270a6d708652",
+        "test_adapter_ui_sha256": "296ceff7dae96f2dcc2bb08a22a620821eeb25685ae01d402e48b651344513cd"
+      },
+      "candidate": {
+        "original_ui_sha256": "fb7eaf718883f943b236f873c15030cb1611c7acbfe110952249f7e6c3980fb4",
+        "test_adapter_ui_sha256": "8c233505269e264b2d446b24d22496cf10cf81e02dc7d53f9d8bfec807be4d95"
+      }
+    },
+    "scope": "Native C drawing on allocated PC buffers at numeric register addresses; wait no-op, CpuFastSet contract mock. No CPU/game/BIOS timing emulation.",
+    "footer_marker_normalized_in_reference_only": "V1.5 D2 -> V1.5 D3"
+  },
+  "EN": {
+    "passed": true,
+    "cases": 12433,
+    "all_vram_palette_io_equal": true,
+    "bgcnt_address_evaluations_reference": 2643,
+    "bgcnt_address_evaluations_optimized": 43,
+    "bios_mock_calls": 190,
+    "frame_wait_mock_calls": 289,
+    "game_or_arm_emulation": false,
+    "source_hashes": {
+      "reference": {
+        "original_ui_sha256": "3f74e2832d016ea2d1b4841c2985fbcefccd30635c4132bc8f4a270a6d708652",
+        "test_adapter_ui_sha256": "296ceff7dae96f2dcc2bb08a22a620821eeb25685ae01d402e48b651344513cd"
+      },
+      "candidate": {
+        "original_ui_sha256": "fb7eaf718883f943b236f873c15030cb1611c7acbfe110952249f7e6c3980fb4",
+        "test_adapter_ui_sha256": "8c233505269e264b2d446b24d22496cf10cf81e02dc7d53f9d8bfec807be4d95"
+      }
+    },
+    "scope": "Native C drawing on allocated PC buffers at numeric register addresses; wait no-op, CpuFastSet contract mock. No CPU/game/BIOS timing emulation.",
+    "footer_marker_normalized_in_reference_only": "V1.5 D2 -> V1.5 D3"
+  }
+}

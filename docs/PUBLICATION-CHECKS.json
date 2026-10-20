@@ -1,0 +1,39 @@
+{
+  "version": "1.1",
+  "date": "2026-10-21",
+  "hardware_acceptance": "FR owner report; EN PC only",
+  "accepted_rom_bytes_unchanged": true,
+  "source_rebuilds": {
+    "passed": true,
+    "build_date": "2026-10-20",
+    "publication_date": "2026-10-21",
+    "runtime_modified": false,
+    "variants": [
+      {
+        "id": "fr",
+        "target_sha256": "12f11cfe5dd61063d0bea22cdb8dacb99740c73c89d513720ca6aecbad095a00",
+        "bps_sha256": "512f0f6471f998b650328fafdb4e330d3afb81bdb2805804891fd30c924d41b3",
+        "payload_bytes": 4968,
+        "exact_rom_bps_and_report_reproduction": true,
+        "source_preserved": true
+      },
+      {
+        "id": "en",
+        "target_sha256": "cb31a81a5271fe0f140f6ed0267a6e1a89cb087a028c50efa344cb23f29cce07",
+        "bps_sha256": "b3204f0e45821f31497bafe3fe9b927f4c5272b453d63cf9477ceb75fee0ade1",
+        "payload_bytes": 4948,
+        "exact_rom_bps_and_report_reproduction": true,
+        "source_preserved": true
+      }
+    ]
+  },
+  "native_math_assertions": 65660514,
+  "rom_free_engine_checks": 17,
+  "rom_integration_engine_checks": 28,
+  "offline_browser_workflows": 13,
+  "independently_verified_personal_zips": 10,
+  "http_requests_during_browser_test": 0,
+  "sd_accessed": false,
+  "rom_or_save_distributed": false,
+  "release_integrity_checks_without_manifest": 73
+}
